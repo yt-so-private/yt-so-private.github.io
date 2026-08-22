@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talking about the weather · Daily English</title>
+<style>
+  :root {
+    --bg: #f6f1e8;
+    --ink: #1c1915;
+    --muted: #6b645b;
+    --card: #fffdf8;
+    --line: #e6ddd0;
+    --accent: #c45c26;
+    --ok: #2c6e49;
+    --bad: #9b2c2c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  header { margin-bottom: 2rem; }
+  .kicker {
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h1 { font-size: 1.6rem; margin: .35rem 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: .95rem; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.25rem 1.2rem;
+    margin: 1rem 0;
+  }
+  h2 { font-size: 1.05rem; margin: 0 0 .8rem; }
+  .passage { font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; }
+  .passage p { margin: 0 0 .8rem; }
+  .vocab { display: grid; gap: .6rem; }
+  .item { border-bottom: 1px dashed var(--line); padding-bottom: .55rem; }
+  .item:last-child { border: 0; padding: 0; }
+  .en { font-weight: 700; }
+  .hint { color: var(--muted); font-size: .9rem; margin-top: .15rem; display: none; }
+  button {
+    appearance: none;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 999px;
+    padding: .35rem .75rem;
+    font: inherit;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  .q { margin: 1rem 0 1.4rem; }
+  .q p { margin: 0 0 .5rem; font-weight: 600; }
+  .choices { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .choices button { border-radius: 10px; padding: .5rem .8rem; }
+  .choices button.correct { background: #e7f4ec; border-color: var(--ok); color: var(--ok); }
+  .choices button.wrong { background: #fbeaea; border-color: var(--bad); color: var(--bad); }
+  .feedback { font-size: .9rem; margin-top: .4rem; min-height: 1.2em; color: var(--muted); }
+  footer { color: var(--muted); font-size: .8rem; margin-top: 1.5rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">Daily English · 10 min</div>
+    <h1>Talking about the weather</h1>
+    <div class="sub">A short, generic lesson · small talk</div>
+  </header>
+
+  <section>
+    <h2>1. 今日の短文</h2>
+    <div class="passage">
+      <p>It's a bit chilly this morning, but it should warm up by noon.</p>
+      <p>I might take a jacket just in case. The forecast isn't great later on.</p>
+    </div>
+    <button type="button" data-toggle="#jp-passage">日本語を見る</button>
+    <p class="hint" id="jp-passage">今朝はちょっと冷える。でも昼までには暖かくなりそう。念のためジャケットを持っていくかも。このあと天気はあまりよくない予報。</p>
+  </section>
+
+  <section>
+    <h2>2. 単語</h2>
+    <div class="vocab">
+      <div class="item">
+        <div class="en">chilly</div>
+        <div>ちょっと寒い、冷える</div>
+      </div>
+      <div class="item">
+        <div class="en">warm up</div>
+        <div>暖かくなる</div>
+      </div>
+      <div class="item">
+        <div class="en">just in case</div>
+        <div>念のため</div>
+      </div>
+      <div class="item">
+        <div class="en">forecast</div>
+        <div>天気予報</div>
+      </div>
+      <div class="item">
+        <div class="en">later on</div>
+        <div>このあと、後で</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 口に出してみる</h2>
+    <p>It's a bit chilly this morning.</p>
+    <p>I might take a jacket just in case.</p>
+  </section>
+
+  <section>
+    <h2>4. クイズ</h2>
+    <div class="q" data-answer="2">
+      <p>Q1. “chilly” に一番近いのは？</p>
+      <div class="choices">
+        <button type="button">蒸し暑い</button>
+        <button type="button">雨</button>
+        <button type="button">ちょっと寒い</button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="0">
+      <p>Q2. “just in case” の感じは？</p>
+      <div class="choices">
+        <button type="button">念のため</button>
+        <button type="button">絶対に</button>
+        <button type="button">急いで</button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+    <div class="q" data-answer="1">
+      <p>Q3. 短文の主旨は？</p>
+      <div class="choices">
+        <button type="button">今日は旅行に行く</button>
+        <button type="button">朝は冷えるが、念のため準備する</button>
+        <button type="button">予報はいつも当たる</button>
+      </div>
+      <div class="feedback"></div>
+    </div>
+  </section>
+
+  <footer><a href="../index.html">← 一覧</a></footer>
+</main>
+<script>
+  document.querySelectorAll("[data-toggle]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const el = document.querySelector(btn.dataset.toggle);
+      const on = el.style.display === "block";
+      el.style.display = on ? "none" : "block";
+      btn.textContent = on ? "日本語を見る" : "日本語を隠す";
+    });
+  });
+  document.querySelectorAll(".q").forEach(q => {
+    const answer = Number(q.dataset.answer);
+    const buttons = [...q.querySelectorAll(".choices button")];
+    const fb = q.querySelector(".feedback");
+    buttons.forEach((b, i) => {
+      b.addEventListener("click", () => {
+        buttons.forEach(x => { x.classList.remove("correct", "wrong"); x.disabled = true; });
+        if (i === answer) {
+          b.classList.add("correct");
+          fb.textContent = "OK";
+          fb.style.color = "var(--ok)";
+        } else {
+          b.classList.add("wrong");
+          buttons[answer].classList.add("correct");
+          fb.textContent = "正解は「" + buttons[answer].textContent + "」";
+          fb.style.color = "var(--bad)";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
