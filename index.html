@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily English</title>
+<style>
+  :root {
+    --bg: #f6f1e8;
+    --ink: #1c1915;
+    --muted: #6b645b;
+    --card: #fffdf8;
+    --line: #e6ddd0;
+    --accent: #c45c26;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  .kicker {
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h1 { font-size: 1.6rem; margin: .35rem 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: .95rem; }
+  ul { list-style: none; padding: 0; margin: 1.5rem 0; }
+  li { margin: 0 0 .75rem; }
+  a {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.1rem 1.2rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover { border-color: var(--accent); }
+  a strong { display: block; margin-bottom: .15rem; }
+  a span { color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">Daily English · 10 min</div>
+  <h1>Short lessons</h1>
+  <p class="sub">Generic practice pages. About 10 minutes each.</p>
+  <ul>
+    <li>
+      <a href="lessons/coffee.html">
+        <strong>At a café</strong>
+        <span>Order a drink and keep it simple.</span>
+      </a>
+    </li>
+    <li>
+      <a href="lessons/weather.html">
+        <strong>Talking about the weather</strong>
+        <span>Small talk you can reuse any day.</span>
+      </a>
+    </li>
+  </ul>
+</main>
+</body>
+</html>
