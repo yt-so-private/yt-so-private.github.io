@@ -70,6 +70,24 @@
   .feedback { font-size: .9rem; margin-top: .4rem; min-height: 1.2em; color: var(--muted); }
   footer { color: var(--muted); font-size: .8rem; margin-top: 1.5rem; }
   footer a { color: var(--accent); }
+
+  .listen {
+    font-size: .72rem;
+    padding: .2rem .55rem;
+    margin-left: .35rem;
+    vertical-align: middle;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  h2 .listen { vertical-align: baseline; }
+  .speak-line {
+    display: flex;
+    align-items: baseline;
+    gap: .35rem;
+    flex-wrap: wrap;
+  }
+  .speak-line > span { flex: 1 1 auto; }
+  .en { display: flex; align-items: baseline; gap: .35rem; flex-wrap: wrap; }
 </style>
 </head>
 <body>
@@ -81,7 +99,7 @@
   </header>
 
   <section>
-    <h2>1. 今日の短文</h2>
+    <h2>1. 今日の短文 <button type="button" class="listen" data-speak-passage>▶ 聞く</button></h2>
     <div class="passage">
       <p>It's a bit chilly this morning, but it should warm up by noon.</p>
       <p>I might take a jacket just in case. The forecast isn't great later on.</p>
@@ -94,23 +112,23 @@
     <h2>2. 単語</h2>
     <div class="vocab">
       <div class="item">
-        <div class="en">chilly</div>
+        <div class="en">chilly <button type="button" class="listen" data-speak="chilly">▶ 聞く</button></div>
         <div>ちょっと寒い、冷える</div>
       </div>
       <div class="item">
-        <div class="en">warm up</div>
+        <div class="en">warm up <button type="button" class="listen" data-speak="warm up">▶ 聞く</button></div>
         <div>暖かくなる</div>
       </div>
       <div class="item">
-        <div class="en">just in case</div>
+        <div class="en">just in case <button type="button" class="listen" data-speak="just in case">▶ 聞く</button></div>
         <div>念のため</div>
       </div>
       <div class="item">
-        <div class="en">forecast</div>
+        <div class="en">forecast <button type="button" class="listen" data-speak="forecast">▶ 聞く</button></div>
         <div>天気予報</div>
       </div>
       <div class="item">
-        <div class="en">later on</div>
+        <div class="en">later on <button type="button" class="listen" data-speak="later on">▶ 聞く</button></div>
         <div>このあと、後で</div>
       </div>
     </div>
@@ -118,8 +136,8 @@
 
   <section>
     <h2>3. 口に出してみる</h2>
-    <p>It's a bit chilly this morning.</p>
-    <p>I might take a jacket just in case.</p>
+    <p class="speak-line"><span>It's a bit chilly this morning.</span> <button type="button" class="listen" data-speak="It's a bit chilly this morning.">▶ 聞く</button></p>
+    <p class="speak-line"><span>I might take a jacket just in case.</span> <button type="button" class="listen" data-speak="I might take a jacket just in case.">▶ 聞く</button></p>
   </section>
 
   <section>
@@ -184,6 +202,41 @@
       });
     });
   });
+
+  function speakEnglish(text) {
+    if (!window.speechSynthesis || !text) return;
+    const t = String(text).replace(/\s+/g, " ").trim();
+    if (!t) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = "en-US";
+    u.rate = 0.9;
+    speechSynthesis.speak(u);
+  }
+  document.querySelectorAll("button.listen").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (btn.hasAttribute("data-speak-passage")) {
+        const sec = btn.closest("section");
+        const passage = sec && sec.querySelector(".passage");
+        speakEnglish(passage ? passage.innerText : "");
+        return;
+      }
+      const attr = btn.getAttribute("data-speak");
+      if (attr != null) {
+        speakEnglish(attr);
+        return;
+      }
+      const en = btn.closest(".en");
+      if (en) {
+        const clone = en.cloneNode(true);
+        clone.querySelectorAll("button").forEach(b => b.remove());
+        speakEnglish(clone.textContent);
+      }
+    });
+  });
+
 </script>
 </body>
 </html>
