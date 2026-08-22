@@ -203,6 +203,28 @@
     });
   });
 
+  let englishVoice = null;
+  function pickEnglishVoice() {
+    const voices = speechSynthesis.getVoices() || [];
+    const prefer = [
+      v => /en-US/i.test(v.lang) && /Google|Microsoft|Samantha|Alex|Jenny|Aria/i.test(v.name),
+      v => /en-GB/i.test(v.lang) && /Google|Microsoft|Daniel|Kate/i.test(v.name),
+      v => /^en(-|$)/i.test(v.lang)
+    ];
+    for (const fn of prefer) {
+      const hit = voices.find(fn);
+      if (hit) return hit;
+    }
+    return null;
+  }
+  function ensureEnglishVoice() {
+    englishVoice = pickEnglishVoice();
+    return englishVoice;
+  }
+  if (window.speechSynthesis) {
+    ensureEnglishVoice();
+    speechSynthesis.addEventListener("voiceschanged", ensureEnglishVoice);
+  }
   function speakEnglish(text) {
     if (!window.speechSynthesis || !text) return;
     const t = String(text).replace(/\s+/g, " ").trim();
@@ -211,6 +233,11 @@
     const u = new SpeechSynthesisUtterance(t);
     u.lang = "en-US";
     u.rate = 0.9;
+    const voice = ensureEnglishVoice();
+    if (voice) {
+      u.voice = voice;
+      u.lang = voice.lang || "en-US";
+    }
     speechSynthesis.speak(u);
   }
   document.querySelectorAll("button.listen").forEach(btn => {
