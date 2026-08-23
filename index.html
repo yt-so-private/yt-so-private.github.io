@@ -45,14 +45,33 @@
   a:hover { border-color: var(--accent); }
   a strong { display: block; margin-bottom: .15rem; }
   a span { color: var(--muted); font-size: .9rem; }
+  a .badge {
+    display: inline-block;
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 999px;
+    padding: .15rem .5rem;
+    margin-bottom: .35rem;
+  }
 </style>
 </head>
 <body>
 <main>
-  <div class="kicker">Daily English · 10 min</div>
+  <div class="kicker">Daily English</div>
   <h1>Short lessons</h1>
-  <p class="sub">Generic practice pages. About 10 minutes each.</p>
+  <p class="sub">Generic practice pages. New longer format ~15–18 min; older ones ~10 min.</p>
   <ul>
+    <li>
+      <a href="lessons/thicker-demo.html">
+        <span class="badge">Demo · 15–18 min</span>
+        <strong>Running a few errands</strong>
+        <span>New longer format: 音読 · 軽いシャドーイング · 瞬間英作文 · quiz.</span>
+      </a>
+    </li>
     <li>
       <a href="lessons/2026-08-23.html">
         <strong>A low-key morning</strong>
