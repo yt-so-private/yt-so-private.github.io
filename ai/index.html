@@ -3,29 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI digest</title>
-<link rel="stylesheet" href="ui.css">
+<title>AI ラインナップと比較</title>
+<style>
+:root{--bg:#111114;--card:#1c1c22;--ink:#f3f1ea;--muted:#9a958b;--line:#2c2c34;--acc:#e8c07a}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+main{max-width:44rem;margin:0 auto;padding:1.1rem 1rem 3rem}
+h1{font-size:1.45rem;margin:.2rem 0 .1rem}
+.sub{color:var(--muted);font-size:.86rem;margin:0 0 .8rem}
+.tabs{position:sticky;top:0;z-index:2;display:flex;gap:.35rem;flex-wrap:wrap;padding:.45rem 0 .7rem;background:var(--bg)}
+.tabs button{appearance:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:.28rem .7rem;font:inherit;font-size:.8rem;cursor:pointer}
+.tabs button.on{border-color:var(--acc);color:var(--acc)}
+.panel{display:none}
+.panel.on{display:block}
+.panel-note{color:var(--muted);font-size:.8rem;margin:0 0 .7rem}
+article,.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.8rem .9rem;margin:0 0 .65rem}
+h3{font-size:.98rem;margin:0 0 .25rem}
+.meta{font-size:.75rem;color:var(--muted);margin-bottom:.3rem}
+p{margin:.3rem 0}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+.role{display:inline-block;font-size:.7rem;border:1px solid var(--line);border-radius:999px;padding:.02rem .45rem;color:var(--acc);white-space:nowrap}
+table{width:100%;border-collapse:collapse;font-size:.84rem}
+th,td{text-align:left;vertical-align:top;padding:.35rem .4rem .35rem 0;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600;font-size:.74rem}
+details.vendor{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.55rem .8rem;margin:0 0 .5rem}
+details.vendor>summary{cursor:pointer;font-weight:700;list-style:none}
+details.vendor>summary::-webkit-details-marker{display:none}
+details.vendor>summary::before{content:"▸ ";color:var(--acc)}
+details.vendor[open]>summary::before{content:"▾ "}
+details.note-fold{margin:.25rem 0 0}
+details.note-fold>summary{cursor:pointer;color:var(--muted);font-size:.78rem;list-style:none}
+details.note-fold>summary::-webkit-details-marker{display:none}
+.note{color:var(--muted);font-size:.8rem}
+.clip{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ol.ranks{margin:.35rem 0 0;padding-left:1.15rem}
+ol.ranks li{margin:.2rem 0}
+.model-row{display:flex;flex-wrap:wrap;gap:.35rem .55rem;align-items:baseline;padding:.4rem 0;border-bottom:1px solid var(--line)}
+.model-row:last-child{border-bottom:0}
+.model-name{font-weight:600;font-size:.9rem}
+.grid{display:grid;gap:.65rem}
+@media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}}
+footer{color:var(--muted);font-size:.75rem;margin-top:1.4rem}
+.err{color:#e8a07a}
+</style>
 </head>
 <body>
 <main>
-  <div class="kicker">Weekday digest</div>
-  <h1>AI news</h1>
-  <p class="sub" id="updated">読み込み中…</p>
-  <nav class="tabs" role="tablist">
-    <button type="button" class="on" data-tab="news">ニュース</button>
-    <button type="button" data-tab="lineups">ラインナップ</button>
-    <button type="button" data-tab="harnesses">ハーネス</button>
-    <button type="button" data-tab="upcoming">予定</button>
-    <button type="button" data-tab="rankings">用途</button>
-    <button type="button" data-tab="benchmarks">読み方</button>
-  </nav>
-  <section id="news" class="panel on"></section>
-  <section id="lineups" class="panel"></section>
-  <section id="harnesses" class="panel"></section>
-  <section id="upcoming" class="panel"></section>
-  <section id="rankings" class="panel"></section>
-  <section id="benchmarks" class="panel"></section>
-  <footer>公開ページ。個人情報は載せない。</footer>
+<h1>AI ラインナップと比較</h1>
+<p class="sub" id="updated">読み込み中…</p>
+<nav class="tabs" role="tablist" aria-label="セクション">
+  <button type="button" role="tab" class="on" data-tab="news" aria-selected="true">今日のニュース</button>
+  <button type="button" role="tab" data-tab="lineups" aria-selected="false">ラインナップ</button>
+  <button type="button" role="tab" data-tab="harnesses" aria-selected="false">ハーネス</button>
+  <button type="button" role="tab" data-tab="upcoming" aria-selected="false">予定</button>
+  <button type="button" role="tab" data-tab="rankings" aria-selected="false">用途</button>
+  <button type="button" role="tab" data-tab="benchmarks" aria-selected="false">読み方</button>
+</nav>
+<section id="news" class="panel on" role="tabpanel"></section>
+<section id="lineups" class="panel" role="tabpanel"></section>
+<section id="harnesses" class="panel" role="tabpanel"></section>
+<section id="upcoming" class="panel" role="tabpanel"></section>
+<section id="rankings" class="panel" role="tabpanel"></section>
+<section id="benchmarks" class="panel" role="tabpanel"></section>
+<footer>公開ページ。個人情報は載せない。</footer>
 </main>
 <script src="ui.js"></script>
 </body>
