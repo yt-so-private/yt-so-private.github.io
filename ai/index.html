@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI digest</title>
+<style>
+:root{--bg:#111114;--card:#1c1c22;--ink:#f3f1ea;--muted:#9a958b;--line:#2c2c34;--acc:#e8c07a}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+main{max-width:40rem;margin:0 auto;padding:2rem 1.2rem 4rem}
+.kicker{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700}
+h1{font-size:1.7rem;margin:.3rem 0 .2rem}
+.sub{color:var(--muted);font-size:.92rem}
+article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.05rem 1.1rem;margin:1rem 0}
+article h2{font-size:1.05rem;margin:0 0 .4rem}
+.meta{font-size:.78rem;color:var(--muted);margin-bottom:.45rem}
+a{color:var(--acc);text-decoration:none}
+a:hover{text-decoration:underline}
+footer{color:var(--muted);font-size:.78rem;margin-top:1.5rem}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Weekday digest</div>
+<h1>AI news</h1>
+<p class="sub" id="updated">読み込み中…</p>
+<div id="list"></div>
+<footer>公開ページ。個人情報は載せない。</footer>
+</main>
+<script>
+fetch("news.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
+const el=document.getElementById("updated");
+const t=data.generatedAt?new Date(data.generatedAt):null;
+el.textContent=t?("更新 "+t.toLocaleString("ja-JP",{timeZone:"Asia/Tokyo"})):"";
+const list=document.getElementById("list");
+(data.items||[]).forEach(item=>{
+const a=document.createElement("article");
+a.innerHTML=`<div class="meta">${item.date||""} · ${item.source||""}</div><h2>${item.title||""}</h2><p>${item.summary||""}</p><p><a href="${item.url||"#"}" rel="noopener" target="_blank">原文</a></p>`;
+list.appendChild(a);});
+}).catch(()=>{document.getElementById("updated").textContent="news.json を読めなかった";});
+</script>
+</body>
+</html>
