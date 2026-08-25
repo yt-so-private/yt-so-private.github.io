@@ -3,42 +3,198 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI digest</title>
+<title>AI ラインナップと比較</title>
 <style>
 :root{--bg:#111114;--card:#1c1c22;--ink:#f3f1ea;--muted:#9a958b;--line:#2c2c34;--acc:#e8c07a}
 *{box-sizing:border-box}
 body{margin:0;font-family:"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
-main{max-width:40rem;margin:0 auto;padding:2rem 1.2rem 4rem}
-.kicker{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:700}
-h1{font-size:1.7rem;margin:.3rem 0 .2rem}
-.sub{color:var(--muted);font-size:.92rem}
-article{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.05rem 1.1rem;margin:1rem 0}
-article h2{font-size:1.05rem;margin:0 0 .4rem}
-.meta{font-size:.78rem;color:var(--muted);margin-bottom:.45rem}
+main{max-width:56rem;margin:0 auto;padding:2rem 1.2rem 4rem}
+h1{font-size:1.7rem;margin:.2rem 0 .25rem}
+h2{font-size:1.15rem;margin:2.1rem 0 .7rem;color:var(--acc);letter-spacing:.04em}
+.sub{color:var(--muted);font-size:.92rem;margin:0 0 1.2rem}
+.note{color:var(--muted);font-size:.82rem;margin:.2rem 0 1rem}
+article,.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.05rem 1.1rem;margin:0 0 .85rem}
+article h3,.card h3{font-size:1.02rem;margin:0 0 .35rem}
+.meta{font-size:.78rem;color:var(--muted);margin-bottom:.4rem}
 a{color:var(--acc);text-decoration:none}
 a:hover{text-decoration:underline}
-footer{color:var(--muted);font-size:.78rem;margin-top:1.5rem}
+footer{color:var(--muted);font-size:.78rem;margin-top:2rem}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{text-align:left;vertical-align:top;padding:.45rem .5rem .45rem 0;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600;font-size:.78rem}
+.role{display:inline-block;font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:.05rem .5rem;color:var(--acc);white-space:nowrap}
+.grid{display:grid;gap:.85rem}
+@media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}}
+ol.ranks{margin:.35rem 0 0;padding-left:1.2rem}
+ol.ranks li{margin:.25rem 0}
+.place{color:var(--acc);font-weight:700;margin-right:.25rem}
+.err{color:#e8a07a}
 </style>
 </head>
 <body>
 <main>
-<div class="kicker">Weekday digest</div>
-<h1>AI news</h1>
+<h1>AI ラインナップと比較</h1>
 <p class="sub" id="updated">読み込み中…</p>
-<div id="list"></div>
+
+<section id="news">
+<h2>今日のニュース</h2>
+<div id="news-list"></div>
+</section>
+
+<section>
+<h2>各社ラインナップ</h2>
+<p class="note">公開情報ベース。役割は flagship / cheap / code / multimodal / open の目安。</p>
+<div id="lineups"></div>
+</section>
+
+<section>
+<h2>ハーネス</h2>
+<p class="note">モデルを包むコーディング用の道具。存在を確認できたものだけ。</p>
+<div id="harnesses"></div>
+</section>
+
+<section>
+<h2>リリース予定</h2>
+<div id="upcoming"></div>
+</section>
+
+<section>
+<h2>用途別の目安</h2>
+<p class="note">総合一位は出さない。今日点の目安で、寄った公開ソースを各カードに書く。</p>
+<div id="rankings" class="grid two"></div>
+</section>
+
+<section>
+<h2>ベンチマークの読み方</h2>
+<div id="benchmarks"></div>
+</section>
+
 <footer>公開ページ。個人情報は載せない。</footer>
 </main>
 <script>
-fetch("news.json",{cache:"no-store"}).then(r=>r.json()).then(data=>{
-const el=document.getElementById("updated");
-const t=data.generatedAt?new Date(data.generatedAt):null;
-el.textContent=t?("更新 "+t.toLocaleString("ja-JP",{timeZone:"Asia/Tokyo"})):"";
-const list=document.getElementById("list");
-(data.items||[]).forEach(item=>{
-const a=document.createElement("article");
-a.innerHTML=`<div class="meta">${item.date||""} · ${item.source||""}</div><h2>${item.title||""}</h2><p>${item.summary||""}</p><p><a href="${item.url||"#"}" rel="noopener" target="_blank">原文</a></p>`;
-list.appendChild(a);});
-}).catch(()=>{document.getElementById("updated").textContent="news.json を読めなかった";});
+function text(el, s){ el.textContent = s == null ? "" : String(s); return el; }
+function el(tag, cls){ const n = document.createElement(tag); if(cls) n.className = cls; return n; }
+function safeUrl(u){
+  try{
+    const x = new URL(u, location.href);
+    if(x.protocol === "http:" || x.protocol === "https:") return x.href;
+  }catch(e){}
+  return "";
+}
+function roleLabel(r){
+  const map = {flagship:"旗艦", cheap:"安さ", code:"コード", multimodal:"マルチモーダル", open:"オープン", balanced:"バランス"};
+  return map[r] || r || "";
+}
+
+fetch("news.json", {cache:"no-store"}).then(r => {
+  if(!r.ok) throw new Error("http");
+  return r.json();
+}).then(data => {
+  const t = data.generatedAt ? new Date(data.generatedAt) : null;
+  text(document.getElementById("updated"),
+    t ? ("更新 " + t.toLocaleString("ja-JP", {timeZone:"Asia/Tokyo"})) : "");
+
+  const news = document.getElementById("news-list");
+  (data.items || []).forEach(item => {
+    const a = el("article");
+    const meta = el("div", "meta");
+    text(meta, [item.date, item.source].filter(Boolean).join(" · "));
+    const h = el("h3"); text(h, item.title || "");
+    const p = el("p"); text(p, item.summary || "");
+    a.append(meta, h, p);
+    const href = safeUrl(item.url);
+    if(href){
+      const p2 = el("p");
+      const link = el("a");
+      link.href = href;
+      link.rel = "noopener";
+      link.target = "_blank";
+      text(link, "原文");
+      p2.appendChild(link);
+      a.appendChild(p2);
+    }
+    news.appendChild(a);
+  });
+
+  const lineups = document.getElementById("lineups");
+  (data.lineups || []).forEach(v => {
+    const card = el("div", "card");
+    const h = el("h3"); text(h, v.vendor || "");
+    card.appendChild(h);
+    const table = el("table");
+    const thead = el("thead");
+    const hr = el("tr");
+    ["モデル","役割","メモ"].forEach(s => { const th = el("th"); text(th,s); hr.appendChild(th); });
+    thead.appendChild(hr); table.appendChild(thead);
+    const tb = el("tbody");
+    (v.models || []).forEach(m => {
+      const tr = el("tr");
+      const n = el("td"); text(n, m.name || "");
+      const r = el("td"); const b = el("span","role"); text(b, roleLabel(m.role)); r.appendChild(b);
+      const note = el("td"); text(note, m.note || "");
+      tr.append(n,r,note); tb.appendChild(tr);
+    });
+    table.appendChild(tb);
+    card.appendChild(table);
+    lineups.appendChild(card);
+  });
+
+  const harnessBox = document.getElementById("harnesses");
+  const htable = el("table");
+  const hthead = el("thead");
+  const hhr = el("tr");
+  ["名前","種類","違い"].forEach(s => { const th = el("th"); text(th,s); hhr.appendChild(th); });
+  hthead.appendChild(hhr); htable.appendChild(hthead);
+  const htb = el("tbody");
+  (data.harnesses || []).forEach(h => {
+    const tr = el("tr");
+    const n = el("td"); text(n, h.name || "");
+    const k = el("td"); text(k, h.kind || "");
+    const note = el("td"); text(note, h.note || "");
+    tr.append(n,k,note); htb.appendChild(tr);
+  });
+  htable.appendChild(htb);
+  harnessBox.appendChild(htable);
+
+  const up = document.getElementById("upcoming");
+  (data.upcoming || []).forEach(u => {
+    const card = el("div", "card");
+    const h = el("h3"); text(h, u.what || "");
+    const meta = el("div", "meta"); text(meta, u.when || "");
+    const p = el("p"); text(p, u.note || "");
+    card.append(h, meta, p);
+    up.appendChild(card);
+  });
+
+  const ranks = document.getElementById("rankings");
+  (data.rankings || []).forEach(r => {
+    const card = el("div", "card");
+    const h = el("h3"); text(h, r.use || "");
+    const note = el("p", "note"); text(note, r.sourceNote || "");
+    const ol = el("ol", "ranks");
+    (r.ranks || []).forEach(item => {
+      const li = el("li");
+      const strong = el("strong"); text(strong, item.name || "");
+      const why = document.createTextNode(" — " + (item.why || ""));
+      li.append(strong, why);
+      ol.appendChild(li);
+    });
+    card.append(h, note, ol);
+    ranks.appendChild(card);
+  });
+
+  const benches = document.getElementById("benchmarks");
+  (data.benchmarks || []).forEach(b => {
+    const card = el("div", "card");
+    const h = el("h3"); text(h, b.name || "");
+    const p1 = el("p"); text(p1, b.what || "");
+    const p2 = el("p", "note"); text(p2, "欠けやすい点: " + (b.caveat || ""));
+    card.append(h, p1, p2);
+    benches.appendChild(card);
+  });
+}).catch(() => {
+  text(document.getElementById("updated"), "news.json を読めなかった");
+});
 </script>
 </body>
 </html>
