@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-25T14:53:43+09:00",
+  "items": [
+    {
+      "date": "2026-08-24",
+      "title": "OpenAI is pushing agents into everyday work",
+      "summary": "TechCrunch looks at ChatGPT Work and Codex: OpenAI wants agents inside white-collar workflows, while usage is still far below ChatGPT itself.",
+      "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Anthropic replaced Workbench with a stateless Playground",
+      "summary": "The new Console Playground stores nothing. Old Workbench data must be exported by September 1. The piece compares it with OpenAI's prompt-testing UI.",
+      "url": "https://thenewstack.io/anthropic-openai-playground-comparison/",
+      "source": "The New Stack"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "Labs still won't publish how they'd contain a rogue model",
+      "summary": "Guidelight graded frontier labs on containment plans. OpenAI scored highest; Anthropic and Meta were at the bottom of the published evidence.",
+      "url": "https://blockchainsphere.news/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
+      "source": "Blockchain Sphere"
+    },
+    {
+      "date": "2026-08-24",
+      "title": "Anthropic: the bottleneck moved past writing the code",
+      "summary": "The AI-Native SDLC playbook argues reviews, handoffs, and gates sized for human speed break once agents write most of the diff.",
+      "url": "https://aiinsiders.net/article/anthropics-sdlc-fix-the-bottleneck-moved-past-the-code",
+      "source": "AI Insiders"
+    }
+  ]
+}
