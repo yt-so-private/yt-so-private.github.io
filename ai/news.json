@@ -1,33 +1,408 @@
 {
-  "generatedAt": "2026-08-25T14:53:43+09:00",
+  "generatedAt": "2026-08-25T15:12:00+09:00",
   "items": [
     {
       "date": "2026-08-24",
-      "title": "OpenAI is pushing agents into everyday work",
-      "summary": "TechCrunch looks at ChatGPT Work and Codex: OpenAI wants agents inside white-collar workflows, while usage is still far below ChatGPT itself.",
+      "title": "OpenAI はエージェントを日常業務に押し込み中",
+      "summary": "TechCrunch が ChatGPT Work と Codex を取材。ホワイトカラーの仕事の中にエージェントを置きたい一方、利用はまだ ChatGPT 本体よりずっと少ない、という話。",
       "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-08-24",
-      "title": "Anthropic replaced Workbench with a stateless Playground",
-      "summary": "The new Console Playground stores nothing. Old Workbench data must be exported by September 1. The piece compares it with OpenAI's prompt-testing UI.",
+      "title": "Anthropic は Workbench をステートレスな Playground に置き換え",
+      "summary": "新しい Console Playground は何も保存しない。古い Workbench のデータは 9月1日までに書き出す必要あり。OpenAI のプロンプト検証 UI との比較記事。",
       "url": "https://thenewstack.io/anthropic-openai-playground-comparison/",
       "source": "The New Stack"
     },
     {
       "date": "2026-08-25",
-      "title": "Labs still won't publish how they'd contain a rogue model",
-      "summary": "Guidelight graded frontier labs on containment plans. OpenAI scored highest; Anthropic and Meta were at the bottom of the published evidence.",
+      "title": "フロンティアラボはいまだ「暴走モデルの封じ方」を出さない",
+      "summary": "Guidelight が封じ込め計画を採点。公開された証拠では OpenAI が最上、Anthropic と Meta が下のほう、という結果。",
       "url": "https://blockchainsphere.news/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
       "source": "Blockchain Sphere"
     },
     {
       "date": "2026-08-24",
-      "title": "Anthropic: the bottleneck moved past writing the code",
-      "summary": "The AI-Native SDLC playbook argues reviews, handoffs, and gates sized for human speed break once agents write most of the diff.",
+      "title": "Anthropic: ボトルネックは「コードを書く」より先に移った",
+      "summary": "AI-Native SDLC のプレイブック。エージェントが diff の大半を書くと、人間の速さ前提のレビュー・引き継ぎ・ゲートが壊れる、という主張。",
       "url": "https://aiinsiders.net/article/anthropics-sdlc-fix-the-bottleneck-moved-past-the-code",
       "source": "AI Insiders"
+    }
+  ],
+  "lineups": [
+    {
+      "vendor": "OpenAI",
+      "models": [
+        {
+          "name": "GPT-5.6 Sol",
+          "role": "flagship",
+          "note": "複雑推論・コーディング向けの現行フラッグシップ。ChatGPT / Codex / API（gpt-5.6-sol）。公式は 2026-07-09 に GPT-5.6 ファミリーを GA。入力 $5 / 出力 $30 / 1M tokens（2026-08-21 に API 価格を下げた更新あり）。テキスト＋画像入力、テキスト出力。"
+        },
+        {
+          "name": "GPT-5.6 Terra",
+          "role": "balanced",
+          "note": "知能とコストのバランス枠。公式は GPT-5.5 級の性能をより安く、と位置づけ。API は gpt-5.6-terra。入力 $2.50 / 出力 $15 / 1M tokens。"
+        },
+        {
+          "name": "GPT-5.6 Luna",
+          "role": "cheap",
+          "note": "速さ・安さ向け。高ボリューム向け。API は gpt-5.6-luna。入力 $1 / 出力 $6 / 1M tokens（2026-07-30 に Luna を 80% 値下げ、という公式更新あり）。"
+        }
+      ]
+    },
+    {
+      "vendor": "Anthropic",
+      "models": [
+        {
+          "name": "Claude Fable 5",
+          "role": "flagship",
+          "note": "公式 docs では「いま使える最高能力」枠。長時間エージェント向け。API は claude-fable-5。入力 $10 / 出力 $50 / 1M tokens。2026-06-09 公開。テキスト＋画像入力。"
+        },
+        {
+          "name": "Claude Opus 5",
+          "role": "flagship",
+          "note": "複雑なエージェントコーディングと業務向けの現行 Opus。API は claude-opus-5。2026-07-24。入力 $5 / 出力 $25 / 1M tokens。Claude 本体、AWS、Google Cloud、Microsoft Foundry。"
+        },
+        {
+          "name": "Claude Sonnet 5",
+          "role": "cheap",
+          "note": "日常・高ボリューム向け。API は claude-sonnet-5。2026-06-30。導入価格は入力 $2 / 出力 $10 / 1M tokens（2026-08-31 まで。9月1日から $3 / $15 の通常料金、という第三者まとめあり）。"
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "role": "cheap",
+          "note": "速さ・安さ枠。API は claude-haiku-4-5-20251001。公式の現行4枠のいちばん軽いモデル。"
+        },
+        {
+          "name": "Claude Mythos 5",
+          "role": "flagship",
+          "note": "限定公開。一般向けではなく、限られた企業向け。Fable 5 と同系統の天井能力、という位置づけ。一般利用は Fable / Opus を見る。"
+        }
+      ]
+    },
+    {
+      "vendor": "Google",
+      "models": [
+        {
+          "name": "Gemini 3.7 Flash",
+          "role": "flagship",
+          "note": "2026-08-13 発表の現行ワークホース。コーディングとエージェント向け。Gemini API / AI Studio / Antigravity / Gemini Spark（Pro・Ultra）。導入価格は入力 $0.75 / 出力 $3.75 / 1M tokens（2026-12-31 まで。2027-01-01 から $1.50 / $7.50）。"
+        },
+        {
+          "name": "Gemini 3.6 Flash",
+          "role": "cheap",
+          "note": "ひとつ前の Flash。3.7 と同じ導入価格に揃っている。互換や段階移行が必要なとき向け。安定版として API カタログに残る。"
+        },
+        {
+          "name": "Gemini 3.5 Flash / 3.5 Flash-Lite",
+          "role": "cheap",
+          "note": "Flash はエージェント・コーディングの持続性能、Flash-Lite は低遅延・高ボリュームのサブエージェント向け。公式モデル一覧ではどちらも Stable。"
+        },
+        {
+          "name": "Gemini 3.1 Pro",
+          "role": "flagship",
+          "note": "Pro 枠。公式カタログでは Preview。長文・科学寄りの重い仕事向け、という第三者の位置づけ。本番は 3.7 Flash が先。"
+        },
+        {
+          "name": "Nano Banana 2 / Pro",
+          "role": "multimodal",
+          "note": "Gemini の画像生成ファミリー。2 は Gemini 3.1 Flash Image（速さ）、Pro は Gemini 3 Pro Image（高精細）。Gemini アプリ / API / Cloud。Omni Flash は短尺動画の Preview。"
+        }
+      ]
+    },
+    {
+      "vendor": "xAI",
+      "models": [
+        {
+          "name": "Grok 4.6",
+          "role": "flagship",
+          "note": "2026-08-12。コーディング・長時間エージェント・知識仕事向け。コンテキスト 50万トークン。テキスト＋画像入力、テキスト出力。API は grok-4.6。入力 $2 / 出力 $6 / 1M tokens（高速版は2倍）。Cursor、Grok Build、API、OpenRouter / Vercel / Cloudflare。Bedrock にも GA したという報道あり。"
+        },
+        {
+          "name": "Grok 4.5",
+          "role": "balanced",
+          "note": "直前のフラッグシップ。API に残る。価格は 4.6 と同じ $2 / $6。EU コンソールでも利用可、というリリースノート。"
+        }
+      ]
+    },
+    {
+      "vendor": "Meta",
+      "models": [
+        {
+          "name": "Muse Spark 1.2",
+          "role": "flagship",
+          "note": "Meta Superintelligence Labs の現行製品ライン。2026-04-08 に Muse Spark 発表、1.2 は長時間コーディングとツール呼び出し向け（公式モデルページ）。meta.ai と Meta Model API。ネイティブマルチモーダル。"
+        },
+        {
+          "name": "Llama 4 Scout / Maverick",
+          "role": "open",
+          "note": "2025-04-05 公開のオープン寄りの MoE。Scout は 17B active / 109B total、コンテキスト 1000万。Maverick は 17B active / 400B total。llama.com と Hugging Face から入手。ローカル運用の定番枠。"
+        },
+        {
+          "name": "Muse Glimmer",
+          "role": "open",
+          "note": "2026-08-10 公開、というリリース追跡サイト。PC で動かす想定のオープンウェイト（Wikipedia は Apache、30B と記載）。ローカル向けの新しい選択肢。ライセンスの最終確認は公式ページ側で。"
+        }
+      ]
+    },
+    {
+      "vendor": "Mistral",
+      "models": [
+        {
+          "name": "Mistral Medium 3.5",
+          "role": "flagship",
+          "note": "公式 docs の現行フロント。エージェントとコーディング向けのマルチモーダル。v26.04。"
+        },
+        {
+          "name": "Mistral Small 4",
+          "role": "cheap",
+          "note": "instruct / 推論 / コードを一本化した効率枠。Apache 2.0。v26.03。"
+        },
+        {
+          "name": "Mistral Large 3",
+          "role": "open",
+          "note": "オープンウェイトの汎用マルチモーダル。Apache 2.0。v25.12。"
+        },
+        {
+          "name": "Ministral 3（14B / 8B / 3B）",
+          "role": "open",
+          "note": "テキスト＋ビジョンの小型枠。Apache 2.0。ローカルやエッジ向け。"
+        }
+      ]
+    },
+    {
+      "vendor": "DeepSeek",
+      "models": [
+        {
+          "name": "DeepSeek-V4-Pro",
+          "role": "flagship",
+          "note": "公式発表の 1.6T total / 49B active MoE。1M コンテキスト。API は deepseek-v4-pro。オープンウェイト（Hugging Face）。Thinking / Non-Thinking。Pro-0813 が現行チェックポイント、という第三者まとめ。"
+        },
+        {
+          "name": "DeepSeek-V4-Flash",
+          "role": "cheap",
+          "note": "284B total / 13B active。速さ・安さ枠。API は deepseek-v4-flash。1M コンテキスト。Flash-0731（2026-07-31）が現行、というまとめ。"
+        }
+      ]
+    },
+    {
+      "vendor": "Amazon",
+      "models": [
+        {
+          "name": "Nova 2 Lite",
+          "role": "cheap",
+          "note": "公式 Nova ページの日常向け推論。思考量のダイヤル、コードインタプリタ、Web Grounding、1M コンテキスト。Bedrock。Nova Forge でカスタムするときの土台、と案内。"
+        },
+        {
+          "name": "Nova 2 Sonic",
+          "role": "multimodal",
+          "note": "音声入出力の会話モデル。7言語、テキストとの切り替え、最大 1M コンテキスト。カスタマーサポートや音声アシスタント向け。"
+        },
+        {
+          "name": "Nova Multimodal Embeddings",
+          "role": "multimodal",
+          "note": "テキスト・文書・画像・動画・音声を一つの埋め込み空間へ。RAG と検索向け。"
+        }
+      ]
+    }
+  ],
+  "harnesses": [
+    {
+      "name": "Cursor",
+      "kind": "IDE",
+      "note": "VS Code フォークの AI ネイティブ IDE。複数社のモデル＋自前 Composer を選べる。Grok 4.6 は公式に全プランで利用可。エディタの中で並列エージェントを回す用途。"
+    },
+    {
+      "name": "Claude Code",
+      "kind": "CLI / IDE",
+      "note": "Anthropic 公式のエージェント。ターミナルが本拠で、IDE・デスクトップ・ブラウザもある。リポジトリを読んで編集し、コマンドを実行する。既定は Opus 5 寄り。"
+    },
+    {
+      "name": "Codex",
+      "kind": "CLI / デスクトップ / クラウド",
+      "note": "OpenAI 側のコーディングエージェント。GPT-5.6 ファミリー（Sol / Terra / Luna）が載る。CLI に加え、複数エージェントを並べるデスクトップもある。"
+    },
+    {
+      "name": "GitHub Copilot",
+      "kind": "IDE 拡張 / クラウド",
+      "note": "既存の VS Code / JetBrains に足す定番。チャット、補完、クラウド側の PR エージェント。GitHub Issues との距離が近い。モデルはマネージドで複数社。"
+    },
+    {
+      "name": "Devin Desktop（旧 Windsurf）",
+      "kind": "IDE / クラウド",
+      "note": "Cognition 側。2026-06 前後に Windsurf ブランドを畳み、Devin Desktop として再編成した、という比較記事が複数。クラウドの Devin に仕事を渡す導線が売り。"
+    },
+    {
+      "name": "Google Antigravity",
+      "kind": "IDE / CLI",
+      "note": "Gemini 公式ブログが開発者向けのエージェントワークフロー先として案内。Gemini 3.7 Flash を載せる。Gemini CLI からの後継経路、という比較記事あり。"
+    },
+    {
+      "name": "Grok Build",
+      "kind": "CLI / コーディングエージェント",
+      "note": "xAI 公式のコーディングエージェント。Grok 4.6 のデフォルト先。x.ai/build と CLI。Cursor と並んで 4.6 の初期投入先。"
+    },
+    {
+      "name": "Cline",
+      "kind": "VS Code 拡張（OSS）",
+      "note": "自分のキーを持っていくオープンなエージェント拡張。Plan / Act の切り分け。OpenRouter やローカル経由でモデルを差し替えやすい。"
+    },
+    {
+      "name": "Aider",
+      "kind": "CLI（OSS）",
+      "note": "git 前提の古いオープンソース・ペアプログラマ。エディタなしで動く。モデルは BYO。スクリプトや CI 向き。"
+    },
+    {
+      "name": "Continue",
+      "kind": "IDE プラグイン（OSS）",
+      "note": "既存エディタにチャットと補完を足すオープンなプラグイン。自前 LLM / ローカルを繋ぐ用途。"
+    }
+  ],
+  "upcoming": [
+    {
+      "what": "Claude Sonnet 5 の導入価格が通常料金へ",
+      "when": "2026-09-01",
+      "note": "第三者の料金まとめでは、導入の $2 / $10 は 2026-08-31 まで。9月1日から $3 / $15。Anthropic 公式料金ページで最終確認を。"
+    },
+    {
+      "what": "Gemini 3.7 / 3.6 Flash の導入価格が終了",
+      "when": "2026-12-31 まで（2027-01-01 から通常）",
+      "note": "Google 公式ブログ脚注。いまは入力 $0.75 / 出力 $3.75。2027-01-01 から $1.50 / $7.50。"
+    },
+    {
+      "what": "Amazon Nova 第1世代の一部が EOL",
+      "when": "2026-09（Premier は 09-14、Canvas / Reel は 09-30 というカタログ記載）",
+      "note": "Nova Premier / Canvas / Reel などが Legacy。現行は Nova 2 Lite / Sonic など。移行は Bedrock のライフサイクル表示で確認。"
+    },
+    {
+      "what": "次の世代（GPT-5.7、Gemini 4、Grok 4.7 など）",
+      "when": "公式の発売日は未発表",
+      "note": "予測市場やリークはあるが、ラボ公式の日付は取れていないので「いつ出る」とは書かない。出たらこの JSON を更新する。"
+    }
+  ],
+  "rankings": [
+    {
+      "use": "コーディング",
+      "sourceNote": "今日点の目安。SWE-bench Verified の公開集計（BenchLM 2026-08-24、vals.ai）と、xAI が載せた CursorBench / DeepSWE / FrontierCode に寄る。ハーネスが違うと順位はすぐ動く。",
+      "ranks": [
+        {
+          "place": 1,
+          "name": "Claude Opus 5",
+          "why": "SWE-bench Verified で先頭付近（BenchLM は 96%、vals.ai は 97% と数字が少し違う）。エージェントコーディングの既定候補。"
+        },
+        {
+          "place": 2,
+          "name": "Claude Fable 5",
+          "why": "Verified では Opus の直後。より難しい SWE-bench Pro では Fable がわずかに上、という Anthropic 系の数字。高い天井が要るとき。"
+        },
+        {
+          "place": 3,
+          "name": "GPT-5.6 Sol / DeepSeek-V4-Pro",
+          "why": "Sol は公式が複雑コーディングの旗艦。V4-Pro は vals.ai の Verified でクローズドの直後に来るオープン枠。用途で振り分ける。"
+        }
+      ]
+    },
+    {
+      "use": "文章・推論",
+      "sourceNote": "今日点の目安。LM Arena（LMSYS 系、lmarena.ai）の第三者スナップショットと、xAI 発表の Artificial Analysis Intelligence Index（Fable 62、Grok 4.6 と GPT-5.6 Sol が 61）に寄る。",
+      "ranks": [
+        {
+          "place": 1,
+          "name": "Claude Fable 5（天井は Mythos 5）",
+          "why": "Arena 集計でテキスト先頭付近。Mythos 5 は Elo がさらに上、という数字もあるが限定公開。"
+        },
+        {
+          "place": 2,
+          "name": "Claude Opus 5",
+          "why": "Arena でも Fable のすぐ下。知識仕事の GDPval-AA では Opus が強い、という第三者比較あり。値段は Fable の半分。"
+        },
+        {
+          "place": 3,
+          "name": "GPT-5.6 Sol / Grok 4.6",
+          "why": "AA Intelligence Index で並ぶ（どちらも 61、Fable が 62）。Sol は汎用、Grok は長時間エージェントと視覚寄りの仕事、という公式の売り。"
+        }
+      ]
+    },
+    {
+      "use": "速さ・安さ",
+      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。実測レイテンシの一枚板は取っていない。",
+      "ranks": [
+        {
+          "place": 1,
+          "name": "Gemini 3.7 Flash",
+          "why": "導入価格 $0.75 / $3.75 で、Google がワークホースとして推している。年末までこの値段。"
+        },
+        {
+          "place": 2,
+          "name": "DeepSeek-V4-Flash / GPT-5.6 Luna",
+          "why": "Flash はオープンで安い高ボリューム枠。Luna は OpenAI 側の最安 Generations（$1 / $6）。"
+        },
+        {
+          "place": 3,
+          "name": "Claude Haiku 4.5 / Grok 4.6",
+          "why": "Haiku は Claude の速さ枠。Grok 4.6 はフラッグシップにして $2 / $6 と出力が安い。"
+        }
+      ]
+    },
+    {
+      "use": "画像",
+      "sourceNote": "今日点の目安。専用の画像生成は Google 公式の Nano Banana 系列。テキストモデルの「画像入力」とは別物。画像 Arena の生ボードは今回直接は開いていない。",
+      "ranks": [
+        {
+          "place": 1,
+          "name": "Nano Banana Pro（Gemini 3 Pro Image）",
+          "why": "公式が「いちばん難しいビジュアル」向けと書く。高精細・ブランド一貫・精密な制御。"
+        },
+        {
+          "place": 2,
+          "name": "Nano Banana 2（Gemini 3.1 Flash Image）",
+          "why": "速さ寄り。4K、参照画像、Gemini アプリの既定。量を回すとき。"
+        },
+        {
+          "place": 3,
+          "name": "GPT-5.6 / Grok 4.6（画像入力）",
+          "why": "どちらもテキスト＋画像入力は公式スペック。生成専用モデルではない。会話の中で絵を読む用途。"
+        }
+      ]
+    },
+    {
+      "use": "ローカル / オープン",
+      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。",
+      "ranks": [
+        {
+          "place": 1,
+          "name": "DeepSeek-V4-Pro / Flash",
+          "why": "公式がオープンソースと案内。Hugging Face。1M コンテキスト。能力はクローズドのすぐ近く、という SWE-bench 集計。"
+        },
+        {
+          "place": 2,
+          "name": "Llama 4 Scout / Maverick",
+          "why": "Meta 公式からダウンロード。Scout は単一 H100 と 10M コンテキストが売り。エコシステムが広い。"
+        },
+        {
+          "place": 3,
+          "name": "Mistral Small 4 / Large 3 / Ministral 3",
+          "why": "公式 docs で Apache 2.0 の小型〜中型が揃う。PC やエッジ向け。Muse Glimmer も同帯の新しい選択肢。"
+        }
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "name": "LMSYS / LM Arena（lmarena.ai）",
+      "what": "人が二つの匿名モデルの返答を比べ、勝敗から Elo を積む。チャットの「好み」に近い。テキスト以外にコーディング用の Arena もある。",
+      "caveat": "プロンプトは短い会話に偏りやすい。長いエージェント作業や、実際のリポジトリ修正は測らない。スタイルや拒否の雰囲気で点が動く。第三者の転載 Elo は公式ボードとずれることがある。"
+    },
+    {
+      "name": "SWE-bench Verified",
+      "what": "実在の GitHub Issue を直せるかを見るコーディングベンチ。人間が「解ける」と確認したサブセットが Verified。",
+      "caveat": "2026 時点では先頭が 95% 超で飽和気味。ハーネス（エージェントの足場）と試行回数で点が跳ねる。Pro 版は別物で、Verified 1位が Pro 1位とは限らない。今回の数字は BenchLM と vals.ai の集計で、公式生ボードは直接開いていない。"
+    },
+    {
+      "name": "Artificial Analysis Intelligence Index",
+      "what": "複数ベンチを一本の指数にまとめた第三者の総合点。xAI の Grok 4.6 発表では 9 本の合成、と説明。速さ・価格の併記でもよく使われる。",
+      "caveat": "どのベンチをどう平均するかは AA 側の定義。コーディング特化や画像特化は別インデックス。ベンダー発表の「Max」設定は、普段使う API 設定より重いことがある。"
     }
   ]
 }
