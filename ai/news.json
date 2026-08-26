@@ -1,33 +1,40 @@
 {
-  "generatedAt": "2026-08-25T15:12:00+09:00",
+  "generatedAt": "2026-08-26T09:10:00+09:00",
   "items": [
     {
-      "date": "2026-08-24",
-      "title": "OpenAI はエージェントを日常業務に押し込み中",
-      "summary": "TechCrunch が ChatGPT Work と Codex を取材。ホワイトカラーの仕事の中にエージェントを置きたい一方、利用はまだ ChatGPT 本体よりずっと少ない、という話。",
-      "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/",
-      "source": "TechCrunch"
+      "date": "2026-08-26",
+      "title": "OpenAI Assistants API が本日シャットダウン、ChatGPT から o3 も退出",
+      "summary": "公式の非推奨一覧どおり、Assistants API（/v1/assistants など）は 2026-08-26 に撤去。移行先は Responses / Conversations。同日、ChatGPT のモデル選択から o3 も引退（API の o3 はこの変更の対象外、という公式説明）。",
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "source": "OpenAI"
     },
     {
-      "date": "2026-08-24",
-      "title": "Anthropic は Workbench をステートレスな Playground に置き換え",
-      "summary": "新しい Console Playground は何も保存しない。古い Workbench のデータは 9月1日までに書き出す必要あり。OpenAI のプロンプト検証 UI との比較記事。",
-      "url": "https://thenewstack.io/anthropic-openai-playground-comparison/",
-      "source": "The New Stack"
+      "date": "2026-08-26",
+      "title": "OpenAI、親ロシア勢力の ChatGPT 不正利用アカウントを停止",
+      "summary": "共同通信などによれば、オープンAIは25日、親ロシア勢力が世論操作のために ChatGPT を不正利用したとして複数アカウントを停止したと発表。Google も同様の悪用増加を報告。",
+      "url": "https://topics.smt.docomo.ne.jp/article/kyodo_nor/business/kyodo_nor-2026082601000057",
+      "source": "共同通信"
     },
     {
       "date": "2026-08-25",
-      "title": "フロンティアラボはいまだ「暴走モデルの封じ方」を出さない",
-      "summary": "Guidelight が封じ込め計画を採点。公開された証拠では OpenAI が最上、Anthropic と Meta が下のほう、という結果。",
-      "url": "https://blockchainsphere.news/frontier-ai-labs-still-wont-say-how-theyd-contain-a-rogue-model/",
-      "source": "Blockchain Sphere"
+      "title": "NTT、AI駆動ラボでβ型酸化ガリウムの自律成膜に成功",
+      "summary": "AI とロボットを連携させた解釈可能な自律成膜で、次世代パワー半導体材料の高品質単結晶薄膜をスパッタ法で世界初作製したと発表。成果は Nature Communications 掲載。",
+      "url": "https://ai.watch.impress.co.jp/docs/news/2135171.html",
+      "source": "AI Watch"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "「AI博覧会 Summer 2026」が新宿で開幕（26–27日）",
+      "summary": "新宿住友ビル三角広場で AI・ロボット特化の展示会が本日開幕。産業用ヒューマノイドの国内初展示なども案内されている。",
+      "url": "https://aismiley.co.jp/ai_hakurankai/summer-2026/",
+      "source": "AIsmiley"
     },
     {
       "date": "2026-08-24",
-      "title": "Anthropic: ボトルネックは「コードを書く」より先に移った",
-      "summary": "AI-Native SDLC のプレイブック。エージェントが diff の大半を書くと、人間の速さ前提のレビュー・引き継ぎ・ゲートが壊れる、という主張。",
-      "url": "https://aiinsiders.net/article/anthropics-sdlc-fix-the-bottleneck-moved-past-the-code",
-      "source": "AI Insiders"
+      "title": "東北大、ナナフシ歩行データから多脚ロボ制御則を抽出するAI",
+      "summary": "わずか数歩分の歩行データから報酬構造と脚の協調則を抽出し、体格の異なる六脚ロボットへ移植して実機歩行を実現したと発表。",
+      "url": "https://news.mynavi.jp/techplus/article/20260824-4860735/",
+      "source": "TECH+"
     }
   ],
   "lineups": [
