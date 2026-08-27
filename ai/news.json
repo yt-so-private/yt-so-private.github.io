@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-08-26T09:10:00+09:00",
+  "generatedAt": "2026-08-27T09:20:00+09:00",
   "items": [
     {
       "date": "2026-08-26",
-      "title": "OpenAI Assistants API が本日シャットダウン、ChatGPT から o3 も退出",
-      "summary": "公式の非推奨一覧どおり、Assistants API（/v1/assistants など）は 2026-08-26 に撤去。移行先は Responses / Conversations。同日、ChatGPT のモデル選択から o3 も引退（API の o3 はこの変更の対象外、という公式説明）。",
-      "url": "https://developers.openai.com/api/docs/deprecations",
-      "source": "OpenAI"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "OpenAI、親ロシア勢力の ChatGPT 不正利用アカウントを停止",
-      "summary": "共同通信などによれば、オープンAIは25日、親ロシア勢力が世論操作のために ChatGPT を不正利用したとして複数アカウントを停止したと発表。Google も同様の悪用増加を報告。",
-      "url": "https://topics.smt.docomo.ne.jp/article/kyodo_nor/business/kyodo_nor-2026082601000057",
-      "source": "共同通信"
+      "title": "OpenAI、自社推論チップ「Jalapeño」の初ベンチマークを公開",
+      "summary": "Hot Chips で自社×Broadcom の推論チップ実測を発表。SemiAnalysis InferenceX 上で対照系比ワット当たり 1.5〜1.9 倍・レイテンシ改善を示した、との第三者まとめ。年内はごく小規模投入、本格は 2027 年以降という説明。NVIDIA 等の調達継続も明言。",
+      "url": "https://aitrends.miyaryo1212.com/reports/2026-08-26-codex-openai/",
+      "source": "AI Trends"
     },
     {
       "date": "2026-08-25",
-      "title": "NTT、AI駆動ラボでβ型酸化ガリウムの自律成膜に成功",
-      "summary": "AI とロボットを連携させた解釈可能な自律成膜で、次世代パワー半導体材料の高品質単結晶薄膜をスパッタ法で世界初作製したと発表。成果は Nature Communications 掲載。",
-      "url": "https://ai.watch.impress.co.jp/docs/news/2135171.html",
-      "source": "AI Watch"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "「AI博覧会 Summer 2026」が新宿で開幕（26–27日）",
-      "summary": "新宿住友ビル三角広場で AI・ロボット特化の展示会が本日開幕。産業用ヒューマノイドの国内初展示なども案内されている。",
-      "url": "https://aismiley.co.jp/ai_hakurankai/summer-2026/",
-      "source": "AIsmiley"
+      "title": "NVIDIA、エッジ向け Jetson Orin Nano 2 を発表",
+      "summary": "ロボティクス／エッジ AI 用コンピューター。従来比おおむね 2 倍の推論性能、同等性能時は消費電力約 40% 削減（公式）。78 TOPS・8GB。モジュール／開発者キットは 2027 年前半提供予定。",
+      "url": "https://blogs.nvidia.co.jp/blog/nvidia-announces-jetson-orin-nano-2-robotics-computer-to-redefine-entry-level-edge-ai/",
+      "source": "NVIDIA Japan"
     },
     {
       "date": "2026-08-24",
-      "title": "東北大、ナナフシ歩行データから多脚ロボ制御則を抽出するAI",
-      "summary": "わずか数歩分の歩行データから報酬構造と脚の協調則を抽出し、体格の異なる六脚ロボットへ移植して実機歩行を実現したと発表。",
-      "url": "https://news.mynavi.jp/techplus/article/20260824-4860735/",
-      "source": "TECH+"
+      "title": "NVIDIA Groq 3 LPX が量産開始、エージェント推論向け",
+      "summary": "Hot Chips で発表の推論アクセラレーター。超低レイテンシのトークン生成を売りに量産へ。Nebius Token Factory などが初期採用予定、と公式。",
+      "url": "https://blogs.nvidia.co.jp/blog/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai/",
+      "source": "NVIDIA Japan"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "Ramp AI Index：企業導入は Anthropic 先行、Fable 5 の利用率は低調",
+      "summary": "米 Ramp の 8 月更新。米国企業の有料採用率は Anthropic 43.5%・OpenAI 39.7%。一方 Fable 5 は Anthropic トークンの約 6% にとどまり、GPT-5.6 Sol の方が企業支出で上回る、という公式レター。",
+      "url": "https://ramp.com/data/ai-index-august-2026",
+      "source": "Ramp"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "「AI博覧会 Summer 2026」が新宿で最終日（26–27日）",
+      "summary": "新宿住友ビル三角広場の AI・ロボット特化展示。産業用ヒューマノイド展示などを案内。本日が会期最終日。",
+      "url": "https://aismiley.co.jp/ai_hakurankai/summer-2026/",
+      "source": "AIsmiley"
     }
   ],
   "lineups": [
