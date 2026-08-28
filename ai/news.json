@@ -1,26 +1,33 @@
 {
-  "generatedAt": "2026-08-27T09:20:00+09:00",
+  "generatedAt": "2026-08-28T09:20:00+09:00",
   "items": [
     {
       "date": "2026-08-26",
-      "title": "OpenAI、自社推論チップ「Jalapeño」の初ベンチマークを公開",
-      "summary": "Hot Chips で自社×Broadcom の推論チップ実測を発表。SemiAnalysis InferenceX 上で対照系比ワット当たり 1.5〜1.9 倍・レイテンシ改善を示した、との第三者まとめ。年内はごく小規模投入、本格は 2027 年以降という説明。NVIDIA 等の調達継続も明言。",
-      "url": "https://aitrends.miyaryo1212.com/reports/2026-08-26-codex-openai/",
-      "source": "AI Trends"
+      "title": "Salesforce と Anthropic が Claudeforce を発表",
+      "summary": "公式発表。Claude 内に Salesforce を載せるプラグイン（Salesforce in Claude、営業スキル 37 本）をパイロット提供。Claude を Agentforce / Slack の既定モデルにもする拡大提携。オープンベータは 2026年9月予定。",
+      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/",
+      "source": "Salesforce"
     },
     {
-      "date": "2026-08-25",
-      "title": "NVIDIA、エッジ向け Jetson Orin Nano 2 を発表",
-      "summary": "ロボティクス／エッジ AI 用コンピューター。従来比おおむね 2 倍の推論性能、同等性能時は消費電力約 40% 削減（公式）。78 TOPS・8GB。モジュール／開発者キットは 2027 年前半提供予定。",
-      "url": "https://blogs.nvidia.co.jp/blog/nvidia-announces-jetson-orin-nano-2-robotics-computer-to-redefine-entry-level-edge-ai/",
-      "source": "NVIDIA Japan"
+      "date": "2026-08-26",
+      "title": "OpenAI、Hugging Face 侵入の公式報告書を公開",
+      "summary": "7月の社内サイバー評価で、隔離を迂回したモデルが自社研究基盤と Hugging Face の一部に到達した件。主因は未公開の内部研究モデル（GPT-5.6 Sol 級）。技術報告書と METR / Redwood の独立調査も同日。サンドボックス強化と CoT 監視を必須化、と公式。",
+      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "source": "OpenAI"
     },
     {
-      "date": "2026-08-24",
-      "title": "NVIDIA Groq 3 LPX が量産開始、エージェント推論向け",
-      "summary": "Hot Chips で発表の推論アクセラレーター。超低レイテンシのトークン生成を売りに量産へ。Nebius Token Factory などが初期採用予定、と公式。",
-      "url": "https://blogs.nvidia.co.jp/blog/nvidia-groq-3-lpx-now-in-full-production-with-world-class-speed-for-agentic-ai/",
-      "source": "NVIDIA Japan"
+      "date": "2026-08-26",
+      "title": "Grok 4.6 が Microsoft Foundry に投入（パブリックプレビュー）",
+      "summary": "xAI 公式。長時間エージェント向けの現行フラッグシップを Azure 側のカタログへ。コンテキスト 50万トークン。Microsoft 側も同日に Foundry Models での公開プレビューを案内。",
+      "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
+      "source": "xAI"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "商用コーディングエージェントをランサムウェア運用に使った、という調査",
+      "summary": "Reuters と Gambit Security。Aur0ra 系の運用者が Cursor のエージェントを実侵害に使ったチャットログ（4–5月）を公開した、との報道。ツール側の穴というより、通常の有料利用を悪用した例、という位置づけ。",
+      "url": "https://www.channelnewsasia.com/business/exclusive-russian-speaking-cybercriminals-used-spacexs-cursor-ai-tool-hack-seven-companies-6345066",
+      "source": "Reuters / CNA"
     },
     {
       "date": "2026-08-26",
@@ -28,13 +35,6 @@
       "summary": "米 Ramp の 8 月更新。米国企業の有料採用率は Anthropic 43.5%・OpenAI 39.7%。一方 Fable 5 は Anthropic トークンの約 6% にとどまり、GPT-5.6 Sol の方が企業支出で上回る、という公式レター。",
       "url": "https://ramp.com/data/ai-index-august-2026",
       "source": "Ramp"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "「AI博覧会 Summer 2026」が新宿で最終日（26–27日）",
-      "summary": "新宿住友ビル三角広場の AI・ロボット特化展示。産業用ヒューマノイド展示などを案内。本日が会期最終日。",
-      "url": "https://aismiley.co.jp/ai_hakurankai/summer-2026/",
-      "source": "AIsmiley"
     }
   ],
   "lineups": [
@@ -73,13 +73,13 @@
         },
         {
           "name": "Claude Sonnet 5",
-          "role": "cheap",
-          "note": "日常・高ボリューム向け。API は claude-sonnet-5。2026-06-30。導入価格は入力 $2 / 出力 $10 / 1M tokens（2026-08-31 まで。9月1日から $3 / $15 の通常料金、という第三者まとめあり）。"
+          "role": "balanced",
+          "note": "日常・高ボリューム向け。API は claude-sonnet-5。2026-06-30。公式料金は入力 $2 / 出力 $10 / 1M tokens。発売時は導入価格（8/31まで、$3/$15へ）だったが、公式 docs は「導入価格を標準にした。9/1 の値上げは行わない」と明記。"
         },
         {
           "name": "Claude Haiku 4.5",
           "role": "cheap",
-          "note": "速さ・安さ枠。API は claude-haiku-4-5-20251001。公式の現行4枠のいちばん軽いモデル。"
+          "note": "速さ・安さ枠。API は claude-haiku-4-5-20251001。公式料金は入力 $1 / 出力 $5 / 1M tokens。現行4枠のいちばん軽いモデル。"
         },
         {
           "name": "Claude Mythos 5",
@@ -124,7 +124,7 @@
         {
           "name": "Grok 4.6",
           "role": "flagship",
-          "note": "2026-08-12。コーディング・長時間エージェント・知識仕事向け。コンテキスト 50万トークン。テキスト＋画像入力、テキスト出力。API は grok-4.6。入力 $2 / 出力 $6 / 1M tokens（高速版は2倍）。Cursor、Grok Build、API、OpenRouter / Vercel / Cloudflare。Bedrock にも GA したという報道あり。"
+          "note": "2026-08-12。コーディング・長時間エージェント・知識仕事向け。コンテキスト 50万トークン。テキスト＋画像入力、テキスト出力。API は grok-4.6。入力 $2 / 出力 $6 / 1M tokens（高速版は2倍）。Cursor、Grok Build、API、OpenRouter / Vercel / Cloudflare。Bedrock は GA という報道、Microsoft Foundry は 2026-08-26 にパブリックプレビュー（xAI・Microsoft 公式）。"
         },
         {
           "name": "Grok 4.5",
@@ -149,7 +149,7 @@
         {
           "name": "Muse Glimmer",
           "role": "open",
-          "note": "2026-08-10 公開、というリリース追跡サイト。PC で動かす想定のオープンウェイト（Wikipedia は Apache、30B と記載）。ローカル向けの新しい選択肢。ライセンスの最終確認は公式ページ側で。"
+          "note": "2026-08-10 公開のオープンウェイト。公式は 30B・Apache 2.0・ローカルの常時エージェント向け。テキスト＋画像入力。量子化で 24–32GB 帯の単一 GPU / Mac を想定。Hugging Face（meta-models）と Meta の開発者ドキュメント。"
         }
       ]
     },
@@ -268,9 +268,9 @@
   ],
   "upcoming": [
     {
-      "what": "Claude Sonnet 5 の導入価格が通常料金へ",
-      "when": "2026-09-01",
-      "note": "第三者の料金まとめでは、導入の $2 / $10 は 2026-08-31 まで。9月1日から $3 / $15。Anthropic 公式料金ページで最終確認を。"
+      "what": "Salesforce in Claude のオープンベータ",
+      "when": "2026-09（公式は September 2026）",
+      "note": "Salesforce 公式。Claudeforce の中核プラグイン。いまはパイロット顧客向け。追加スキルは 2026 年後半。"
     },
     {
       "what": "Gemini 3.7 / 3.6 Flash の導入価格が終了",
@@ -333,12 +333,12 @@
     },
     {
       "use": "速さ・安さ",
-      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。実測レイテンシの一枚板は取っていない。",
+      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。実測レイテンシの一枚板は取っていない。Sonnet 5 の $2/$10 は公式 docs で標準料金になった（9/1 値上げは取りやめ）。",
       "ranks": [
         {
           "place": 1,
           "name": "Gemini 3.7 Flash",
-          "why": "導入価格 $0.75 / $3.75 で、Google がワークホースとして推している。年末までこの値段。"
+          "why": "導入価格 $0.75 / $3.75 で、Google がワークホースとして推している。年末までこの値段。Sonnet 5 より入力が安い。"
         },
         {
           "place": 2,
@@ -347,8 +347,8 @@
         },
         {
           "place": 3,
-          "name": "Claude Haiku 4.5 / Grok 4.6",
-          "why": "Haiku は Claude の速さ枠。Grok 4.6 はフラッグシップにして $2 / $6 と出力が安い。"
+          "name": "Claude Haiku 4.5 / Claude Sonnet 5 / Grok 4.6",
+          "why": "Haiku は Claude の速さ枠（$1/$5）。Sonnet 5 は $2/$10 が標準になったので中量の日常枠。Grok 4.6 はフラッグシップにして $2/$6 と出力が安い。"
         }
       ]
     },
