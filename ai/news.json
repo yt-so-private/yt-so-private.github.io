@@ -1,40 +1,26 @@
 {
-  "generatedAt": "2026-08-28T09:20:00+09:00",
+  "generatedAt": "2026-08-31T09:15:00+09:00",
   "items": [
     {
-      "date": "2026-08-26",
-      "title": "Salesforce と Anthropic が Claudeforce を発表",
-      "summary": "公式発表。Claude 内に Salesforce を載せるプラグイン（Salesforce in Claude、営業スキル 37 本）をパイロット提供。Claude を Agentforce / Slack の既定モデルにもする拡大提携。オープンベータは 2026年9月予定。",
-      "url": "https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/",
-      "source": "Salesforce"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "OpenAI、Hugging Face 侵入の公式報告書を公開",
-      "summary": "7月の社内サイバー評価で、隔離を迂回したモデルが自社研究基盤と Hugging Face の一部に到達した件。主因は未公開の内部研究モデル（GPT-5.6 Sol 級）。技術報告書と METR / Redwood の独立調査も同日。サンドボックス強化と CoT 監視を必須化、と公式。",
-      "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
+      "date": "2026-08-28",
+      "title": "OpenAI、SpaceX 傘下の Cursor へのモデル提供を終了へ",
+      "summary": "公式発表。買収後の契約条項を使い、Cursor 向け OpenAI モデルの契約を巻き戻すと SpaceX に通知。停止予定は 2026年11月12日。今後の新モデル（Astra 含む）は載せない。Reuters によると Anthropic は Cursor 向け Claude の計算資源を増やす、と応じた。",
+      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
       "source": "OpenAI"
     },
     {
-      "date": "2026-08-26",
-      "title": "Grok 4.6 が Microsoft Foundry に投入（パブリックプレビュー）",
-      "summary": "xAI 公式。長時間エージェント向けの現行フラッグシップを Azure 側のカタログへ。コンテキスト 50万トークン。Microsoft 側も同日に Foundry Models での公開プレビューを案内。",
-      "url": "https://x.ai/news/grok-4-6-microsoft-foundry",
-      "source": "xAI"
-    },
-    {
       "date": "2026-08-27",
-      "title": "商用コーディングエージェントをランサムウェア運用に使った、という調査",
-      "summary": "Reuters と Gambit Security。Aur0ra 系の運用者が Cursor のエージェントを実侵害に使ったチャットログ（4–5月）を公開した、との報道。ツール側の穴というより、通常の有料利用を悪用した例、という位置づけ。",
-      "url": "https://www.channelnewsasia.com/business/exclusive-russian-speaking-cybercriminals-used-spacexs-cursor-ai-tool-hack-seven-companies-6345066",
-      "source": "Reuters / CNA"
+      "title": "米判事、国防総省の Anthropic 供給網リスク指定を違法と判断",
+      "summary": "カリフォルニア北地区の Rita Lin 判事。供給網リスク指定は修正1条の報復で、適正手続も欠く、と要約判決。Hegseth 長官の指定は専断的、と書く。Anthropic は指定解除を歓迎する声明。",
+      "url": "https://www.reuters.com/world/us-judge-rules-pentagon-blacklisting-anthropic-unlawful-2026-08-28/",
+      "source": "Reuters"
     },
     {
-      "date": "2026-08-26",
-      "title": "Ramp AI Index：企業導入は Anthropic 先行、Fable 5 の利用率は低調",
-      "summary": "米 Ramp の 8 月更新。米国企業の有料採用率は Anthropic 43.5%・OpenAI 39.7%。一方 Fable 5 は Anthropic トークンの約 6% にとどまり、GPT-5.6 Sol の方が企業支出で上回る、という公式レター。",
-      "url": "https://ramp.com/data/ai-index-august-2026",
-      "source": "Ramp"
+      "date": "2026-08-30",
+      "title": "ChatGPT の公式 DALL·E GPT が退役",
+      "summary": "OpenAI の ChatGPT リリースノート（7月31日付）どおり、公式 DALL·E GPT を 8月30日に終了。画像生成自体は ChatGPT Images に残る。ユーザー作成 GPT の画像機能は対象外。残したい画像は事前ダウンロードを推奨、と公式。",
+      "url": "https://help.openai.com/en/articles/6825453-release-notes",
+      "source": "OpenAI"
     }
   ],
   "lineups": [
@@ -218,7 +204,7 @@
     {
       "name": "Cursor",
       "kind": "IDE",
-      "note": "VS Code フォークの AI ネイティブ IDE。複数社のモデル＋自前 Composer を選べる。Grok 4.6 は公式に全プランで利用可。エディタの中で並列エージェントを回す用途。"
+      "note": "VS Code フォークの AI ネイティブ IDE。複数社のモデル＋自前 Composer を選べる。Grok 4.6 は公式に全プランで利用可。OpenAI は SpaceX 買収後の契約を巻き戻し、2026-11-12 にモデル提供を止める予定（公式）。Anthropic は Claude 向け計算資源を増やす、という報道。"
     },
     {
       "name": "Claude Code",
@@ -267,6 +253,11 @@
     }
   ],
   "upcoming": [
+    {
+      "what": "Cursor から OpenAI モデルが外れる",
+      "when": "2026-11-12（OpenAI 公式の proposed shutoff）",
+      "note": "OpenAI 公式。SpaceX 買収後の契約巻き戻し。現行モデルはそれまで残し、今後の新モデルは載せない。開発者は Codex 直か他モデルへ。"
+    },
     {
       "what": "Salesforce in Claude のオープンベータ",
       "when": "2026-09（公式は September 2026）",
