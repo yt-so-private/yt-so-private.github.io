@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-08-31T09:15:00+09:00",
+  "generatedAt": "2026-09-01T09:30:00+09:00",
   "items": [
     {
-      "date": "2026-08-28",
-      "title": "OpenAI、SpaceX 傘下の Cursor へのモデル提供を終了へ",
-      "summary": "公式発表。買収後の契約条項を使い、Cursor 向け OpenAI モデルの契約を巻き戻すと SpaceX に通知。停止予定は 2026年11月12日。今後の新モデル（Astra 含む）は載せない。Reuters によると Anthropic は Cursor 向け Claude の計算資源を増やす、と応じた。",
-      "url": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/",
-      "source": "OpenAI"
+      "date": "2026-08-31",
+      "title": "米国防総省、ChatGPT Mil と Grok for Government を投入",
+      "summary": "TechCrunch 報道。GenAI.mil に OpenAI の ChatGPT Mil と xAI（Starshield AI）の Grok for Government を追加。対象は約300万人。ポータルはすでに約170万人が利用。Gemini は当初から載っていた。Anthropic の Claude は供給網リスク指定の争いのあと、今回の投入には入っていない。",
+      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-08-27",
-      "title": "米判事、国防総省の Anthropic 供給網リスク指定を違法と判断",
-      "summary": "カリフォルニア北地区の Rita Lin 判事。供給網リスク指定は修正1条の報復で、適正手続も欠く、と要約判決。Hegseth 長官の指定は専断的、と書く。Anthropic は指定解除を歓迎する声明。",
-      "url": "https://www.reuters.com/world/us-judge-rules-pentagon-blacklisting-anthropic-unlawful-2026-08-28/",
-      "source": "Reuters"
+      "date": "2026-08-31",
+      "title": "Apple、OpenAI 訴訟で元社員の MacBook を新証拠に",
+      "summary": "TechCrunch 報道。元 Apple 社員（現 OpenAI）の旧業務用 MacBook を提出。機密の回路図を OpenAI での仕事に使った、認証バグで残アクセスを維持した、調査を知って証拠隠滅を頼んだ、と Apple 側。OpenAI は以前、退社後の残アクセスは Apple 側の管理不備だと反論。仮処分と早期開示を求めている。",
+      "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-08-30",
-      "title": "ChatGPT の公式 DALL·E GPT が退役",
-      "summary": "OpenAI の ChatGPT リリースノート（7月31日付）どおり、公式 DALL·E GPT を 8月30日に終了。画像生成自体は ChatGPT Images に残る。ユーザー作成 GPT の画像機能は対象外。残したい画像は事前ダウンロードを推奨、と公式。",
-      "url": "https://help.openai.com/en/articles/6825453-release-notes",
+      "date": "2026-09-01",
+      "title": "OpenAI Daybreak、個人アカウントにハードウェアキー必須",
+      "summary": "公式。防衛向けプログラム Daybreak の個人アカウントは、2026年9月1日からハードウェアセキュリティキーの採用が必須。Blue（GPT-5.6 Sol）と Red（GPT-5.6-Cyber）の二段階。Codex はフルアクセスから auto-review へ寄せる、と公式。",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
       "source": "OpenAI"
     }
   ],
