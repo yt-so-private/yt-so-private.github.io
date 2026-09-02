@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-01T09:30:00+09:00",
+  "generatedAt": "2026-09-02T09:20:00+09:00",
   "items": [
     {
-      "date": "2026-08-31",
-      "title": "米国防総省、ChatGPT Mil と Grok for Government を投入",
-      "summary": "TechCrunch 報道。GenAI.mil に OpenAI の ChatGPT Mil と xAI（Starshield AI）の Grok for Government を追加。対象は約300万人。ポータルはすでに約170万人が利用。Gemini は当初から載っていた。Anthropic の Claude は供給網リスク指定の争いのあと、今回の投入には入っていない。",
-      "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/",
-      "source": "TechCrunch"
+      "date": "2026-09-01",
+      "title": "OpenAI、Astra を Critical サイバー能力と認定",
+      "summary": "公式。Preparedness Framework で初めて Critical。未知の脆弱性を自力で見つけ、攻撃手順まで組める、という評価。公開は「soon」だが、高度なサイバー機能はテスターと Daybreak Blue 向けに限定。Hugging Face 事案後に強化したガードレール付き。",
+      "url": "https://openai.com/index/path-to-astra/",
+      "source": "OpenAI"
     },
     {
-      "date": "2026-08-31",
-      "title": "Apple、OpenAI 訴訟で元社員の MacBook を新証拠に",
-      "summary": "TechCrunch 報道。元 Apple 社員（現 OpenAI）の旧業務用 MacBook を提出。機密の回路図を OpenAI での仕事に使った、認証バグで残アクセスを維持した、調査を知って証拠隠滅を頼んだ、と Apple 側。OpenAI は以前、退社後の残アクセスは Apple 側の管理不備だと反論。仮処分と早期開示を求めている。",
-      "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/",
+      "date": "2026-09-01",
+      "title": "Anthropic、Claude Fable / Mythos 5.1 を公開",
+      "summary": "TechCrunch 報道。Fable 5.1 は一般公開、Mythos 5.1 はサイバー／ライフサイエンス向けパートナー限定。キャッシュ読み取り料金を 75% 下げ、誤検知の多いセーフガードも緩めめ。Enterprise Frontier Safeguards（高プライバシー）は秋以降の予定。",
+      "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-09-01",
-      "title": "OpenAI Daybreak、個人アカウントにハードウェアキー必須",
-      "summary": "公式。防衛向けプログラム Daybreak の個人アカウントは、2026年9月1日からハードウェアセキュリティキーの採用が必須。Blue（GPT-5.6 Sol）と Red（GPT-5.6-Cyber）の二段階。Codex はフルアクセスから auto-review へ寄せる、と公式。",
-      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
-      "source": "OpenAI"
+      "title": "Google、Gemini に Agentic Video を投入",
+      "summary": "公式。3.7 / 3.6 Flash と 3.5 Flash-Lite で、動画を固定 FPS ではなく必要箇所だけ探して読む。トークン最大 88% 減・コスト最大 66% 減・精度最大 7% 向上、という公式数字。Gemini API / AI Studio / Enterprise で利用可。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+      "source": "Google"
     }
   ],
   "lineups": [
@@ -48,9 +48,9 @@
       "vendor": "Anthropic",
       "models": [
         {
-          "name": "Claude Fable 5",
+          "name": "Claude Fable 5.1",
           "role": "flagship",
-          "note": "公式 docs では「いま使える最高能力」枠。長時間エージェント向け。API は claude-fable-5。入力 $10 / 出力 $50 / 1M tokens。2026-06-09 公開。テキスト＋画像入力。"
+          "note": "2026-09-01 公開の現行フラッグシップ。API 経由と各クラウドで一般利用可。ベース料金は入力 $10 / 出力 $50 / 1M tokens。キャッシュ読み取りは 75% 下げ、セーフガードの誤検知も減らした、という TechCrunch 報道。長時間エージェント向け。"
         },
         {
           "name": "Claude Opus 5",
@@ -68,9 +68,9 @@
           "note": "速さ・安さ枠。API は claude-haiku-4-5-20251001。公式料金は入力 $1 / 出力 $5 / 1M tokens。現行4枠のいちばん軽いモデル。"
         },
         {
-          "name": "Claude Mythos 5",
+          "name": "Claude Mythos 5.1",
           "role": "flagship",
-          "note": "限定公開。一般向けではなく、限られた企業向け。Fable 5 と同系統の天井能力、という位置づけ。一般利用は Fable / Opus を見る。"
+          "note": "2026-09-01。Fable 5.1 と同系統の天井能力だが、サイバー／ライフサイエンスの認定パートナー向け限定。一般利用は Fable / Opus を見る。"
         }
       ]
     },
@@ -254,6 +254,11 @@
   ],
   "upcoming": [
     {
+      "what": "OpenAI Astra の公開",
+      "when": "まもなく（公式は soon。高度なサイバー機能は限定）",
+      "note": "2026-09-01 公式。Critical サイバー能力と認定。一般公開は近いが、Advanced cybersecurity はテスター → Daybreak Blue の順。System Card はローンチ時。"
+    },
+    {
       "what": "Cursor から OpenAI モデルが外れる",
       "when": "2026-11-12（OpenAI 公式の proposed shutoff）",
       "note": "OpenAI 公式。SpaceX 買収後の契約巻き戻し。現行モデルはそれまで残し、今後の新モデルは載せない。開発者は Codex 直か他モデルへ。"
@@ -291,7 +296,7 @@
         },
         {
           "place": 2,
-          "name": "Claude Fable 5",
+          "name": "Claude Fable 5.1",
           "why": "Verified では Opus の直後。より難しい SWE-bench Pro では Fable がわずかに上、という Anthropic 系の数字。高い天井が要るとき。"
         },
         {
@@ -307,7 +312,7 @@
       "ranks": [
         {
           "place": 1,
-          "name": "Claude Fable 5（天井は Mythos 5）",
+          "name": "Claude Fable 5.1（天井は Mythos 5）",
           "why": "Arena 集計でテキスト先頭付近。Mythos 5 は Elo がさらに上、という数字もあるが限定公開。"
         },
         {
