@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-09-02T09:20:00+09:00",
+  "generatedAt": "2026-09-03T09:15:00+09:00",
   "items": [
     {
-      "date": "2026-09-01",
-      "title": "OpenAI、Astra を Critical サイバー能力と認定",
-      "summary": "公式。Preparedness Framework で初めて Critical。未知の脆弱性を自力で見つけ、攻撃手順まで組める、という評価。公開は「soon」だが、高度なサイバー機能はテスターと Daybreak Blue 向けに限定。Hugging Face 事案後に強化したガードレール付き。",
-      "url": "https://openai.com/index/path-to-astra/",
-      "source": "OpenAI"
+      "date": "2026-09-02",
+      "title": "Google、Gemini 3.8 Flash と Flash Cyber を公開",
+      "summary": "公式。6週で3回目の Flash。3.8 Flash はコーディング・エージェント向けワークホースで、導入価格は 3.7 と同じ入力 $0.75 / 出力 $3.75。Flash Cyber は脆弱性発見と自動パッチ、Fairwind の防御側限定。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "source": "Google"
     },
     {
-      "date": "2026-09-01",
-      "title": "Anthropic、Claude Fable / Mythos 5.1 を公開",
-      "summary": "TechCrunch 報道。Fable 5.1 は一般公開、Mythos 5.1 はサイバー／ライフサイエンス向けパートナー限定。キャッシュ読み取り料金を 75% 下げ、誤検知の多いセーフガードも緩めめ。Enterprise Frontier Safeguards（高プライバシー）は秋以降の予定。",
-      "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+      "date": "2026-09-02",
+      "title": "Astra の recurrent depth、監視しにくさで議論",
+      "summary": "TechCrunch。The Information 報道を受け、Astra が同じ層をループする recurrent depth を使うと安全研究者らが懸念。OpenAI は CoT は読める範囲に留め、neuralese ではない、と反論。",
+      "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
       "source": "TechCrunch"
     },
     {
       "date": "2026-09-01",
-      "title": "Google、Gemini に Agentic Video を投入",
-      "summary": "公式。3.7 / 3.6 Flash と 3.5 Flash-Lite で、動画を固定 FPS ではなく必要箇所だけ探して読む。トークン最大 88% 減・コスト最大 66% 減・精度最大 7% 向上、という公式数字。Gemini API / AI Studio / Enterprise で利用可。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/",
+      "title": "Google Pics、Workspace 向け画像編集が一般提供",
+      "summary": "公式。Nano Banana ベースの画像生成・精密編集。AI Pro / Ultra と Workspace の上位プランへ順次。Docs / Slides から直接編集、Drive は数週間以内。",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
       "source": "Google"
     }
   ],
@@ -78,9 +78,19 @@
       "vendor": "Google",
       "models": [
         {
-          "name": "Gemini 3.7 Flash",
+          "name": "Gemini 3.8 Flash",
           "role": "flagship",
-          "note": "2026-08-13 発表の現行ワークホース。コーディングとエージェント向け。Gemini API / AI Studio / Antigravity / Gemini Spark（Pro・Ultra）。導入価格は入力 $0.75 / 出力 $3.75 / 1M tokens（2026-12-31 まで。2027-01-01 から $1.50 / $7.50）。"
+          "note": "2026-09-02 公式。現行ワークホース。3.7 からコーディング・エージェント・多段推論を上げた、と同社。導入価格は 3.7 と同じ入力 $0.75 / 出力 $3.75 / 1M tokens（2026-12-31 まで。2027-01-01 から $1.50 / $7.50）。Gemini API / AI Studio / Antigravity / Gemini Enterprise。アプリは Pro・Ultra。"
+        },
+        {
+          "name": "Gemini 3.8 Flash Cyber",
+          "role": "flagship",
+          "note": "2026-09-02。脆弱性発見と自動パッチ向け。Fairwind Program の信頼できる防御側限定（政府・重要インフラ・メンテナ）。一般利用は 3.8 Flash。"
+        },
+        {
+          "name": "Gemini 3.7 Flash",
+          "role": "cheap",
+          "note": "ひとつ前のワークホース。公式は効率重視の仕事では引き続きサポート、と案内。導入価格は 3.8 と同じ入力 $0.75 / 出力 $3.75。"
         },
         {
           "name": "Gemini 3.6 Flash",
@@ -229,7 +239,7 @@
     {
       "name": "Google Antigravity",
       "kind": "IDE / CLI",
-      "note": "Gemini 公式ブログが開発者向けのエージェントワークフロー先として案内。Gemini 3.7 Flash を載せる。Gemini CLI からの後継経路、という比較記事あり。"
+      "note": "Gemini 公式ブログが開発者向けのエージェントワークフロー先として案内。Gemini 3.8 Flash を載せる。Gemini CLI からの後継経路、という比較記事あり。"
     },
     {
       "name": "Grok Build",
@@ -269,9 +279,9 @@
       "note": "Salesforce 公式。Claudeforce の中核プラグイン。いまはパイロット顧客向け。追加スキルは 2026 年後半。"
     },
     {
-      "what": "Gemini 3.7 / 3.6 Flash の導入価格が終了",
+      "what": "Gemini 3.8 / 3.7 / 3.6 Flash の導入価格が終了",
       "when": "2026-12-31 まで（2027-01-01 から通常）",
-      "note": "Google 公式ブログ脚注。いまは入力 $0.75 / 出力 $3.75。2027-01-01 から $1.50 / $7.50。"
+      "note": "Google 公式ブログ脚注。3.8 Flash も 3.7 と同じ入力 $0.75 / 出力 $3.75。2027-01-01 から $1.50 / $7.50。"
     },
     {
       "what": "Amazon Nova 第1世代の一部が EOL",
@@ -333,8 +343,8 @@
       "ranks": [
         {
           "place": 1,
-          "name": "Gemini 3.7 Flash",
-          "why": "導入価格 $0.75 / $3.75 で、Google がワークホースとして推している。年末までこの値段。Sonnet 5 より入力が安い。"
+          "name": "Gemini 3.8 Flash",
+          "why": "導入価格 $0.75 / $3.75 のまま、公式が現行ワークホースとして推している。年末までこの値段。Sonnet 5 より入力が安い。"
         },
         {
           "place": 2,
