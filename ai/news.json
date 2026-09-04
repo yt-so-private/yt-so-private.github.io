@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-09-03T09:15:00+09:00",
+  "generatedAt": "2026-09-04T09:30:00+09:00",
   "items": [
+    {
+      "date": "2026-09-03",
+      "title": "OpenAI、GPT-6 Astra を公開（まだ一般提供前）",
+      "summary": "ChatGPT リリースノート公式。コーディング・調査・コンピュータ操作・多段作業向け。限定組織へ展開中で、Plus / Pro / Business / Enterprise と API は数日以内の拡大予定。API は gpt-6-astra（標準 入力 $10 / 出力 $50 / 1M）。Critical サイバー閾値の初モデルで、高度な防御用途は制限付き。",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "source": "OpenAI"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Astra の「AGI era」発言とモニタリング議論が続く",
+      "summary": "VentureBeat。Brockman がブリーフィングで AGI era と述べた、と報道。一方で recurrent depth など監視しにくさへの懸念は前日からの続き。ベンチはベンダー発表（DeepSWE 等）で、ハーネス差に注意。",
+      "url": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
+      "source": "VentureBeat"
+    },
     {
       "date": "2026-09-02",
       "title": "Google、Gemini 3.8 Flash と Flash Cyber を公開",
       "summary": "公式。6週で3回目の Flash。3.8 Flash はコーディング・エージェント向けワークホースで、導入価格は 3.7 と同じ入力 $0.75 / 出力 $3.75。Flash Cyber は脆弱性発見と自動パッチ、Fairwind の防御側限定。",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "source": "Google"
-    },
-    {
-      "date": "2026-09-02",
-      "title": "Astra の recurrent depth、監視しにくさで議論",
-      "summary": "TechCrunch。The Information 報道を受け、Astra が同じ層をループする recurrent depth を使うと安全研究者らが懸念。OpenAI は CoT は読める範囲に留め、neuralese ではない、と反論。",
-      "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-01",
-      "title": "Google Pics、Workspace 向け画像編集が一般提供",
-      "summary": "公式。Nano Banana ベースの画像生成・精密編集。AI Pro / Ultra と Workspace の上位プランへ順次。Docs / Slides から直接編集、Drive は数週間以内。",
-      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/",
       "source": "Google"
     }
   ],
@@ -28,19 +28,24 @@
       "vendor": "OpenAI",
       "models": [
         {
+          "name": "GPT-6 Astra",
+          "role": "flagship",
+          "note": "2026-09-03。ChatGPT リリースノート公式で導入。コーディング・調査・コンピュータ操作・多段作業。いまは Trusted Access / 限定組織向けで、一般提供はこれから数日。API は gpt-6-astra。公式料金は標準 入力 $10 / 出力 $50 / 1M（長コンテキストは $20 / $75）。Fast mode は標準の2倍料金。Preparedness の Critical サイバー閾値の初モデルで、高度なサイバー機能は防御側に制限。"
+        },
+        {
           "name": "GPT-5.6 Sol",
           "role": "flagship",
-          "note": "複雑推論・コーディング向けの現行フラッグシップ。ChatGPT / Codex / API（gpt-5.6-sol）。公式は 2026-07-09 に GPT-5.6 ファミリーを GA。入力 $5 / 出力 $30 / 1M tokens（2026-08-21 に API 価格を下げた更新あり）。テキスト＋画像入力、テキスト出力。"
+          "note": "直前までの複雑推論・コーディング向け旗艦。ChatGPT / Codex / API（gpt-5.6-sol）。公式料金表（短コンテキスト）は入力 $4 / 出力 $20 / 1M。Astra 展開後も残る。テキスト＋画像入力、テキスト出力。"
         },
         {
           "name": "GPT-5.6 Terra",
           "role": "balanced",
-          "note": "知能とコストのバランス枠。公式は GPT-5.5 級の性能をより安く、と位置づけ。API は gpt-5.6-terra。入力 $2.50 / 出力 $15 / 1M tokens。"
+          "note": "知能とコストのバランス枠。API は gpt-5.6-terra。公式料金表（短コンテキスト）は入力 $2 / 出力 $12 / 1M。"
         },
         {
           "name": "GPT-5.6 Luna",
           "role": "cheap",
-          "note": "速さ・安さ向け。高ボリューム向け。API は gpt-5.6-luna。入力 $1 / 出力 $6 / 1M tokens（2026-07-30 に Luna を 80% 値下げ、という公式更新あり）。"
+          "note": "速さ・安さ向け。API は gpt-5.6-luna。公式料金表（短コンテキスト）は入力 $0.20 / 出力 $1.20 / 1M。"
         }
       ]
     },
@@ -264,9 +269,9 @@
   ],
   "upcoming": [
     {
-      "what": "OpenAI Astra の公開",
-      "when": "まもなく（公式は soon。高度なサイバー機能は限定）",
-      "note": "2026-09-01 公式。Critical サイバー能力と認定。一般公開は近いが、Advanced cybersecurity はテスター → Daybreak Blue の順。System Card はローンチ時。"
+      "what": "GPT-6 Astra の一般提供拡大",
+      "when": "展開中（公式は coming days。高度なサイバーは限定）",
+      "note": "2026-09-03 リリースノート。限定組織へ先行。Plus / Pro / Business / Enterprise と API・Bedrock / Azure は数日で拡大予定、と案内。Advanced cybersecurity は Trusted Access / Daybreak 系の防御用途に制限。"
     },
     {
       "what": "Cursor から OpenAI モデルが外れる",
@@ -297,12 +302,12 @@
   "rankings": [
     {
       "use": "コーディング",
-      "sourceNote": "今日点の目安。SWE-bench Verified の公開集計（BenchLM 2026-08-24、vals.ai）と、xAI が載せた CursorBench / DeepSWE / FrontierCode に寄る。ハーネスが違うと順位はすぐ動く。",
+      "sourceNote": "今日点の目安。OpenAI の Astra 発表（DeepSWE 等のベンダー数字）と、従来の SWE-bench Verified 集計（BenchLM / vals.ai）に寄る。ハーネスが違うと順位はすぐ動く。Astra はまだ一般提供前。",
       "ranks": [
         {
           "place": 1,
-          "name": "Claude Opus 5",
-          "why": "SWE-bench Verified で先頭付近（BenchLM は 96%、vals.ai は 97% と数字が少し違う）。エージェントコーディングの既定候補。"
+          "name": "GPT-6 Astra（展開中） / Claude Opus 5",
+          "why": "Astra は公式がソフトウェア工学とコンピュータ操作の旗艦と位置づけ（ベンダー発表の DeepSWE 等）。一般提供前なので本番は Opus 5 も並走候補。SWE-bench Verified では Opus が先頭付近の集計が残る。"
         },
         {
           "place": 2,
@@ -312,18 +317,18 @@
         {
           "place": 3,
           "name": "GPT-5.6 Sol / DeepSeek-V4-Pro",
-          "why": "Sol は公式が複雑コーディングの旗艦。V4-Pro は vals.ai の Verified でクローズドの直後に来るオープン枠。用途で振り分ける。"
+          "why": "Sol は Astra 直前の OpenAI 旗艦として残る。V4-Pro はオープン枠でクローズドの直後に来る集計あり。用途で振り分ける。"
         }
       ]
     },
     {
       "use": "文章・推論",
-      "sourceNote": "今日点の目安。LM Arena（LMSYS 系、lmarena.ai）の第三者スナップショットと、xAI 発表の Artificial Analysis Intelligence Index（Fable 62、Grok 4.6 と GPT-5.6 Sol が 61）に寄る。",
+      "sourceNote": "今日点の目安。LM Arena の第三者スナップショット、Artificial Analysis、および Astra 発表のベンダー数字。Astra の ARC-AGI 等はハーネス付きの報告があり、単純比較は避ける。",
       "ranks": [
         {
           "place": 1,
-          "name": "Claude Fable 5.1（天井は Mythos 5）",
-          "why": "Arena 集計でテキスト先頭付近。Mythos 5 は Elo がさらに上、という数字もあるが限定公開。"
+          "name": "GPT-6 Astra（展開中） / Claude Fable 5.1",
+          "why": "Astra は公式が複雑多段とコンピュータ操作で大幅更新と主張。Fable は Arena / AA でテキスト天井付近の既存スナップショット。一般提供前は両方見る。"
         },
         {
           "place": 2,
@@ -333,7 +338,7 @@
         {
           "place": 3,
           "name": "GPT-5.6 Sol / Grok 4.6",
-          "why": "AA Intelligence Index で並ぶ（どちらも 61、Fable が 62）。Sol は汎用、Grok は長時間エージェントと視覚寄りの仕事、という公式の売り。"
+          "why": "AA Intelligence Index で並ぶ（どちらも 61 前後、Fable が 62 という過去スナップ）。Sol は汎用、Grok は長時間エージェント寄り。"
         }
       ]
     },
@@ -349,7 +354,7 @@
         {
           "place": 2,
           "name": "DeepSeek-V4-Flash / GPT-5.6 Luna",
-          "why": "Flash はオープンで安い高ボリューム枠。Luna は OpenAI 側の最安 Generations（$1 / $6）。"
+          "why": "Flash はオープンで安い高ボリューム枠。Luna は公式料金表で入力 $0.20 / 出力 $1.20 とさらに安い Generations 枠。"
         },
         {
           "place": 3,
