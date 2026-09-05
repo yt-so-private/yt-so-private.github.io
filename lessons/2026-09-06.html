@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I wish I had more free time · Daily English</title>
+<!--
+  Thicker Daily English template (~15–18 min)
+  Sections: 0流れ → 1聞く → 2チャンク → 3音読 → 4軽いシャドーイング → 5瞬間英作文 → 6クイズ
+-->
+<style>
+  :root {
+    --bg: #f6f1e8;
+    --ink: #1c1915;
+    --muted: #6b645b;
+    --card: #fffdf8;
+    --line: #e6ddd0;
+    --accent: #c45c26;
+    --ok: #2c6e49;
+    --bad: #9b2c2c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  header { margin-bottom: 1.5rem; }
+  .kicker {
+    font-size: .75rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  h1 { font-size: 1.6rem; margin: .35rem 0 .25rem; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: .95rem; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 1.25rem 1.2rem;
+    margin: 1rem 0;
+  }
+  h2 { font-size: 1.05rem; margin: 0 0 .8rem; }
+  .note { color: var(--muted); font-size: .9rem; margin: 0 0 .75rem; }
+  .passage { font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; }
+  .passage p { margin: 0 0 .8rem; }
+  .vocab { display: grid; gap: .6rem; }
+  .item { border-bottom: 1px dashed var(--line); padding-bottom: .55rem; }
+  .item:last-child { border: 0; padding: 0; }
+  .en { font-weight: 700; display: flex; align-items: baseline; gap: .35rem; flex-wrap: wrap; }
+  .gloss { color: var(--ink); font-size: .95rem; margin-top: .15rem; }
+  .tag {
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    color: var(--accent);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: .1rem .45rem;
+    margin-left: .25rem;
+  }
+  .hint { color: var(--muted); font-size: .9rem; margin-top: .5rem; display: none; }
+  .flow { list-style: none; padding: 0; margin: 0; }
+  .flow li {
+    display: flex;
+    gap: .6rem;
+    align-items: flex-start;
+    padding: .35rem 0;
+    border-bottom: 1px dashed var(--line);
+    font-size: .95rem;
+  }
+  .flow li:last-child { border: 0; }
+  .flow .min { color: var(--muted); font-size: .8rem; white-space: nowrap; min-width: 2.8rem; }
+  button {
+    appearance: none;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 999px;
+    padding: .35rem .75rem;
+    font: inherit;
+    font-size: .8rem;
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  button.primary:hover { filter: brightness(1.05); color: #fff; }
+  .listen {
+    font-size: .72rem;
+    padding: .2rem .55rem;
+    margin-left: .35rem;
+    vertical-align: middle;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  h2 .listen { vertical-align: baseline; }
+  .speak-line {
+    display: flex;
+    align-items: baseline;
+    gap: .35rem;
+    flex-wrap: wrap;
+    margin: 0 0 .7rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+  }
+  .speak-line > span { flex: 1 1 auto; }
+  .prompt {
+    border: 1px dashed var(--line);
+    border-radius: 12px;
+    padding: .9rem 1rem;
+    margin: 0 0 .9rem;
+  }
+  .prompt .ja { font-weight: 600; margin: 0 0 .55rem; }
+  .prompt .model { display: none; margin-top: .55rem; }
+  .prompt .model .en-line {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .q { margin: 1rem 0 1.4rem; }
+  .q p { margin: 0 0 .5rem; font-weight: 600; }
+  .choices { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .choices button { border-radius: 10px; padding: .5rem .8rem; }
+  .choices button.correct { background: #e7f4ec; border-color: var(--ok); color: var(--ok); }
+  .choices button.wrong { background: #fbeaea; border-color: var(--bad); color: var(--bad); }
+  .feedback { font-size: .9rem; margin-top: .4rem; min-height: 1.2em; color: var(--muted); }
+  .quiz-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+    margin-top: .5rem;
+  }
+  #quiz-score { color: var(--muted); font-size: .9rem; }
+  footer { color: var(--muted); font-size: .8rem; margin-top: 1.5rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="kicker">Daily English · 15–18 min</div>
+    <h1>I wish I had more free time</h1>
+    <div class="sub">午後のくつろぎと「I wish」の言い方。</div>
+  </header>
+
+  <section>
+    <h2>0. 今日の流れ</h2>
+    <ul class="flow">
+      <li><span class="min">~2分</span><span>1. まず聞く</span></li>
+      <li><span class="min">~3分</span><span>2. 意味とチャンク</span></li>
+      <li><span class="min">~3分</span><span>3. 音読（声に出して2–3回）</span></li>
+      <li><span class="min">~3分</span><span>4. 軽いシャドーイング</span></li>
+      <li><span class="min">~3分</span><span>5. 瞬間英作文</span></li>
+      <li><span class="min">~3分</span><span>6. クイズ</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>1. まず聞く <button type="button" class="listen" data-speak-passage>▶ 聞く</button></h2>
+    <p class="note">意味はまだ見ない。音と流れだけ。</p>
+    <div class="passage">
+      <p>I feel like winding down this afternoon — nothing big, just a quiet stretch at home.</p>
+      <p>I wish I had more free time to hang out with friends nearby.</p>
+      <p>I'll try not to put off that short walk; I should make time for it later.</p>
+    </div>
+    <button type="button" data-toggle="#jp-passage">日本語を見る</button>
+    <p class="hint" id="jp-passage">午後はのんびりしたい気分 — 大きな予定はなくて、家で静かに過ごすくらい。近くの友だちと遊ぶ自由な時間がもっとあったらいいのに。短い散歩は先延ばしにしないで、あとで時間を作りたい。</p>
+  </section>
+
+  <section>
+    <h2>2. 意味とチャンク</h2>
+    <div class="vocab">
+      <div class="item"><div class="en">wind down <span class="tag">新規</span><button type="button" class="listen" data-speak="wind down">▶ 聞く</button></div><div class="gloss">くつろぐ、リラックスして落ち着く。</div></div>
+      <div class="item"><div class="en">feel like <span class="tag">新規</span><button type="button" class="listen" data-speak="feel like winding down">▶ 聞く</button></div><div class="gloss">〜したい気分（後ろは動詞の -ing）。</div></div>
+      <div class="item"><div class="en">hang out <span class="tag">新規</span><button type="button" class="listen" data-speak="hang out with friends">▶ 聞く</button></div><div class="gloss">（友だちと）ぶらぶら過ごす・遊ぶ。</div></div>
+      <div class="item"><div class="en">make time for <span class="tag">新規</span><button type="button" class="listen" data-speak="make time for it">▶ 聞く</button></div><div class="gloss">（忙しい中でも）〜のための時間を作る。</div></div>
+      <div class="item"><div class="en">I wish I had … <span class="tag">新規</span><button type="button" class="listen" data-speak="I wish I had more free time.">▶ 聞く</button></div><div class="gloss">〜があればいいのに（いまは違う願望）。had は過去形だが「今」の話。</div></div>
+      <div class="item"><div class="en">put off <span class="tag">復習</span><button type="button" class="listen" data-speak="put off">▶ 聞く</button></div><div class="gloss">（用事を）先延ばしにする。</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. 音読</h2>
+    <p class="note">▶で聞いてから、声に出して2–3回。</p>
+    <p class="speak-line"><span>I feel like winding down this afternoon — nothing big, just a quiet stretch at home.</span><button type="button" class="listen" data-speak="I feel like winding down this afternoon. Nothing big, just a quiet stretch at home.">▶ 聞く</button></p>
+    <p class="speak-line"><span>I wish I had more free time to hang out with friends nearby.</span><button type="button" class="listen" data-speak="I wish I had more free time to hang out with friends nearby.">▶ 聞く</button></p>
+    <p class="speak-line"><span>I'll try not to put off that short walk; I should make time for it later.</span><button type="button" class="listen" data-speak="I'll try not to put off that short walk. I should make time for it later.">▶ 聞く</button></p>
+  </section>
+
+  <section>
+    <h2>4. 軽いシャドーイング</h2>
+    <p class="note">▶で聞いて、少し遅れて真似する（完璧じゃなくてOK）。</p>
+    <p class="speak-line"><span>I feel like winding down this afternoon — nothing big, just a quiet stretch at home.</span><button type="button" class="listen" data-speak="I feel like winding down this afternoon. Nothing big, just a quiet stretch at home.">▶ 聞く</button></p>
+    <p class="speak-line"><span>I wish I had more free time to hang out with friends nearby.</span><button type="button" class="listen" data-speak="I wish I had more free time to hang out with friends nearby.">▶ 聞く</button></p>
+    <p class="speak-line"><span>I'll try not to put off that short walk; I should make time for it later.</span><button type="button" class="listen" data-speak="I'll try not to put off that short walk. I should make time for it later.">▶ 聞く</button></p>
+  </section>
+
+  <section>
+    <h2>5. 瞬間英作文</h2>
+    <p class="note">日本語を見て、英語を口に出してから「英語を見る」。</p>
+    <div class="prompt"><p class="ja">午後はのんびりしたい気分です。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">I feel like winding down this afternoon. <button type="button" class="listen" data-speak="I feel like winding down this afternoon.">▶ 聞く</button></div></div></div>
+    <div class="prompt"><p class="ja">友だちと遊ぶ自由な時間がもっとあったらいいのに。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">I wish I had more free time to hang out with friends. <button type="button" class="listen" data-speak="I wish I had more free time to hang out with friends.">▶ 聞く</button></div></div></div>
+    <div class="prompt"><p class="ja">あとでその散歩のための時間を作るべきです。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">I should make time for that walk later. <button type="button" class="listen" data-speak="I should make time for that walk later.">▶ 聞く</button></div></div></div>
+  </section>
+
+  <section>
+    <h2>6. クイズ</h2>
+    <div class="q" data-answer="1"><p>Q1. 「くつろぐ・リラックスする」は？</p><div class="choices"><button type="button">hang out</button><button type="button">wind down</button><button type="button">put off</button></div><div class="feedback"></div></div>
+    <div class="q" data-answer="0"><p>Q2. 「〜したい気分」は？（後ろは -ing）</p><div class="choices"><button type="button">feel like</button><button type="button">make time for</button><button type="button">used to</button></div><div class="feedback"></div></div>
+    <div class="q" data-answer="2"><p>Q3. 「（友だちと）ぶらぶら過ごす」は？</p><div class="choices"><button type="button">wind down</button><button type="button">catch up on</button><button type="button">hang out</button></div><div class="feedback"></div></div>
+    <div class="q" data-answer="1"><p>Q4. I should ___ a short walk later.</p><div class="choices"><button type="button">feel like</button><button type="button">make time for</button><button type="button">hang out</button></div><div class="feedback"></div></div>
+    <div class="q" data-answer="0"><p>Q5. 自由な時間がもっとあったらいいのに。</p><div class="choices"><button type="button">I wish I had more free time.</button><button type="button">I used to have more free time later.</button><button type="button">I might as well put off free time.</button></div><div class="feedback"></div></div>
+    <div class="quiz-bar">
+      <span id="quiz-score"></span>
+      <button type="button" id="copy-results" hidden>結果をコピー</button>
+    </div>
+  </section>
+
+  <footer><a href="../index.html">← 一覧</a></footer>
+</main>
+<script>
+  document.querySelectorAll("[data-toggle]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const el = document.querySelector(btn.dataset.toggle);
+      const on = el.style.display === "block";
+      el.style.display = on ? "none" : "block";
+      btn.textContent = on ? "日本語を見る" : "日本語を隠す";
+    });
+  });
+
+  document.querySelectorAll("[data-reveal]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const box = btn.closest(".prompt");
+      const model = box && box.querySelector(".model");
+      if (!model) return;
+      const on = model.style.display === "block";
+      model.style.display = on ? "none" : "block";
+      btn.textContent = on ? "英語を見る" : "英語を隠す";
+    });
+  });
+
+  const quizState = { answered: 0, correct: 0, total: 0 };
+  const scoreEl = document.getElementById("quiz-score");
+  const copyBtn = document.getElementById("copy-results");
+  quizState.total = document.querySelectorAll(".q").length;
+
+  function updateQuizScore() {
+    if (!scoreEl) return;
+    if (quizState.answered === 0) {
+      scoreEl.textContent = "";
+      if (copyBtn) copyBtn.hidden = true;
+      return;
+    }
+    scoreEl.textContent = "スコア: " + quizState.correct + " / " + quizState.total;
+    if (copyBtn && quizState.answered >= quizState.total) copyBtn.hidden = false;
+  }
+
+  document.querySelectorAll(".q").forEach(q => {
+    const answer = Number(q.dataset.answer);
+    const buttons = [...q.querySelectorAll(".choices button")];
+    const fb = q.querySelector(".feedback");
+    let done = false;
+    buttons.forEach((b, i) => {
+      b.addEventListener("click", () => {
+        if (done) return;
+        done = true;
+        quizState.answered += 1;
+        buttons.forEach(x => { x.classList.remove("correct", "wrong"); x.disabled = true; });
+        if (i === answer) {
+          b.classList.add("correct");
+          fb.textContent = "OK";
+          fb.style.color = "var(--ok)";
+          quizState.correct += 1;
+        } else {
+          b.classList.add("wrong");
+          buttons[answer].classList.add("correct");
+          fb.textContent = "正解は「" + buttons[answer].textContent + "」";
+          fb.style.color = "var(--bad)";
+        }
+        updateQuizScore();
+      });
+    });
+  });
+
+  if (copyBtn) {
+    copyBtn.addEventListener("click", async () => {
+      const title = document.querySelector("h1")?.textContent?.trim() || "Daily English";
+      const text = title + " · quiz " + quizState.correct + "/" + quizState.total;
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "コピーした";
+        setTimeout(() => { copyBtn.textContent = "結果をコピー"; }, 1500);
+      } catch (_) {
+        copyBtn.textContent = "コピー失敗";
+      }
+    });
+  }
+
+  let englishVoice = null;
+  function pickEnglishVoice() {
+    const voices = speechSynthesis.getVoices() || [];
+    const prefer = [
+      v => /en-US/i.test(v.lang) && /Google|Microsoft|Samantha|Alex|Jenny|Aria/i.test(v.name),
+      v => /en-GB/i.test(v.lang) && /Google|Microsoft|Daniel|Kate/i.test(v.name),
+      v => /^en(-|$)/i.test(v.lang)
+    ];
+    for (const fn of prefer) {
+      const hit = voices.find(fn);
+      if (hit) return hit;
+    }
+    return null;
+  }
+  function ensureEnglishVoice() {
+    englishVoice = pickEnglishVoice();
+    return englishVoice;
+  }
+  if (window.speechSynthesis) {
+    ensureEnglishVoice();
+    speechSynthesis.addEventListener("voiceschanged", ensureEnglishVoice);
+  }
+  function speakEnglish(text) {
+    if (!window.speechSynthesis || !text) return;
+    const t = String(text).replace(/\s+/g, " ").trim();
+    if (!t) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(t);
+    u.lang = "en-US";
+    u.rate = 0.9;
+    const voice = ensureEnglishVoice();
+    if (voice) {
+      u.voice = voice;
+      u.lang = voice.lang || "en-US";
+    }
+    speechSynthesis.speak(u);
+  }
+  document.querySelectorAll("button.listen").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (btn.hasAttribute("data-speak-passage")) {
+        const sec = btn.closest("section");
+        const passage = sec && sec.querySelector(".passage");
+        speakEnglish(passage ? passage.innerText : "");
+        return;
+      }
+      const attr = btn.getAttribute("data-speak");
+      if (attr != null) {
+        speakEnglish(attr);
+        return;
+      }
+      const en = btn.closest(".en");
+      if (en) {
+        const clone = en.cloneNode(true);
+        clone.querySelectorAll("button, .tag").forEach(b => b.remove());
+        speakEnglish(clone.textContent);
+      }
+    });
+  });
+</script>
+</body>
+</html>
