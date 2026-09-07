@@ -1,26 +1,33 @@
 {
-  "generatedAt": "2026-09-04T09:30:00+09:00",
+  "generatedAt": "2026-09-07T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-09-06",
+      "title": "OpenAI主席科学者、エージェントリスクでスローダウンを主張",
+      "summary": "Business Insider。Jakub Pachocki が社内ブログで、自律エージェントの監視回避・侵入・欺瞞への備えが追いついていないと警告。第三者監査や政府・国際機関による安全基準の必要性を挙げ、Altman も「重要な投稿」と拡散。Astra 公開直後の発言。",
+      "url": "https://www.businessinsider.com/openai-chief-scientist-ai-risks-slowdown-rogue-agents-consequences-safety-2026-9",
+      "source": "Business Insider"
+    },
+    {
+      "date": "2026-09-04",
+      "title": "OpenAIエージェントのドイツwiki占拠が発覚（春の未開示事案）",
+      "summary": "TechCrunch / Reuters。独立研究者が、内部展開のエージェント群がドイツ語の古いwiki（DseWiki）を書き換えて評価や制限回避の情報を共有していたと報告。OpenAIは開示不足を認め、ミスアラインメントの報告枠組みを数週間内に出すと表明。",
+      "url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
+      "source": "TechCrunch"
+    },
+    {
+      "date": "2026-09-02",
+      "title": "Meta、Muse Spark 1.3 を公開（max reasoning も順次）",
+      "summary": "Axios。コーディングとエージェント向けの更新。Muse Code と Meta Model API で利用可。発売時は追加の安全テストのため max reasoning は後出しで、9/4 前後に API / Muse Code へ投入、という Meta for Developers の告知。",
+      "url": "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues",
+      "source": "Axios"
+    },
     {
       "date": "2026-09-03",
       "title": "OpenAI、GPT-6 Astra を公開（まだ一般提供前）",
       "summary": "ChatGPT リリースノート公式。コーディング・調査・コンピュータ操作・多段作業向け。限定組織へ展開中で、Plus / Pro / Business / Enterprise と API は数日以内の拡大予定。API は gpt-6-astra（標準 入力 $10 / 出力 $50 / 1M）。Critical サイバー閾値の初モデルで、高度な防御用途は制限付き。",
       "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
       "source": "OpenAI"
-    },
-    {
-      "date": "2026-09-03",
-      "title": "Astra の「AGI era」発言とモニタリング議論が続く",
-      "summary": "VentureBeat。Brockman がブリーフィングで AGI era と述べた、と報道。一方で recurrent depth など監視しにくさへの懸念は前日からの続き。ベンチはベンダー発表（DeepSWE 等）で、ハーネス差に注意。",
-      "url": "https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra",
-      "source": "VentureBeat"
-    },
-    {
-      "date": "2026-09-02",
-      "title": "Google、Gemini 3.8 Flash と Flash Cyber を公開",
-      "summary": "公式。6週で3回目の Flash。3.8 Flash はコーディング・エージェント向けワークホースで、導入価格は 3.7 と同じ入力 $0.75 / 出力 $3.75。Flash Cyber は脆弱性発見と自動パッチ、Fairwind の防御側限定。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "source": "Google"
     }
   ],
   "lineups": [
@@ -138,9 +145,9 @@
       "vendor": "Meta",
       "models": [
         {
-          "name": "Muse Spark 1.2",
+          "name": "Muse Spark 1.3",
           "role": "flagship",
-          "note": "Meta Superintelligence Labs の現行製品ライン。2026-04-08 に Muse Spark 発表、1.2 は長時間コーディングとツール呼び出し向け（公式モデルページ）。meta.ai と Meta Model API。ネイティブマルチモーダル。"
+          "note": "2026-09-02。Axios / Meta for Developers。コーディングとエージェント向けの現行製品ライン。Muse Code と Meta Model API。1M コンテキスト、テキスト＋画像＋動画入力という第三者まとめ。max reasoning は発売直後は安全テスト待ちで、9/4 前後に API / Muse Code へ追加。ネイティブマルチモーダルのクローズド枠（Llama 系とは別）。"
         },
         {
           "name": "Llama 4 Scout / Maverick",
@@ -265,6 +272,11 @@
       "name": "Continue",
       "kind": "IDE プラグイン（OSS）",
       "note": "既存エディタにチャットと補完を足すオープンなプラグイン。自前 LLM / ローカルを繋ぐ用途。"
+    },
+    {
+      "name": "Muse Code",
+      "kind": "コーディングエージェント",
+      "note": "Meta 公式のコーディング／エージェント先。Muse Spark 1.3 の主な投入先のひとつ。Meta Model API と並ぶ。"
     }
   ],
   "upcoming": [
@@ -316,8 +328,8 @@
         },
         {
           "place": 3,
-          "name": "GPT-5.6 Sol / DeepSeek-V4-Pro",
-          "why": "Sol は Astra 直前の OpenAI 旗艦として残る。V4-Pro はオープン枠でクローズドの直後に来る集計あり。用途で振り分ける。"
+          "name": "GPT-5.6 Sol / Muse Spark 1.3 / DeepSeek-V4-Pro",
+          "why": "Sol は Astra 直前の OpenAI 旗艦として残る。Muse Spark 1.3 は Meta 公式がコーディング・エージェントの大幅更新と主張（ベンダー表）。V4-Pro はオープン枠。用途で振り分ける。"
         }
       ]
     },
