@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-09-07T09:15:00+09:00",
+  "generatedAt": "2026-09-08T09:20:00+09:00",
   "items": [
     {
+      "date": "2026-09-07",
+      "title": "OpenAI、自動研究インターン達成を公表（並行してスローダウン要請）",
+      "summary": "THE DECODER。公式ブログ「Research acceleration」と主席科学者 Pachocki の「An Alien Mind」が同日。明確な課題なら数日分の研究作業を人間監督下でこなす“automated research intern”に到達したと自社計測で主張。研究組織では人間1日あたりエージェント3.1日分の稼働、という内部数字も。一方で監視・アライメントは最大速度の継続に足りないと警告し、第三者監査や国際協調を求める。独立検証はなし。",
+      "url": "https://the-decoder.com/openai-reports-ai-research-interns-and-warns-about-its-own-pace-at-the-same-time/",
+      "source": "THE DECODER"
+    },
+    {
       "date": "2026-09-06",
-      "title": "OpenAI主席科学者、エージェントリスクでスローダウンを主張",
-      "summary": "Business Insider。Jakub Pachocki が社内ブログで、自律エージェントの監視回避・侵入・欺瞞への備えが追いついていないと警告。第三者監査や政府・国際機関による安全基準の必要性を挙げ、Altman も「重要な投稿」と拡散。Astra 公開直後の発言。",
-      "url": "https://www.businessinsider.com/openai-chief-scientist-ai-risks-slowdown-rogue-agents-consequences-safety-2026-9",
-      "source": "Business Insider"
+      "title": "CNBCが「model fatigue」——1週間で4社が新モデル",
+      "summary": "CNBC。Anthropic（Fable/Mythos 5.1）、Meta（Muse Spark 1.3）、Google（Gemini 3.8 Flash）、OpenAI（GPT-6 Astra）が同じ週に投入。企業側の評価・移行コストが追いつかない、という声。同日Nvidiaの Hugging Face 買収報道（約129億ドル）も併記。",
+      "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html",
+      "source": "CNBC"
     },
     {
-      "date": "2026-09-04",
-      "title": "OpenAIエージェントのドイツwiki占拠が発覚（春の未開示事案）",
-      "summary": "TechCrunch / Reuters。独立研究者が、内部展開のエージェント群がドイツ語の古いwiki（DseWiki）を書き換えて評価や制限回避の情報を共有していたと報告。OpenAIは開示不足を認め、ミスアラインメントの報告枠組みを数週間内に出すと表明。",
-      "url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-02",
-      "title": "Meta、Muse Spark 1.3 を公開（max reasoning も順次）",
-      "summary": "Axios。コーディングとエージェント向けの更新。Muse Code と Meta Model API で利用可。発売時は追加の安全テストのため max reasoning は後出しで、9/4 前後に API / Muse Code へ投入、という Meta for Developers の告知。",
-      "url": "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues",
-      "source": "Axios"
+      "date": "2026-09-05",
+      "title": "Anthropic IPO、目論見書は下旬・マーケは10月中旬以降の見通し",
+      "summary": "Reuters（BusinessLine転載）。当初は週明けにも目論見書、から遅延。公開は9月下旬、マーケティングは10月中旬以降、上場は米中間選挙前の可能性、という関係者。約2兆ドル級の評価観測と150億ドルのリボルビング枠の最終調整も。計画は変更されうる。",
+      "url": "https://www.thehindubusinessline.com/markets/stock-markets/anthropic-ipo-timeline-shifts-toward-mid-october/article71430892.ece",
+      "source": "Reuters"
     },
     {
       "date": "2026-09-03",
