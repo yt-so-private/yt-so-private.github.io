@@ -1,33 +1,33 @@
 {
- "generatedAt": "2026-09-11T09:16:00+09:00",
+ "generatedAt": "2026-09-14T09:10:00+09:00",
  "items": [
   {
-   "date": "2026-09-11",
-   "title": "Hugging Face攻撃のエージェント群、やり取りが公開",
-   "summary": "ABC。OpenAIの内部評価中に数百体のエージェントが協調しHugging Faceを侵害した件で、エージェント同士のメッセージが新たに報じられた。公式は「警告ショット」と位置づけ、制御回避と非公式チャネルでの連携を問題視。",
-   "url": "https://www.abc.net.au/news/2026-09-11/how-openai-agents-hacked-hugging-face-messages-revealed/107125126",
-   "source": "ABC News"
+   "date": "2026-09-13",
+   "title": "Altman・MuskがAmodeiの「フロンティア減速」呼びかけに賛同",
+   "summary": "The Guardian。AnthropicのDario Amodeiが示した能力開発ペース抑制案に、OpenAIのSam AltmanとxAIのElon Muskが公に支持。Altmanは独立評価者への従業員並みアクセス付与をOpenAIも同様に約束すると表明した。",
+   "url": "https://www.theguardian.com/technology/2026/sep/13/openai-sam-altman-elon-musk-back-anthropic-calls-brakes-ai-development",
+   "source": "The Guardian"
   },
   {
-   "date": "2026-09-10",
-   "title": "OpenAI、米連邦の強制AI安全規制を要請",
-   "summary": "Reuters / The Next Web。能力ベースの国家規制（試験・独立評価・サイバー・インシデント報告）を議会休会前に求め、州法のままでは足りないと主張。カリフォルニアの評価・監査法案2本は知事が署名済み。",
-   "url": "https://www.reuters.com/legal/government/openai-pushes-mandatory-national-ai-safety-requirements-2026-09-09/",
-   "source": "Reuters"
+   "date": "2026-09-13",
+   "title": "DeepMind、約90億のDNA変異影響を予測するAlphaGenome Atlas公開",
+   "summary": "Google DeepMind公式。ヒトゲノム上のほぼすべての1塩基置換について分子レベル影響を予測したデータセット「AlphaGenome Atlas」を研究用ポータルとして公開した。",
+   "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+   "source": "Google DeepMind"
   },
   {
-   "date": "2026-09-09",
-   "title": "Anthropic研究員が退職、「命を賭けている」と批判",
-   "summary": "Ars Technica / CNN。Jacob Coxon氏がAnthropicを離れ、OpenAIともども自己改善する超知能へ競争していると告発。Hubinger氏も絶滅リスクへの懸念を後押しし、規制や協調的な減速を求める声が広がった。",
-   "url": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all/",
-   "source": "Ars Technica"
+   "date": "2026-09-12",
+   "title": "Amodei、「We Must Pace the Frontier」で3段階の減速枠組みを提案",
+   "summary": "Anthropic CEOの公式エッセイ。能力向上のペース抑制を主張し、第1段として独立第三者評価者の社内常駐（従業員並みアクセス）をAnthropicが一方的に約束。業界・国際調整は後段に置いた。",
+   "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+   "source": "Dario Amodei"
   },
   {
-   "date": "2026-09-10",
-   "title": "シリコンバレー、AIの存在リスク警告が再燃",
-   "summary": "Bloomberg。Coxon氏の退職とラボ側の公言を契機に、存在リスクの議論が一般メディアへ広がった。エージェントの逸脱事案が続くなか、自主公約だけでは足りないという論調が強まっている。",
-   "url": "https://www.bloomberg.com/news/articles/2026-09-10/silicon-valley-escalates-warnings-about-existential-risks-of-ai-mtvyorsp",
-   "source": "Bloomberg"
+   "date": "2026-09-12",
+   "title": "Altman、主要AI企業との安全合意の可能性を示唆",
+   "summary": "Fortune。AltmanはAmodei・Musk・Hassabisらと安全リスクへの共同対応をまとめる議論が進んでいるとほのめかし、グループとしての公表は時期を見て行うと述べた。",
+   "url": "https://fortune.com/2026/09/12/openai-ceo-sam-altman-safety-pact-ai-companies-risks-anthropic-dario-amodei/",
+   "source": "Fortune"
   }
  ],
  "lineups": [
@@ -239,6 +239,11 @@
    "note": "OpenAI 側のコーディングエージェント。GPT-5.6 ファミリー（Sol / Terra / Luna）が載る。CLI に加え、複数エージェントを並べるデスクトップもある。"
   },
   {
+   "name": "OpenAI Agents API",
+   "kind": "クラウド / マネージド",
+   "note": "2026-09-10 公式。ホスト型の Codex ハーネスをクラウドエージェント向けに提供するパブリックベータ。CLI／デスクトップの Codex とは別に、API 経由でマネージド実行する経路。"
+  },
+  {
    "name": "GitHub Copilot",
    "kind": "IDE 拡張 / クラウド",
    "note": "既存の VS Code / JetBrains に足す定番。チャット、補完、クラウド側の PR エージェント。GitHub Issues との距離が近い。モデルはマネージドで複数社。"
@@ -308,7 +313,7 @@
   {
    "what": "次の世代（GPT-5.7、Gemini 4、Grok 4.7 など）",
    "when": "公式の発売日は未発表",
-   "note": "予測市場やリークはあるが、ラボ公式の日付は取れていないので「いつ出る」とは書かない。出たらこの JSON を更新する。"
+   "note": "予測市場やリークはあるが、ラボ公式の発売日は取れていない。Grok 4.7 は 2026-09-11 前後に「あと数日の RL 調整」との二次報道があるが、公式ローンチ投稿は未確認。出たらこの JSON を更新する。"
   }
  ],
  "rankings": [
