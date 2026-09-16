@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-15T09:30:00+09:00",
+  "generatedAt": "2026-09-16T09:14:00+09:00",
   "items": [
     {
-      "date": "2026-09-14",
-      "title": "Anthropic・OpenAI・Google、AI安全の業界標準団体の設置を協議",
-      "summary": "Asia Business Daily。フロンティア開発のペース抑制論を背景に、3社が試験・監査向けの業界主導の標準設定組織を共同でつくる可能性を協議していると報道。DeepMindのHassabisも業界レベルの標準組織案に言及。",
-      "url": "https://www.asiae.co.kr/en/article/2026091410164445337",
-      "source": "Asia Business Daily"
+      "date": "2026-09-15",
+      "title": "OpenAI、Anthropic・GoogleとAI業界標準団体の設置を協議中と公表",
+      "summary": "Straits Times / Bloomberg。OpenAIが9/15、Anthropic・Googleと共同で、米FINRA型の自己規制・試験組織を検討していると述べた。DeepMindのHassabis案が起点。合意の形はまだ固まっていない。",
+      "url": "https://www.straitstimes.com/world/united-states/openai-anthropic-and-google-are-working-to-create-an-ai-standards-body",
+      "source": "The Straits Times"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Musk、主要AIラボ同士の相互「テストハーネス」評価を提案",
+      "summary": "CNBC。All-In Summitで、xAI・OpenAI・Anthropic・Google・Metaと中国の主要ラボが、公開前に互いのモデルへ安全テストをかけ合う案を提示。他社は未合意。中国の参加が条件、と発言。",
+      "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html",
+      "source": "CNBC"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "Google、Gemini 3.8 Live／Live Extended Thinkingを公開",
+      "summary": "Google公式。音声対話向けの新モデル。Liveは規模とコスト、Extended Thinkingは複雑タスク向け。Gemini API / AI Studioから展開。Workspace・Search Liveにも順次。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
+      "source": "Google"
     },
     {
       "date": "2026-09-14",
-      "title": "Apple、次世代Apple Intelligence搭載の「Siri AI」を公開",
-      "summary": "Apple Newsroom公式。個人コンテキスト理解・画面認識・システム横断のアプリ操作をうたう新Siri。英語ベータで本日配信開始、来月に日本語などへ拡大予定。",
-      "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
-      "source": "Apple"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "Microsoft AI、MAI向けHumanist AI行動規範の公開諮問を開始",
-      "summary": "Microsoft AI公式。人よりAIを上位に置かないことやシャットダウン拒否の禁止などを盛り込んだCode of Conduct草案を公開し、今後6週間のフィードバック募集。",
-      "url": "https://microsoft.ai/news/mai-code-of-conduct/",
-      "source": "Microsoft AI"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "OpenAI、PerplexityがGPT-6 Astraで本番システム運用する事例を公開",
-      "summary": "OpenAI公式。PerplexityがAstraを通信文作成・ソフト変更・本番監視などエンドツーエンド作業に使い、以前より確認頻度を下げて信頼している、と紹介。",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra/",
-      "source": "OpenAI"
+      "title": "元DeepMind研究者ら、AIリスクを警告する公開投稿が続く",
+      "summary": "Straits Times。Anthropic退職のCoxonに続き、元Google DeepMindのBilal Chughtaiが9/14に存続リスクへの懸念を投稿。業界のペース抑制論と標準団体議論の背景になっている。",
+      "url": "https://www.straitstimes.com/world/united-states/openai-anthropic-and-google-are-working-to-create-an-ai-standards-body",
+      "source": "The Straits Times"
     }
   ],
   "lineups": [
@@ -98,6 +98,16 @@
           "name": "Gemini 3.8 Flash Cyber",
           "role": "flagship",
           "note": "2026-09-02。脆弱性発見と自動パッチ向け。Fairwind Program の信頼できる防御側限定（政府・重要インフラ・メンテナ）。一般利用は 3.8 Flash。"
+        },
+        {
+          "name": "Gemini 3.8 Live Extended Thinking",
+          "role": "multimodal",
+          "note": "2026-09-15 公式。複雑タスク向けのライブ音声。話しながら多段推論。Gemini API / AI Studio、Enterpriseはプレビュー。Gemini Live・Workspace（Docs等）へ展開。"
+        },
+        {
+          "name": "Gemini 3.8 Live",
+          "role": "multimodal",
+          "note": "2026-09-15 公式。規模とコスト向きのライブ対話。視覚接地・97言語の切替・バックグラウンドツール実行。API / AI Studio、Search Liveへ。"
         },
         {
           "name": "Gemini 3.7 Flash",
