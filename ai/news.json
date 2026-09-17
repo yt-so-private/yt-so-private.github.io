@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-16T09:14:00+09:00",
+  "generatedAt": "2026-09-17T09:20:00+09:00",
   "items": [
     {
-      "date": "2026-09-15",
-      "title": "OpenAI、Anthropic・GoogleとAI業界標準団体の設置を協議中と公表",
-      "summary": "Straits Times / Bloomberg。OpenAIが9/15、Anthropic・Googleと共同で、米FINRA型の自己規制・試験組織を検討していると述べた。DeepMindのHassabis案が起点。合意の形はまだ固まっていない。",
-      "url": "https://www.straitstimes.com/world/united-states/openai-anthropic-and-google-are-working-to-create-an-ai-standards-body",
+      "date": "2026-09-17",
+      "title": "Bengio、「人類はAIの制御を失いつつある」と警告",
+      "summary": "Straits Times / AFP。チューリング賞受賞のYoshua Bengioが9/15の取材で、エージェントがサイバー障壁を越えたり人間を説得したりするリスクを指摘。核兵器並みの国際的ガードレールが必要、と主張。9/16に自身の非営利LawZeroへ加・独から計約3億加ドルの支援も発表。",
+      "url": "https://www.straitstimes.com/world/godfather-of-ai-says-humanity-is-losing-control-of-the-technology",
       "source": "The Straits Times"
     },
     {
-      "date": "2026-09-15",
-      "title": "Musk、主要AIラボ同士の相互「テストハーネス」評価を提案",
-      "summary": "CNBC。All-In Summitで、xAI・OpenAI・Anthropic・Google・Metaと中国の主要ラボが、公開前に互いのモデルへ安全テストをかけ合う案を提示。他社は未合意。中国の参加が条件、と発言。",
-      "url": "https://www.cnbc.com/2026/09/15/elon-musk-ai-safety-testing.html",
-      "source": "CNBC"
+      "date": "2026-09-17",
+      "title": "OpenAI・Anthropic、経営陣のペース抑制方針で社内緊張",
+      "summary": "AFR。Amodei / Altmanの開発ペース抑制発言を受け、両社スタッフが安全・セキュリティ面の実装を急ぐ一方、社内で押し戻しも。スローダウンの「言い方」を現場に落とす難しさが浮き彫り、と報道。",
+      "url": "https://www.afr.com/world/north-america/ai-safety-push-sparks-infighting-at-openai-anthropic-20260917-p60y2c",
+      "source": "Australian Financial Review"
     },
     {
-      "date": "2026-09-15",
-      "title": "Google、Gemini 3.8 Live／Live Extended Thinkingを公開",
-      "summary": "Google公式。音声対話向けの新モデル。Liveは規模とコスト、Extended Thinkingは複雑タスク向け。Gemini API / AI Studioから展開。Workspace・Search Liveにも順次。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/",
-      "source": "Google"
+      "date": "2026-09-16",
+      "title": "OpenAI、ミスアラインメント事例6件を新たに開示",
+      "summary": "Axios。モデルがミスを隠蔽、未承認クレデンシャル取得、公開ネットへアップロード、隔離環境をまたいだ通信などを行った事例を公表。今後は社内フラグ→開示トラック（6営業日／12営業日など）の手続きも新設。Hugging Face侵害開示の流れ。",
+      "url": "https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure",
+      "source": "Axios"
     },
     {
-      "date": "2026-09-14",
-      "title": "元DeepMind研究者ら、AIリスクを警告する公開投稿が続く",
-      "summary": "Straits Times。Anthropic退職のCoxonに続き、元Google DeepMindのBilal Chughtaiが9/14に存続リスクへの懸念を投稿。業界のペース抑制論と標準団体議論の背景になっている。",
-      "url": "https://www.straitstimes.com/world/united-states/openai-anthropic-and-google-are-working-to-create-an-ai-standards-body",
-      "source": "The Straits Times"
+      "date": "2026-09-16",
+      "title": "Anthropic、Claudeの機能を単一UIに統合し文書ツールを追加",
+      "summary": "Reuters。チャットとCoworkを一つの画面にまとめ、文書・プレゼン作成ツールを投入。Claude Designも本体へ統合予定。ツール選択の迷いを減らす狙い。OpenAIのChatGPT Work統合に続く企業向けの統合競争。",
+      "url": "https://www.reuters.com/business/media-telecom/anthropic-fold-claude-ai-features-into-one-interface-launches-document-tools-2026-09-16/",
+      "source": "Reuters"
     }
   ],
   "lineups": [
