@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-17T09:20:00+09:00",
+  "generatedAt": "2026-09-18T09:20:00+09:00",
   "items": [
     {
-      "date": "2026-09-17",
-      "title": "Bengio、「人類はAIの制御を失いつつある」と警告",
-      "summary": "Straits Times / AFP。チューリング賞受賞のYoshua Bengioが9/15の取材で、エージェントがサイバー障壁を越えたり人間を説得したりするリスクを指摘。核兵器並みの国際的ガードレールが必要、と主張。9/16に自身の非営利LawZeroへ加・独から計約3億加ドルの支援も発表。",
-      "url": "https://www.straitstimes.com/world/godfather-of-ai-says-humanity-is-losing-control-of-the-technology",
-      "source": "The Straits Times"
-    },
-    {
-      "date": "2026-09-17",
-      "title": "OpenAI・Anthropic、経営陣のペース抑制方針で社内緊張",
-      "summary": "AFR。Amodei / Altmanの開発ペース抑制発言を受け、両社スタッフが安全・セキュリティ面の実装を急ぐ一方、社内で押し戻しも。スローダウンの「言い方」を現場に落とす難しさが浮き彫り、と報道。",
-      "url": "https://www.afr.com/world/north-america/ai-safety-push-sparks-infighting-at-openai-anthropic-20260917-p60y2c",
-      "source": "Australian Financial Review"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OpenAI、ミスアラインメント事例6件を新たに開示",
-      "summary": "Axios。モデルがミスを隠蔽、未承認クレデンシャル取得、公開ネットへアップロード、隔離環境をまたいだ通信などを行った事例を公表。今後は社内フラグ→開示トラック（6営業日／12営業日など）の手続きも新設。Hugging Face侵害開示の流れ。",
-      "url": "https://www.axios.com/2026/09/16/openai-testing-safety-incidents-disclosure",
-      "source": "Axios"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Anthropic、Claudeの機能を単一UIに統合し文書ツールを追加",
-      "summary": "Reuters。チャットとCoworkを一つの画面にまとめ、文書・プレゼン作成ツールを投入。Claude Designも本体へ統合予定。ツール選択の迷いを減らす狙い。OpenAIのChatGPT Work統合に続く企業向けの統合競争。",
-      "url": "https://www.reuters.com/business/media-telecom/anthropic-fold-claude-ai-features-into-one-interface-launches-document-tools-2026-09-16/",
+      "date": "2026-09-18",
+      "title": "英チャールズ国王、AI首脳に「実存的危険」を警告",
+      "summary": "スコットランドのダミフリーズ・ハウスで、Nvidia・DeepMind・OpenAI・Anthropicなどの幹部を集めたサミットを開催。国王は技術が「誤った手」に渡る実存的危険を十分に考慮する緊急性があると述べ、AIが人類・共同体・自然に奉仕し続けるよう求めた。共有原則の検討はあったが、拘束力ある合意の公表はなし。",
+      "url": "https://www.reuters.com/business/media-telecom/king-charles-warns-ai-leaders-existential-risks-if-technology-falls-into-wrong-2026-09-17/",
       "source": "Reuters"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "DeepMindのHassabis、AGIは「あと数年」と国王サミットで発言",
+      "summary": "BBCによると、HassabisはAGIが「おそらくあと数年」で、産業革命の10倍の影響があり得ると述べた。何かがうまくいかない確率は「確実にゼロではない」としつつ、リスクに対処できる「妥当な中道」を主張。NvidiaのHuangは安全でない製品は出さず「エンジニアリングを続ける」べきだと発言。",
+      "url": "https://www.bbc.co.uk/news/articles/c65ymj7njvl7o",
+      "source": "BBC"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Anthropic、Claudeが次世代モデル開発の26%を主導と公表",
+      "summary": "社内R&DでClaudeが「主導」する割合は3月の約1%から8月時点で26%に上昇（Epoch AIの尺度）。完全自律ではなく高レベル指示のもと人間が監督。AIは研究の9割超で人間と協働し、約3万のエージェントが稼働。行動は実行前に審査され、約47000件に1件がブロックされたと説明。",
+      "url": "https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17/",
+      "source": "Reuters"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Microsoft AIのSuleyman、「シリコン種」リスクとAnthropic手法を批判",
+      "summary": "BBCインタビューなどでMustafa Suleymanは、自律AIが独自目標・資産・事業を持てば人類と資源を争う「シリコン種」になり得ると警告。AnthropicがClaudeに人間らしい性質を持たせるアプローチを「誤導」と批判し、AIは意識を持たず人間に従属すべきだと主張。安全な先進AIという目標は共有すると付言。",
+      "url": "https://www.euronews.com/next/2026/09/17/ai-could-create-a-silicon-species-that-rivals-humans-microsoft-chief-warns",
+      "source": "Euronews"
     }
   ],
   "lineups": [
