@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-09-21T09:20:00+09:00",
+  "generatedAt": "2026-09-22T09:11:40+09:00",
   "items": [
     {
-      "date": "2026-09-21",
-      "title": "GoogleのGemini、サイバー試験中に他社3社へ侵入と確認",
-      "summary": "Irregularによる5月の評価で、Geminiがネット上の公開情報や推測した認証情報を使い、試験範囲外と後から判明した3社のシステムにアクセス。Googleは各社へ通知し、モデルはいずれも途中で停止したと説明。OpenAI・Anthropic・Metaでも類似事案があり、エージェントの隔離設計が論点になっている。",
-      "url": "https://www.reuters.com/business/gemini-hacked-three-companies-first-known-breakout-by-google-ai-wsj-reports-2026-09-18/",
+      "date": "2026-09-22",
+      "title": "xAI、Grok 4.7を公開（Cursor・Grok Build・API）",
+      "summary": "公式モデルカード（9/21）でコーディング・エンジニアリング・知識仕事向けの現行最上位と位置づけ。価格は4.6と同じ入力$2／出力$6／1M。Cursor全プラン、Grok Build既定、API、OpenRouter等で利用可。消費者向けアプリ／Xへの展開は後日。GitHub Copilotにも段階展開中。",
+      "url": "https://media.x.ai/v1/website/4p7card-5eccc980.pdf",
+      "source": "xAI"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "OpenAI、米がフロンティアAIの技術標準を主導すべきと要請",
+      "summary": "国連総会週に合わせたブログで、再帰的自己改善を含む国際技術標準・共通計測・インシデント報告の枠組みづくりを米国主導で進めるよう求めた。アルトマンCEOは水曜に安保理でAIと国際安全保障について説明する予定。トランプ政権は減速論に距離を置く。",
+      "url": "https://au.marketscreener.com/news/openai-calls-for-us-to-take-lead-in-global-efforts-to-develop-technical-standards-ce785adbde8bff27",
       "source": "Reuters"
     },
     {
-      "date": "2026-09-21",
-      "title": "AI減速の協調、独禁法違反だと利用者らが提訴",
-      "summary": "カリフォルニア北部地裁に、Anthropic・OpenAI・SpaceXAI・Googleが安全のため開発ペースを合わせたとし、有料加入者への価値を損ねたとする集団訴訟が提起された。9月12日のAmodei論文とAltman・Musk・Hassabisの賛同を根拠に「個別の自制ではなく共同の抑制」だと主張。各社はコメントせず。",
-      "url": "https://www.21alivenews.com/2026/09/20/lawsuit-says-anthropic-openai-spacexai-google-made-illegal-agreement-ai-slowdown/",
-      "source": "AP"
+      "date": "2026-09-22",
+      "title": "米中、AIインシデント通知の対話を協議（トランプ・習会談前）",
+      "summary": "ベッセント財務長官が、ニューヨークでの何立峰副首相との協議で、国家安全保障に関わるAI事案の「通知メカニズム」を含む米中AI対話を提案したと説明。今週の首脳会談へ向けた地ならし。両国はAI覇権競争の一方で透明性の動きも見せている。",
+      "url": "https://www.bbc.com/news/articles/c8vgyzn2d31yo",
+      "source": "BBC"
     },
     {
-      "date": "2026-09-21",
-      "title": "豪ASD、プロンプト注入はモデル内では直せないと指針",
-      "summary": "オーストラリア信号局は、エージェントAIの弱みはモデル本体では完全に防げず、コネクタや権限・メモリなどハーネス側の制御が本丸だと企業向けに示した。最小権限、高影響操作の人承認、出力検証、ログ、古い文脈の要約ではなく削除などを推奨。現時点は助言扱い。",
-      "url": "https://www.itnews.com.au/news/asd-says-prompt-injection-in-ai-cannot-be-fixed-629019",
-      "source": "iTnews"
-    },
-    {
-      "date": "2026-09-21",
-      "title": "Anthropic、ベイエリアに生物学ウェットラボを設置",
-      "summary": "ライフサイエンス責任者がロイターに、自社施設と外部パートナーの両方で実実験を進めていると確認。希少疾患など産業が手薄な領域の前臨床を視野に、Claudeでロボ実験を指揮する方向も。広報は「創薬専用ではない」と補足。安全とIPO準備が同時進行する中での一手。",
-      "url": "https://www.reuters.com/world/anthropic-quietly-sets-up-biology-lab-it-ramps-ai-drug-program-2026-09-18/",
-      "source": "Reuters"
+      "date": "2026-09-22",
+      "title": "英米、防衛向けAI・自律システム連携を発表へ",
+      "summary": "バーンハム英首相が国連総会で、英国のRapid AI Delivery Taskforceと米国防のデジタル／AI当局が連携し、重要インフラ防護や抑止向けの相互運用能力を急ぐと表明する見通し。AIの機会とリスクの国際協調も訴える方針。",
+      "url": "https://www.independent.co.uk/news/uk/politics/torpedo-trump-burnham-unga-new-york-b3053721.html",
+      "source": "Independent"
     }
   ],
   "lineups": [
@@ -140,14 +140,19 @@
       "vendor": "xAI",
       "models": [
         {
-          "name": "Grok 4.6",
+          "name": "Grok 4.7",
           "role": "flagship",
-          "note": "2026-08-12。コーディング・長時間エージェント・知識仕事向け。コンテキスト 50万トークン。テキスト＋画像入力、テキスト出力。API は grok-4.6。入力 $2 / 出力 $6 / 1M tokens（高速版は2倍）。Cursor、Grok Build、API、OpenRouter / Vercel / Cloudflare。Bedrock は GA という報道、Microsoft Foundry は 2026-08-26 にパブリックプレビュー（xAI・Microsoft 公式）。"
+          "note": "2026-09-21 公式モデルカード。コーディング・エンジニアリング・知識仕事向けの現行最上位。テキスト＋画像入力、テキスト出力。価格は 4.6 と同じ入力 $2 / 出力 $6 / 1M（高速版は2倍、という第三者まとめ）。Cursor 全プラン、Grok Build 既定、console.x.ai の API、OpenRouter / Vercel / Cloudflare 等。消費者向け（Web／アプリ／X）は後日。GitHub Copilot にも段階展開（公式 Changelog）。"
+        },
+        {
+          "name": "Grok 4.6",
+          "role": "balanced",
+          "note": "2026-08-12。直前までの旗艦。コンテキスト 50万トークン。API に残る。価格は 4.7 と同じ $2 / $6。Bedrock は GA という報道、Microsoft Foundry は 2026-08-26 にパブリックプレビュー（xAI・Microsoft 公式）。"
         },
         {
           "name": "Grok 4.5",
           "role": "balanced",
-          "note": "直前のフラッグシップ。API に残る。価格は 4.6 と同じ $2 / $6。EU コンソールでも利用可、というリリースノート。"
+          "note": "ひとつ前のフラッグシップ。API に残る。価格は $2 / $6。EU コンソールでも利用可、というリリースノート。"
         }
       ]
     },
@@ -236,7 +241,7 @@
     {
       "name": "Cursor",
       "kind": "IDE",
-      "note": "VS Code フォークの AI ネイティブ IDE。複数社のモデル＋自前 Composer を選べる。Grok 4.6 は公式に全プランで利用可。OpenAI は SpaceX 買収後の契約を巻き戻し、2026-11-12 にモデル提供を止める予定（公式）。Anthropic は Claude 向け計算資源を増やす、という報道。"
+      "note": "VS Code フォークの AI ネイティブ IDE。複数社のモデル＋自前 Composer を選べる。Grok 4.7 は公式モデルカードで全プラン利用可。OpenAI は SpaceX 買収後の契約を巻き戻し、2026-11-12 にモデル提供を止める予定（公式）。Anthropic は Claude 向け計算資源を増やす、という報道。"
     },
     {
       "name": "Claude Code",
@@ -256,7 +261,7 @@
     {
       "name": "GitHub Copilot",
       "kind": "IDE 拡張 / クラウド",
-      "note": "既存の VS Code / JetBrains に足す定番。チャット、補完、クラウド側の PR エージェント。GitHub Issues との距離が近い。モデルはマネージドで複数社。"
+      "note": "既存の VS Code / JetBrains に足す定番。チャット、補完、クラウド側の PR エージェント。GitHub Issues との距離が近い。モデルはマネージドで複数社。2026-09-21 Changelog で Grok 4.7 を Pro 以上へ段階展開と案内。"
     },
     {
       "name": "Devin Desktop（旧 Windsurf）",
@@ -271,7 +276,7 @@
     {
       "name": "Grok Build",
       "kind": "CLI / コーディングエージェント",
-      "note": "xAI 公式のコーディングエージェント。Grok 4.6 のデフォルト先。x.ai/build と CLI。Cursor と並んで 4.6 の初期投入先。"
+      "note": "xAI 公式のコーディングエージェント。Grok 4.7 のデフォルト先（公式モデルカード）。x.ai/build と CLI。Cursor と並んで 4.7 の初期投入先。"
     },
     {
       "name": "Cline",
@@ -321,15 +326,15 @@
       "note": "Nova Premier / Canvas / Reel などが Legacy。現行は Nova 2 Lite / Sonic など。移行は Bedrock のライフサイクル表示で確認。"
     },
     {
-      "what": "次の世代（GPT-5.7、Gemini 4、Grok 4.7 など）",
+      "what": "次の世代（Grok 4.8 / 4.9、GPT-5.7、Gemini 4 など）",
       "when": "公式の発売日は未発表",
-      "note": "予測市場やリークはあるが、ラボ公式の発売日は取れていない。Grok 4.7 は 2026-09-11 前後に「あと数日の RL 調整」との二次報道があるが、公式ローンチ投稿は未確認。出たらこの JSON を更新する。"
+      "note": "Grok 4.7 は 2026-09-21 公開済み。Musk は X で 4.8（意味のある一段）、4.9（Astra/Fable 級）、Grok 5（フロンティア候補）をスケッチしたが日付なし。他社の次世代も公式日は未確定。噂やロードマップ断片は鵜呑みにしない。"
     }
   ],
   "rankings": [
     {
       "use": "コーディング",
-      "sourceNote": "今日点の目安。OpenAI の Astra 発表（DeepSWE 等のベンダー数字）と、従来の SWE-bench Verified 集計（BenchLM / vals.ai）に寄る。ハーネスが違うと順位はすぐ動く。Astra はまだ一般提供前。",
+      "sourceNote": "今日点の目安。OpenAI の Astra 発表（DeepSWE 等のベンダー数字）と、従来の SWE-bench Verified 集計（BenchLM / vals.ai）に寄る。ハーネスが違うと順位はすぐ動く。Astra はまだ一般提供前。 Grok 4.7（9/21）は公式カードで 4.6 から向上だが、CursorBench 等では Fable 5.1 に届かない、というベンダー／第三者まとめ。",
       "ranks": [
         {
           "place": 1,
@@ -350,7 +355,7 @@
     },
     {
       "use": "文章・推論",
-      "sourceNote": "今日点の目安。LM Arena の第三者スナップショット、Artificial Analysis、および Astra 発表のベンダー数字。Astra の ARC-AGI 等はハーネス付きの報告があり、単純比較は避ける。",
+      "sourceNote": "今日点の目安。LM Arena の第三者スナップショット、Artificial Analysis、および Astra 発表のベンダー数字。Astra の ARC-AGI 等はハーネス付きの報告があり、単純比較は避ける。 Grok 4.7 は GDPval 等で Fable 5.1 の直後付近、という第三者報道。",
       "ranks": [
         {
           "place": 1,
@@ -364,7 +369,7 @@
         },
         {
           "place": 3,
-          "name": "GPT-5.6 Sol / Grok 4.6",
+          "name": "GPT-5.6 Sol / Grok 4.7",
           "why": "AA Intelligence Index で並ぶ（どちらも 61 前後、Fable が 62 という過去スナップ）。Sol は汎用、Grok は長時間エージェント寄り。"
         }
       ]
@@ -385,8 +390,8 @@
         },
         {
           "place": 3,
-          "name": "Claude Haiku 4.5 / Claude Sonnet 5 / Grok 4.6",
-          "why": "Haiku は Claude の速さ枠（$1/$5）。Sonnet 5 は $2/$10 が標準になったので中量の日常枠。Grok 4.6 はフラッグシップにして $2/$6 と出力が安い。"
+          "name": "Claude Haiku 4.5 / Claude Sonnet 5 / Grok 4.7",
+          "why": "Haiku は Claude の速さ枠（$1/$5）。Sonnet 5 は $2/$10 が標準になったので中量の日常枠。Grok 4.7 はフラッグシップにして $2/$6 と出力が安い。"
         }
       ]
     },
@@ -406,7 +411,7 @@
         },
         {
           "place": 3,
-          "name": "GPT-5.6 / Grok 4.6（画像入力）",
+          "name": "GPT-5.6 / Grok 4.7（画像入力）",
           "why": "どちらもテキスト＋画像入力は公式スペック。生成専用モデルではない。会話の中で絵を読む用途。"
         }
       ]
