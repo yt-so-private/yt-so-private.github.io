@@ -1,33 +1,40 @@
 {
-  "generatedAt": "2026-09-22T09:11:40+09:00",
+  "generatedAt": "2026-09-23T09:23:00+09:00",
   "items": [
     {
-      "date": "2026-09-22",
-      "title": "xAI、Grok 4.7を公開（Cursor・Grok Build・API）",
-      "summary": "公式モデルカード（9/21）でコーディング・エンジニアリング・知識仕事向けの現行最上位と位置づけ。価格は4.6と同じ入力$2／出力$6／1M。Cursor全プラン、Grok Build既定、API、OpenRouter等で利用可。消費者向けアプリ／Xへの展開は後日。GitHub Copilotにも段階展開中。",
-      "url": "https://media.x.ai/v1/website/4p7card-5eccc980.pdf",
-      "source": "xAI"
+      "date": "2026-09-23",
+      "title": "Anthropic、Claude Opus 5.5を公開（Claude 5.5初号）",
+      "summary": "公式。Fable 5.1級の性能を多くの作業で主張しつつ、実行コストはOpus 5より約40%安い。APIはclaude-opus-5-5、入力$4／出力$20／1M（Opus 5より約20%安）、キャッシュ読み取り$0.20。AWS／GCP／Azureでも提供。Sonnet 5.5とHaiku 5.5は数週間以内。外部安全評価（Frontier Design、METR）とサイバー／バイオのフロンティア対策はFable相当。",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "source": "Anthropic"
     },
     {
-      "date": "2026-09-22",
-      "title": "OpenAI、米がフロンティアAIの技術標準を主導すべきと要請",
-      "summary": "国連総会週に合わせたブログで、再帰的自己改善を含む国際技術標準・共通計測・インシデント報告の枠組みづくりを米国主導で進めるよう求めた。アルトマンCEOは水曜に安保理でAIと国際安全保障について説明する予定。トランプ政権は減速論に距離を置く。",
-      "url": "https://au.marketscreener.com/news/openai-calls-for-us-to-take-lead-in-global-efforts-to-develop-technical-standards-ce785adbde8bff27",
+      "date": "2026-09-23",
+      "title": "OpenAI、APIにGPT-6 SolとGPT-6 Lunaを追加",
+      "summary": "Astraの下位に安価な2枠。Solは複雑コーディング／エージェント向け（gpt-6-sol、$2/$10／1M）、Lunaは高ボリュームの集中タスク向け（gpt-6-luna、$0.10/$0.50）。5.6系の導入価格より約50%安い、という案内。ChatGPT WorkとCodexへ順次、LunaはFree／Goのデスクトップにも。",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-sol",
+      "source": "OpenAI"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "AnthropicとOpenEvidence、医療AIで世界展開の提携",
+      "summary": "Reuters／CNA。医師向け臨床意思決定支援を、アクセスの乏しい地域を含む約100カ国へ。Anthropicがバックエンド、OpenEvidenceが現地化を担う。",
+      "url": "https://www.channelnewsasia.com/business/exclusive-anthropic-openevidence-partner-bring-medical-ai-worldwide-6403491",
       "source": "Reuters"
     },
     {
-      "date": "2026-09-22",
-      "title": "米中、AIインシデント通知の対話を協議（トランプ・習会談前）",
-      "summary": "ベッセント財務長官が、ニューヨークでの何立峰副首相との協議で、国家安全保障に関わるAI事案の「通知メカニズム」を含む米中AI対話を提案したと説明。今週の首脳会談へ向けた地ならし。両国はAI覇権競争の一方で透明性の動きも見せている。",
-      "url": "https://www.bbc.com/news/articles/c8vgyzn2d31yo",
-      "source": "BBC"
+      "date": "2026-09-23",
+      "title": "Meta、個人AIエージェントMuseで「人間コンシェルジュ」試験",
+      "summary": "Reuters。Muse経由の一部電話を請負の人間が静かに処理する従業員向け試験。公開前に安全・プライバシーのフィードバックを取る狙い。",
+      "url": "https://www.thestar.com.my/tech/tech-news/2026/09/23/exclusive-meta-testing-a-039human-concierge039-for-its-new-personal-ai-agent-muse",
+      "source": "Reuters"
     },
     {
-      "date": "2026-09-22",
-      "title": "英米、防衛向けAI・自律システム連携を発表へ",
-      "summary": "バーンハム英首相が国連総会で、英国のRapid AI Delivery Taskforceと米国防のデジタル／AI当局が連携し、重要インフラ防護や抑止向けの相互運用能力を急ぐと表明する見通し。AIの機会とリスクの国際協調も訴える方針。",
-      "url": "https://www.independent.co.uk/news/uk/politics/torpedo-trump-burnham-unga-new-york-b3053721.html",
-      "source": "Independent"
+      "date": "2026-09-23",
+      "title": "元Google安全責任者、AIは子どもへの害がSNS超えうると警告",
+      "summary": "CNA。元Google安全責任者が、生成AIが子どもに与える害はソーシャルメディア以上になりうる、と指摘。規制・設計側の注意を促す発言。",
+      "url": "https://www.channelnewsasia.com/business/ex-google-safety-chief-warns-ai-could-harm-children-more-than-social-media-did-6403061",
+      "source": "CNA"
     }
   ],
   "lineups": [
@@ -37,22 +44,22 @@
         {
           "name": "GPT-6 Astra",
           "role": "flagship",
-          "note": "2026-09-03。ChatGPT リリースノート公式で導入。コーディング・調査・コンピュータ操作・多段作業。いまは Trusted Access / 限定組織向けで、一般提供はこれから数日。API は gpt-6-astra。公式料金は標準 入力 $10 / 出力 $50 / 1M（長コンテキストは $20 / $75）。Fast mode は標準の2倍料金。Preparedness の Critical サイバー閾値の初モデルで、高度なサイバー機能は防御側に制限。"
+          "note": "2026-09-03。ChatGPT リリースノート公式で導入。コーディング・調査・コンピュータ操作・多段作業。Trusted Access / 限定組織向けから一般提供へ拡大中。API は gpt-6-astra。公式料金は標準 入力 $10 / 出力 $50 / 1M（長コンテキストは $20 / $75）。Fast mode は標準の2倍料金。Preparedness の Critical サイバー閾値の初モデルで、高度なサイバー機能は防御側に制限。"
         },
         {
-          "name": "GPT-5.6 Sol",
-          "role": "flagship",
-          "note": "直前までの複雑推論・コーディング向け旗艦。ChatGPT / Codex / API（gpt-5.6-sol）。公式料金表（短コンテキスト）は入力 $4 / 出力 $20 / 1M。Astra 展開後も残る。テキスト＋画像入力、テキスト出力。"
+          "name": "GPT-6 Sol",
+          "role": "balanced",
+          "note": "2026-09-22。Astra 下の複雑コーディング／エージェント向け。API は gpt-6-sol。公式料金は入力 $2 / 出力 $10 / 1M。5.6 系の導入価格より約50%安い、という案内。ChatGPT Work・Codex へ順次。"
+        },
+        {
+          "name": "GPT-6 Luna",
+          "role": "cheap",
+          "note": "2026-09-22。高ボリュームの集中タスク向け。API は gpt-6-luna。公式料金は入力 $0.10 / 出力 $0.50 / 1M。ChatGPT Free／Go（デスクトップ）にも展開予定、という案内。"
         },
         {
           "name": "GPT-5.6 Terra",
           "role": "balanced",
-          "note": "知能とコストのバランス枠。API は gpt-5.6-terra。公式料金表（短コンテキスト）は入力 $2 / 出力 $12 / 1M。"
-        },
-        {
-          "name": "GPT-5.6 Luna",
-          "role": "cheap",
-          "note": "速さ・安さ向け。API は gpt-5.6-luna。公式料金表（短コンテキスト）は入力 $0.20 / 出力 $1.20 / 1M。"
+          "note": "5.6 世代のバランス枠として API に残る。gpt-5.6-terra。公式料金表（短コンテキスト）は入力 $2 / 出力 $12 / 1M。新規は GPT-6 Sol／Luna を優先。"
         }
       ]
     },
@@ -60,29 +67,34 @@
       "vendor": "Anthropic",
       "models": [
         {
+          "name": "Claude Opus 5.5",
+          "role": "flagship",
+          "note": "2026-09-22 公開。Claude 5.5 ファミリー初号。多くの作業で Fable 5.1 級を主張しつつ、実行コストは Opus 5 より約40%安い。API は claude-opus-5-5。入力 $4 / 出力 $20 / 1M（Opus 5 より約20%安）、キャッシュ読み取り $0.20。AWS／GCP／Azure でも提供。外部安全評価（Frontier Design、METR）。サイバー／バイオ対策は Fable 相当。"
+        },
+        {
           "name": "Claude Fable 5.1",
           "role": "flagship",
-          "note": "2026-09-01 公開の現行フラッグシップ。API 経由と各クラウドで一般利用可。ベース料金は入力 $10 / 出力 $50 / 1M tokens。キャッシュ読み取りは 75% 下げ、セーフガードの誤検知も減らした、という TechCrunch 報道。長時間エージェント向け。"
+          "note": "2026-09-01 公開。天井寄りフラッグシップ。API 経由と各クラウドで一般利用可。ベース料金は入力 $10 / 出力 $50 / 1M tokens。キャッシュ読み取りは 75% 下げ、セーフガードの誤検知も減らした、という TechCrunch 報道。長時間エージェント向け。"
         },
         {
           "name": "Claude Opus 5",
           "role": "flagship",
-          "note": "複雑なエージェントコーディングと業務向けの現行 Opus。API は claude-opus-5。2026-07-24。入力 $5 / 出力 $25 / 1M tokens。Claude 本体、AWS、Google Cloud、Microsoft Foundry。"
+          "note": "直前までの Opus。API は claude-opus-5。2026-07-24。入力 $5 / 出力 $25 / 1M tokens。新規は Opus 5.5 を優先。Claude 本体、AWS、Google Cloud、Microsoft Foundry。"
         },
         {
           "name": "Claude Sonnet 5",
           "role": "balanced",
-          "note": "日常・高ボリューム向け。API は claude-sonnet-5。2026-06-30。公式料金は入力 $2 / 出力 $10 / 1M tokens。発売時は導入価格（8/31まで、$3/$15へ）だったが、公式 docs は「導入価格を標準にした。9/1 の値上げは行わない」と明記。"
+          "note": "日常・高ボリューム向け。API は claude-sonnet-5。2026-06-30。公式料金は入力 $2 / 出力 $10 / 1M tokens。Sonnet 5.5 が数週間以内に続く予定（公式）。"
         },
         {
           "name": "Claude Haiku 4.5",
           "role": "cheap",
-          "note": "速さ・安さ枠。API は claude-haiku-4-5-20251001。公式料金は入力 $1 / 出力 $5 / 1M tokens。現行4枠のいちばん軽いモデル。"
+          "note": "速さ・安さ枠。API は claude-haiku-4-5-20251001。公式料金は入力 $1 / 出力 $5 / 1M tokens。Haiku 5.5 が数週間以内に続く予定（公式）。"
         },
         {
           "name": "Claude Mythos 5.1",
           "role": "flagship",
-          "note": "2026-09-01。Fable 5.1 と同系統の天井能力だが、サイバー／ライフサイエンスの認定パートナー向け限定。一般利用は Fable / Opus を見る。"
+          "note": "2026-09-01。Fable 5.1 と同系統の天井能力だが、サイバー／ライフサイエンスの認定パートナー向け限定。一般利用は Opus 5.5 / Fable を見る。"
         }
       ]
     },
@@ -246,12 +258,12 @@
     {
       "name": "Claude Code",
       "kind": "CLI / IDE",
-      "note": "Anthropic 公式のエージェント。ターミナルが本拠で、IDE・デスクトップ・ブラウザもある。リポジトリを読んで編集し、コマンドを実行する。既定は Opus 5 寄り。"
+      "note": "Anthropic 公式のエージェント。ターミナルが本拠で、IDE・デスクトップ・ブラウザもある。リポジトリを読んで編集し、コマンドを実行する。Opus 5.5 が利用可（既定は Opus 寄り）。"
     },
     {
       "name": "Codex",
       "kind": "CLI / デスクトップ / クラウド",
-      "note": "OpenAI 側のコーディングエージェント。GPT-5.6 ファミリー（Sol / Terra / Luna）が載る。CLI に加え、複数エージェントを並べるデスクトップもある。"
+      "note": "OpenAI 側のコーディングエージェント。GPT-6 Sol／Luna が追加（Astra 下位の安価枠）。CLI に加え、複数エージェントを並べるデスクトップもある。"
     },
     {
       "name": "OpenAI Agents API",
@@ -301,6 +313,11 @@
   ],
   "upcoming": [
     {
+      "what": "Claude Sonnet 5.5 / Haiku 5.5",
+      "when": "数週間以内（Anthropic 公式・Opus 5.5 発表）",
+      "note": "2026-09-22。Opus 5.5 に続く Claude 5.5 ファミリー。日付の詳細は未発表。"
+    },
+    {
       "what": "GPT-6 Astra の一般提供拡大",
       "when": "展開中（公式は coming days。高度なサイバーは限定）",
       "note": "2026-09-03 リリースノート。限定組織へ先行。Plus / Pro / Business / Enterprise と API・Bedrock / Azure は数日で拡大予定、と案内。Advanced cybersecurity は Trusted Access / Daybreak 系の防御用途に制限。"
@@ -334,64 +351,64 @@
   "rankings": [
     {
       "use": "コーディング",
-      "sourceNote": "今日点の目安。OpenAI の Astra 発表（DeepSWE 等のベンダー数字）と、従来の SWE-bench Verified 集計（BenchLM / vals.ai）に寄る。ハーネスが違うと順位はすぐ動く。Astra はまだ一般提供前。 Grok 4.7（9/21）は公式カードで 4.6 から向上だが、CursorBench 等では Fable 5.1 に届かない、というベンダー／第三者まとめ。",
+      "sourceNote": "今日点の目安。OpenAI の Astra／Sol 発表と Anthropic Opus 5.5（ベンダー主張）、従来の SWE-bench Verified 集計に寄る。ハーネスが違うと順位はすぐ動く。Astra はまだ一般提供前寄り。",
       "ranks": [
         {
           "place": 1,
-          "name": "GPT-6 Astra（展開中） / Claude Opus 5",
-          "why": "Astra は公式がソフトウェア工学とコンピュータ操作の旗艦と位置づけ（ベンダー発表の DeepSWE 等）。一般提供前なので本番は Opus 5 も並走候補。SWE-bench Verified では Opus が先頭付近の集計が残る。"
+          "name": "GPT-6 Astra（展開中） / Claude Opus 5.5",
+          "why": "Astra は公式がソフトウェア工学とコンピュータ操作の旗艦。Opus 5.5 は多くの作業で Fable 級を主張しつつ安価。一般提供前の Astra と並走候補。"
         },
         {
           "place": 2,
-          "name": "Claude Fable 5.1",
-          "why": "Verified では Opus の直後。より難しい SWE-bench Pro では Fable がわずかに上、という Anthropic 系の数字。高い天井が要るとき。"
+          "name": "Claude Fable 5.1 / Claude Opus 5",
+          "why": "天井が要るときは Fable。直前までの Opus 5 も SWE-bench 集計で先頭付近の残像あり。"
         },
         {
           "place": 3,
-          "name": "GPT-5.6 Sol / Muse Spark 1.3 / DeepSeek-V4-Pro",
-          "why": "Sol は Astra 直前の OpenAI 旗艦として残る。Muse Spark 1.3 は Meta 公式がコーディング・エージェントの大幅更新と主張（ベンダー表）。V4-Pro はオープン枠。用途で振り分ける。"
+          "name": "GPT-6 Sol / Muse Spark 1.3 / DeepSeek-V4-Pro",
+          "why": "Sol は Astra 下のコーディング／エージェント向け新枠（$2/$10）。Muse Spark と V4-Pro は用途で振り分ける。"
         }
       ]
     },
     {
       "use": "文章・推論",
-      "sourceNote": "今日点の目安。LM Arena の第三者スナップショット、Artificial Analysis、および Astra 発表のベンダー数字。Astra の ARC-AGI 等はハーネス付きの報告があり、単純比較は避ける。 Grok 4.7 は GDPval 等で Fable 5.1 の直後付近、という第三者報道。",
+      "sourceNote": "今日点の目安。LM Arena・Artificial Analysis の過去スナップと、Astra／Opus 5.5 のベンダー数字。単純比較は避ける。",
       "ranks": [
         {
           "place": 1,
-          "name": "GPT-6 Astra（展開中） / Claude Fable 5.1",
-          "why": "Astra は公式が複雑多段とコンピュータ操作で大幅更新と主張。Fable は Arena / AA でテキスト天井付近の既存スナップショット。一般提供前は両方見る。"
+          "name": "GPT-6 Astra（展開中） / Claude Fable 5.1 / Claude Opus 5.5",
+          "why": "Astra は複雑多段とコンピュータ操作で大幅更新と主張。Fable は Arena／AA でテキスト天井付近。Opus 5.5 は Fable 級を安価に、という公式。"
         },
         {
           "place": 2,
           "name": "Claude Opus 5",
-          "why": "Arena でも Fable のすぐ下。知識仕事の GDPval-AA では Opus が強い、という第三者比較あり。値段は Fable の半分。"
+          "why": "Arena でも Fable のすぐ下。知識仕事の GDPval-AA では Opus が強い、という第三者比較あり。新規は 5.5 を優先。"
         },
         {
           "place": 3,
-          "name": "GPT-5.6 Sol / Grok 4.7",
-          "why": "AA Intelligence Index で並ぶ（どちらも 61 前後、Fable が 62 という過去スナップ）。Sol は汎用、Grok は長時間エージェント寄り。"
+          "name": "GPT-6 Sol / Grok 4.7",
+          "why": "Sol は汎用の中位枠。Grok は長時間エージェント寄りで $2/$6。"
         }
       ]
     },
     {
       "use": "速さ・安さ",
-      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。実測レイテンシの一枚板は取っていない。Sonnet 5 の $2/$10 は公式 docs で標準料金になった（9/1 値上げは取りやめ）。",
+      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。実測レイテンシの一枚板は取っていない。",
       "ranks": [
         {
           "place": 1,
-          "name": "Gemini 3.8 Flash",
-          "why": "導入価格 $0.75 / $3.75 のまま、公式が現行ワークホースとして推している。年末までこの値段。Sonnet 5 より入力が安い。"
+          "name": "GPT-6 Luna / Gemini 3.8 Flash",
+          "why": "Luna は公式 $0.10/$0.50 の高ボリューム枠。Gemini 3.8 Flash は導入価格 $0.75/$3.75 のまま年末まで。"
         },
         {
           "place": 2,
-          "name": "DeepSeek-V4-Flash / GPT-5.6 Luna",
-          "why": "Flash はオープンで安い高ボリューム枠。Luna は公式料金表で入力 $0.20 / 出力 $1.20 とさらに安い Generations 枠。"
+          "name": "DeepSeek-V4-Flash / Claude Opus 5.5",
+          "why": "Flash はオープンで安い。Opus 5.5 は旗艦寄りのまま $4/$20 と Opus 5 より安く、日常〜中量のコスパ枠にもなりうる。"
         },
         {
           "place": 3,
           "name": "Claude Haiku 4.5 / Claude Sonnet 5 / Grok 4.7",
-          "why": "Haiku は Claude の速さ枠（$1/$5）。Sonnet 5 は $2/$10 が標準になったので中量の日常枠。Grok 4.7 はフラッグシップにして $2/$6 と出力が安い。"
+          "why": "Haiku は Claude の速さ枠（$1/$5）。Sonnet 5 は $2/$10。Grok 4.7 はフラッグシップにして $2/$6。"
         }
       ]
     },
