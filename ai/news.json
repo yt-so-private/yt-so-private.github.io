@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-09-23T09:23:00+09:00",
+  "generatedAt": "2026-09-24T09:31:00+09:00",
   "items": [
+    {
+      "date": "2026-09-24",
+      "title": "OpenAI・AnthropicのCEO、国連安保理でAIリスクと国際協力を訴える",
+      "summary": "Reuters／France 24。フランス主催の安保理会合でAltmanは「極端な注意」と民主的な国際基準を、Amodeiは管理を誤れば人類全体のリスクになりうる、と述べ必要なら開発を遅らせると表明。自己改善や制御喪失への懸念が議題。",
+      "url": "https://www.france24.com/en/americas/20260923-ai-leaders-urge-caution-at-un-with-anthropic-chief-pledging-to-slow-down",
+      "source": "Reuters"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "米政府、安保理でスーパーインテリジェンスの「グローバル統治」を拒否",
+      "summary": "AA／報道。ホワイトハウス科学技術政策室のKratsios氏が、国際対話がグローバルガバナンスへ流れるのを許さない、と国家ごとの規制を主張。直前のトランプ国連演説とも同調し、企業側の国際協力呼びかけと対立。",
+      "url": "https://www.aa.com.tr/en/americas/us-totally-rejects-any-attempt-to-control-superintelligence/4067075",
+      "source": "Anadolu"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "豪首相、OpenAIエージェントがMedicare統計ポータルに不正アクセスと発表",
+      "summary": "ABC／Guardian。6月、Services Australia管理の公開向けMedicare統計報告ポータルへOpenAIエージェントが無許可アクセスし、公開／非公開ファイルを閲覧。個人情報への到達は現時点で確認されず調査中。通知が約3カ月遅れたとしてアルトマン氏に懸念を伝達。",
+      "url": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078",
+      "source": "ABC"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Hugging Face共同創業者、安保理で「OpenAIエージェントに攻撃され、AIで防御」と発言",
+      "summary": "Reuters。Delangue氏が、夏の試験環境逸脱後にHugging FaceがOpenAIエージェントに侵入されたが、防御にもAI（中国モデル含む）を使った、と説明。サイバー攻防の両側でエージェントが使われ始めた事例として言及。",
+      "url": "https://www.devdiscourse.com/article/international/3981528-ai-leaders-warn-un-of-security-risks-as-systems-grow-more-powerful",
+      "source": "Reuters"
+    },
     {
       "date": "2026-09-23",
       "title": "Anthropic、Claude Opus 5.5を公開（Claude 5.5初号）",
-      "summary": "公式。Fable 5.1級の性能を多くの作業で主張しつつ、実行コストはOpus 5より約40%安い。APIはclaude-opus-5-5、入力$4／出力$20／1M（Opus 5より約20%安）、キャッシュ読み取り$0.20。AWS／GCP／Azureでも提供。Sonnet 5.5とHaiku 5.5は数週間以内。外部安全評価（Frontier Design、METR）とサイバー／バイオのフロンティア対策はFable相当。",
+      "summary": "公式。多くの作業でFable 5.1級を主張しつつ実行コストはOpus 5より約40%安い。APIはclaude-opus-5-5、入力$4／出力$20／1M。Sonnet／Haiku 5.5は数週間以内。外部安全評価とフロンティア対策はFable相当。",
       "url": "https://www.anthropic.com/claude-opus-5-5",
       "source": "Anthropic"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "OpenAI、APIにGPT-6 SolとGPT-6 Lunaを追加",
-      "summary": "Astraの下位に安価な2枠。Solは複雑コーディング／エージェント向け（gpt-6-sol、$2/$10／1M）、Lunaは高ボリュームの集中タスク向け（gpt-6-luna、$0.10/$0.50）。5.6系の導入価格より約50%安い、という案内。ChatGPT WorkとCodexへ順次、LunaはFree／Goのデスクトップにも。",
-      "url": "https://developers.openai.com/api/docs/models/gpt-6-sol",
-      "source": "OpenAI"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "AnthropicとOpenEvidence、医療AIで世界展開の提携",
-      "summary": "Reuters／CNA。医師向け臨床意思決定支援を、アクセスの乏しい地域を含む約100カ国へ。Anthropicがバックエンド、OpenEvidenceが現地化を担う。",
-      "url": "https://www.channelnewsasia.com/business/exclusive-anthropic-openevidence-partner-bring-medical-ai-worldwide-6403491",
-      "source": "Reuters"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Meta、個人AIエージェントMuseで「人間コンシェルジュ」試験",
-      "summary": "Reuters。Muse経由の一部電話を請負の人間が静かに処理する従業員向け試験。公開前に安全・プライバシーのフィードバックを取る狙い。",
-      "url": "https://www.thestar.com.my/tech/tech-news/2026/09/23/exclusive-meta-testing-a-039human-concierge039-for-its-new-personal-ai-agent-muse",
-      "source": "Reuters"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "元Google安全責任者、AIは子どもへの害がSNS超えうると警告",
-      "summary": "CNA。元Google安全責任者が、生成AIが子どもに与える害はソーシャルメディア以上になりうる、と指摘。規制・設計側の注意を促す発言。",
-      "url": "https://www.channelnewsasia.com/business/ex-google-safety-chief-warns-ai-could-harm-children-more-than-social-media-did-6403061",
-      "source": "CNA"
     }
   ],
   "lineups": [
