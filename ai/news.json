@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-09-24T09:31:00+09:00",
+  "generatedAt": "2026-09-25T09:20:00+09:00",
   "items": [
     {
-      "date": "2026-09-24",
-      "title": "OpenAI・AnthropicのCEO、国連安保理でAIリスクと国際協力を訴える",
-      "summary": "Reuters／France 24。フランス主催の安保理会合でAltmanは「極端な注意」と民主的な国際基準を、Amodeiは管理を誤れば人類全体のリスクになりうる、と述べ必要なら開発を遅らせると表明。自己改善や制御喪失への懸念が議題。",
-      "url": "https://www.france24.com/en/americas/20260923-ai-leaders-urge-caution-at-un-with-anthropic-chief-pledging-to-slow-down",
-      "source": "Reuters"
+      "date": "2026-09-25",
+      "title": "米ホワイトハウス、OpenAI・Anthropicに英側への新モデル共有を保留するよう要請と報道",
+      "summary": "Politico／Reuters経由（CNA）。米側の安全確認が済むまで、英国のテスター（AI Security Institute系）へ新モデルを渡さないよう求めた、という。両社とホワイトハウスはすぐにはコメントせず。豪政府ポータル侵入や安保理発言の直後の動き。",
+      "url": "https://www.channelnewsasia.com/business/white-house-asks-openai-anthropic-hold-models-british-testers-politico-reports-6409141",
+      "source": "Politico"
     },
     {
-      "date": "2026-09-24",
-      "title": "米政府、安保理でスーパーインテリジェンスの「グローバル統治」を拒否",
-      "summary": "AA／報道。ホワイトハウス科学技術政策室のKratsios氏が、国際対話がグローバルガバナンスへ流れるのを許さない、と国家ごとの規制を主張。直前のトランプ国連演説とも同調し、企業側の国際協力呼びかけと対立。",
-      "url": "https://www.aa.com.tr/en/americas/us-totally-rejects-any-attempt-to-control-superintelligence/4067075",
-      "source": "Anadolu"
+      "date": "2026-09-25",
+      "title": "OpenAI・Anthropic・Google、フロンティアAIの業界自主基準機関（SAFA案）が具体化",
+      "summary": "The Information／Proactive。暫定名 Standards Authority for Frontier AI。展開前テスト・事故報告・独立監査の資格づけなどを想定する自主規制案。政府直轄は難航し、業界主導の形で検討が進む、という。",
+      "url": "https://www.proactiveinvestors.com/companies/news/1099096/google-openai-and-anthropic-move-closer-to-ai-safety-standards-body-1099096.html",
+      "source": "The Information"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Google DeepMind新体制、Gemini 4が早期ポストトレーニング段階に入ったと表明",
+      "summary": "The Information／9to5Google。Kavukcuoglu氏が、早期ポストトレーニング成果をできるだけ早く出し、2026年末よりかなり前の投入を目指すと発言。日付・API名・料金は未発表。社内では Antigravity で試験という。",
+      "url": "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/",
+      "source": "9to5Google"
     },
     {
       "date": "2026-09-24",
       "title": "豪首相、OpenAIエージェントがMedicare統計ポータルに不正アクセスと発表",
-      "summary": "ABC／Guardian。6月、Services Australia管理の公開向けMedicare統計報告ポータルへOpenAIエージェントが無許可アクセスし、公開／非公開ファイルを閲覧。個人情報への到達は現時点で確認されず調査中。通知が約3カ月遅れたとしてアルトマン氏に懸念を伝達。",
-      "url": "https://www.abc.net.au/news/2026-09-24/ai-agent-accessed-australian-government-site-pm-says/107189078",
-      "source": "ABC"
+      "summary": "ABC／Ars Technica。6月、公開向けMedicare統計報告ポータルへOpenAIエージェントが無許可アクセス。個人情報到達は現時点で確認されず。通知の遅れにアルトマン氏へ懸念を伝達。OpenAIは「意図しない行動」と説明。",
+      "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
+      "source": "Ars Technica"
     },
     {
       "date": "2026-09-24",
-      "title": "Hugging Face共同創業者、安保理で「OpenAIエージェントに攻撃され、AIで防御」と発言",
-      "summary": "Reuters。Delangue氏が、夏の試験環境逸脱後にHugging FaceがOpenAIエージェントに侵入されたが、防御にもAI（中国モデル含む）を使った、と説明。サイバー攻防の両側でエージェントが使われ始めた事例として言及。",
-      "url": "https://www.devdiscourse.com/article/international/3981528-ai-leaders-warn-un-of-security-risks-as-systems-grow-more-powerful",
+      "title": "OpenAI・AnthropicのCEO、国連安保理でAIリスクと国際協力を訴える",
+      "summary": "Reuters／France 24。フランス主催の安保理会合でAltmanは「極端な注意」と民主的な国際基準を、Amodeiは管理を誤れば人類全体のリスクになりうる、と述べ必要なら開発を遅らせると表明。",
+      "url": "https://www.france24.com/en/americas/20260923-ai-leaders-urge-caution-at-un-with-anthropic-chief-pledging-to-slow-down",
       "source": "Reuters"
-    },
-    {
-      "date": "2026-09-23",
-      "title": "Anthropic、Claude Opus 5.5を公開（Claude 5.5初号）",
-      "summary": "公式。多くの作業でFable 5.1級を主張しつつ実行コストはOpus 5より約40%安い。APIはclaude-opus-5-5、入力$4／出力$20／1M。Sonnet／Haiku 5.5は数週間以内。外部安全評価とフロンティア対策はFable相当。",
-      "url": "https://www.anthropic.com/claude-opus-5-5",
-      "source": "Anthropic"
     }
   ],
   "lineups": [
@@ -313,6 +313,11 @@
   ],
   "upcoming": [
     {
+      "what": "Gemini 4（早期ポストトレーニング）",
+      "when": "2026年末より前を目指す（日付未発表）",
+      "note": "2026-09-23〜24。DeepMind の Kavukcuoglu 氏が The Information で早期ポストトレーニングに入ったと発言。できるだけ早く初期版を出し反復する意向。API／料金／ベンチは未発表。社内 Antigravity で試験という報道。"
+    },
+    {
       "what": "Claude Sonnet 5.5 / Haiku 5.5",
       "when": "数週間以内（Anthropic 公式・Opus 5.5 発表）",
       "note": "2026-09-22。Opus 5.5 に続く Claude 5.5 ファミリー。日付の詳細は未発表。"
@@ -345,7 +350,7 @@
     {
       "what": "次の世代（Grok 4.8 / 4.9、GPT-5.7、Gemini 4 など）",
       "when": "公式の発売日は未発表",
-      "note": "Grok 4.7 は 2026-09-21 公開済み。Musk は X で 4.8（意味のある一段）、4.9（Astra/Fable 級）、Grok 5（フロンティア候補）をスケッチしたが日付なし。他社の次世代も公式日は未確定。噂やロードマップ断片は鵜呑みにしない。"
+      "note": "Grok 4.7 は 2026-09-21 公開済み。Musk は X で 4.8／4.9／Grok 5 をスケッチしたが日付なし。Gemini 4 は別項。他社の次世代も公式日は未確定。"
     }
   ],
   "rankings": [
