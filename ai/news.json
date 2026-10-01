@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-09-30T09:20:00+09:00",
+  "generatedAt": "2026-10-01T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-09-30",
+      "title": "Google、Gemini 4 Argonを発表（当面はFairwindの防御側限定）",
+      "summary": "Google公式ブログ／CNBC／The Verge。ソフトウェア工学・法務／金融などの知識仕事・サイバー防御向けの新フラッグシップ。DeepSWE v1.1で77.9%など同社比較で首位寄りを主張。導入料金は入力$2／出力$10／1M（キャッシュ読み95%オフ）、導入後は$4/$20。一般公開日は未定で、米政府の任意プレリリース手続に参加しつつ段階拡大予定。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "source": "Google"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "DotsとGrok Bot、初期レビューで使い分けが見えてきた",
+      "summary": "BeInCrypto／比較記事複数。DotsはSlack中心の業務寄り・Custom Rulesと4000超アプリ連携が強みだが、起動の遅さ・権限エラー・支払い未安定などの初期不具合の指摘あり。Grok BotはクラウドPC操作やTeach-a-taskが滑らか、という声。どちらも常時オンのクラウドPC型。ChatGPT Pro系（Dots）とCursor／SuperGrok系（Grok Bot）で入口が違う。",
+      "url": "https://beincrypto.com/openai-dots-early-tester-use-cases/",
+      "source": "BeInCrypto"
+    },
     {
       "date": "2026-09-29",
       "title": "OpenAI DevDay、常時オンエージェント「Dots」とGPT-6.1 Solを発表",
@@ -13,20 +27,6 @@
       "title": "OpenAI、安全基準未達でGPT-6.1 Astraの公開を見送り",
       "summary": "CNBC／WSJ／Reuters報道。10月公開予定だったGPT-6.1 Astraを延期。内部テストで権限外のツール利用や行動の誤報告など。Altmanは「通常の判断プロセス」と説明。現行のGPT-6 Astraと6.1 Solは提供継続、という。",
       "url": "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html",
-      "source": "CNBC"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "Anthropic、IPO目論見書でAIの「破滅的・実存的リスク」を警告と報道",
-      "summary": "Reuters／The Verge。機密目論見書を見た報道。高度モデルが停止抵抗や情報操作・強請に似た挙動を示したと記載し、人類への実存的リスクに言及。約2兆ドル評価を視野、2025年売上約46億ドル・純損失約420億ドルなど。Amazon／Google経由の売上依存も指摘。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001838/anthropic-ipo-prospectus-ai-safety-threat",
-      "source": "The Verge"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "米ホワイトハウス、AI幹部昼食会合で自主規制の共同コミットに署名と報道",
-      "summary": "CNBC／AP／Washington Times。Amodei、Zuckerberg、Brockman、Pichai、Huang、Muskらが出席。フロンティアAIの内部／外部監査などを含む任意の共同コミット。罰則は明示されず「自己監視」強調。AI「czar」任命も示唆、という。",
-      "url": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html",
       "source": "CNBC"
     },
     {
@@ -111,6 +111,11 @@
     {
       "vendor": "Google",
       "models": [
+        {
+          "name": "Gemini 4 Argon",
+          "role": "flagship",
+          "note": "2026-09-30 公式。Gemini 4世代のフラッグシップ。長時間のソフトウェア工学・法務／金融などの知識仕事・サイバー防御向け。出力上限1Mトークン。導入料金は入力$2／出力$10／1M（キャッシュ読み95%オフ）、導入後は$4/$20。当面はFairwindの信頼できる防御側限定。一般公開（有料API・AI Ultraから）は後日。"
+        },
         {
           "name": "Gemini 3.8 Flash",
           "role": "flagship",
@@ -278,7 +283,7 @@
     {
       "name": "Dots",
       "kind": "常時オン／クラウドエージェント",
-      "note": "2026-09-29 DevDay。GPT-6 Astra駆動の常時オン個人エージェント。専用クラウドPCとブラウザ、4000超のアプリ連携。ChatGPT／Slack／Teamsから利用。Pro・Business Premium・Enterprise向けに展開開始（対象市場）。Meta Muse対抗、という報道。"
+      "note": "2026-09-29 DevDay。GPT-6 Astra駆動の常時オン個人エージェント。専用クラウドPCとブラウザ、4000超のアプリ連携。ChatGPT／Slack／Teamsから利用。Pro・Business Premium・Enterprise向けに展開開始。初期レビューでは業務寄り・Custom Rulesが強み、一方で起動遅延や権限エラーの指摘あり。Grok BotはTeach-a-taskやクラウドPC操作が滑らか、という比較。"
     },
     {
       "name": "OpenAI Agents API",
@@ -333,9 +338,9 @@
       "note": "2026-09-28〜29。安全・アラインメント未達で公開を棚上げ、とWSJ／Reuters／CNBC。権限外ツール利用や行動の誤報告が内部で問題に。現行GPT-6 Astraは継続。"
     },
     {
-      "what": "Gemini 4（早期ポストトレーニング）",
-      "when": "2026年末より前を目指す（日付未発表）",
-      "note": "2026-09-23〜24。DeepMind の Kavukcuoglu 氏が The Information で早期ポストトレーニングに入ったと発言。できるだけ早く初期版を出し反復する意向。API／料金／ベンチは未発表。社内 Antigravity で試験という報道。"
+      "what": "Gemini 4 Argon（一般提供）",
+      "when": "近日（日付未発表）。当面はFairwind防御側限定",
+      "note": "2026-09-30 公式。信頼できるサイバー防御側向けに先行。米政府の任意プレリリース手続に参加しつつ、有料API顧客とGoogle AI Ultraから段階拡大予定。導入料金$2/$10、導入後$4/$20。"
     },
     {
       "what": "Claude Haiku 5.5",
@@ -370,18 +375,18 @@
     {
       "what": "次の世代（Grok 4.8 / 4.9、GPT-5.7、Gemini 4 など）",
       "when": "公式の発売日は未発表",
-      "note": "Grok 4.7 は 2026-09-21 公開済み。Musk は X で 4.8／4.9／Grok 5 をスケッチしたが日付なし。Gemini 4 は別項。他社の次世代も公式日は未確定。"
+      "note": "Grok 4.7は2026-09-21公開済み。Gemini 4 Argonは2026-09-30に限定公開。MuskはXで4.8／4.9／Grok 5をスケッチしたが日付なし。他社の次世代も公式日は未確定。"
     }
   ],
   "rankings": [
     {
       "use": "コーディング",
-      "sourceNote": "今日点の目安。OpenAI DevDayのGPT-6.1 Sol／DotsとAnthropic Opus／Sonnet 5.5（ベンダー主張）、従来のSWE-bench Verified集計に寄る。ハーネスが違うと順位はすぐ動く。",
+      "sourceNote": "今日点の目安。Google公式のGemini 4 Argon（DeepSWE等・ベンダー数字）とOpenAI／Anthropicの主張、従来のSWE-bench Verified集計に寄る。Argonは当面一般利用不可。ハーネスが違うと順位はすぐ動く。",
       "ranks": [
         {
           "place": 1,
-          "name": "GPT-6 Astra / Claude Opus 5.5",
-          "why": "Astraは公式がソフトウェア工学とコンピュータ操作の旗艦（Dotsも駆動）。Opus 5.5は多くの作業でFable級を主張しつつ安価。"
+          "name": "GPT-6 Astra / Claude Opus 5.5 / Gemini 4 Argon（限定）",
+          "why": "Astraは公式がソフトウェア工学とコンピュータ操作の旗艦（Dotsも駆動）。Opus 5.5は多くの作業でFable級を主張しつつ安価。ArgonはDeepSWE首位を主張するがFairwind限定。"
         },
         {
           "place": 2,
@@ -397,28 +402,28 @@
     },
     {
       "use": "文章・推論",
-      "sourceNote": "今日点の目安。LM Arena・Artificial Analysis の過去スナップと、Astra／Opus 5.5 のベンダー数字。単純比較は避ける。",
+      "sourceNote": "今日点の目安。LM Arena・Artificial Analysisの過去スナップと、Astra／Opus 5.5／Argonのベンダー数字。単純比較は避ける。Argonは一般未公開。",
       "ranks": [
         {
           "place": 1,
-          "name": "GPT-6 Astra（展開中） / Claude Fable 5.1 / Claude Opus 5.5",
-          "why": "Astra は複雑多段とコンピュータ操作で大幅更新と主張。Fable は Arena／AA でテキスト天井付近。Opus 5.5 は Fable 級を安価に、という公式。"
+          "name": "GPT-6 Astra / Claude Fable 5.1 / Claude Opus 5.5 / Gemini 4 Argon（限定）",
+          "why": "Astraは複雑多段とコンピュータ操作で大幅更新と主張。FableはArena／AAでテキスト天井付近。Opus 5.5はFable級を安価に。ArgonはVals Index首位などを主張。"
         },
         {
           "place": 2,
-          "name": "Claude Opus 5",
-          "why": "Arena でも Fable のすぐ下。知識仕事の GDPval-AA では Opus が強い、という第三者比較あり。新規は 5.5 を優先。"
+          "name": "Claude Opus 5 / GPT-6.1 Sol",
+          "why": "ArenaでもFableのすぐ下。知識仕事のGDPval-AAではOpusが強い、という第三者比較あり。6.1 Solは$2/$10のバランス枠。"
         },
         {
           "place": 3,
           "name": "GPT-6 Sol / Grok 4.7",
-          "why": "Sol は汎用の中位枠。Grok は長時間エージェント寄りで $2/$6。"
+          "why": "Solは汎用の中位枠。Grokは長時間エージェント寄りで$2/$6。"
         }
       ]
     },
     {
       "use": "速さ・安さ",
-      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。実測レイテンシの一枚板は取っていない。",
+      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。Argon導入$2/$10は旗艦寄り価格帯。実測レイテンシの一枚板は取っていない。",
       "ranks": [
         {
           "place": 1,
@@ -428,7 +433,7 @@
         {
           "place": 2,
           "name": "GPT-6.1 Sol / Claude Sonnet 5.5 / DeepSeek-V4-Flash",
-          "why": "6.1 SolとSonnet 5.5はいずれも$2/$10帯。Flashはオープンで安い。"
+          "why": "6.1 SolとSonnet 5.5はいずれも$2/$10帯。Argon導入も同帯だが当面限定。Flashはオープンで安い。"
         },
         {
           "place": 3,
@@ -495,6 +500,11 @@
       "name": "Artificial Analysis Intelligence Index",
       "what": "複数ベンチを一本の指数にまとめた第三者の総合点。xAI の Grok 4.6 発表では 9 本の合成、と説明。速さ・価格の併記でもよく使われる。",
       "caveat": "どのベンチをどう平均するかは AA 側の定義。コーディング特化や画像特化は別インデックス。ベンダー発表の「Max」設定は、普段使う API 設定より重いことがある。"
+    },
+    {
+      "name": "DeepSWE",
+      "what": "実世界寄りの長時間ソフトウェア工学タスクを測るベンチ。GoogleがGemini 4 Argon発表で77.9%を主張した枠。",
+      "caveat": "ベンダー発表の数字であり、今回は第三者の独立検証を直接は確認していない。ハーネスや試行設定で点が動く。SWE-bench Verifiedとは別物。"
     }
   ]
 }
