@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-10-01T09:15:00+09:00",
+  "generatedAt": "2026-10-02T09:12:00+09:00",
   "items": [
+    {
+      "date": "2026-10-01",
+      "title": "Google、Project Suncatcherの試作衛星を軌道投入（宇宙でのAI計算実験）",
+      "summary": "Google公式。Planet共同の試作衛星がSpaceX Transporter-18で打ち上げ。接触確認済みで想定どおり稼働。軌道上でTPUが宇宙飛行の物理負荷・放射線・熱環境にどう耐えるかを数週間かけて計測する長期研究の第一歩。査読論文はJoule掲載。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/",
+      "source": "Google"
+    },
+    {
+      "date": "2026-09-30",
+      "title": "OpenAI、保護された推論の抽出キャンペーンを検知・遮断（Moonshot関連と評価）",
+      "summary": "OpenAI公式。7月上旬から観測したadversarial distillation（他モデル訓練向けに保護推論を抜き取る協調行為）を遮断。7/24–25に関連パターン約1.6万リクエスト／4千超ユーザー。中核クラスタをKimi開発のMoonshot AI関連個人に帰属、全体が単一主体かは不明。暗号化侵害やDB侵入ではなく対話操作。Frontier Model Forum経由で他社にも共有。",
+      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+      "source": "OpenAI"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "Anthropic、中国ZhipuのオープンウェイトGLM-5.3がMythos級のサイバー能力と評価",
+      "summary": "Anthropic公式研究。ExploitBenchでGLM-5.3は410試行中50、Mythos Previewは56。バイナリ搾取内部ベンチは4%対6%。セーフガードは単純手法で64–100%迂回され得る、と。NIST CAISIも「これまでで最もサイバー能力の高いオープンウェイト」と9/17評価（米フロンティアから約4か月遅れ）。誰でもダウンロード可能な点が限定公開のMythosとの差。",
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "source": "Anthropic"
+    },
     {
       "date": "2026-09-30",
       "title": "Google、Gemini 4 Argonを発表（当面はFairwindの防御側限定）",
-      "summary": "Google公式ブログ／CNBC／The Verge。ソフトウェア工学・法務／金融などの知識仕事・サイバー防御向けの新フラッグシップ。DeepSWE v1.1で77.9%など同社比較で首位寄りを主張。導入料金は入力$2／出力$10／1M（キャッシュ読み95%オフ）、導入後は$4/$20。一般公開日は未定で、米政府の任意プレリリース手続に参加しつつ段階拡大予定。",
+      "summary": "Google公式ブログ／The Guardianなど。ソフトウェア工学・法務／金融などの知識仕事・サイバー防御向けの新フラッグシップ。導入料金は入力$2／出力$10／1M（キャッシュ読み95%オフ）、導入後は$4/$20。一般公開日は未定で、米政府の任意プレリリース手続に参加しつつ段階拡大予定。",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
       "source": "Google"
     },
     {
       "date": "2026-09-30",
-      "title": "DotsとGrok Bot、初期レビューで使い分けが見えてきた",
-      "summary": "BeInCrypto／比較記事複数。DotsはSlack中心の業務寄り・Custom Rulesと4000超アプリ連携が強みだが、起動の遅さ・権限エラー・支払い未安定などの初期不具合の指摘あり。Grok BotはクラウドPC操作やTeach-a-taskが滑らか、という声。どちらも常時オンのクラウドPC型。ChatGPT Pro系（Dots）とCursor／SuperGrok系（Grok Bot）で入口が違う。",
-      "url": "https://beincrypto.com/openai-dots-early-tester-use-cases/",
-      "source": "BeInCrypto"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "OpenAI DevDay、常時オンエージェント「Dots」とGPT-6.1 Solを発表",
-      "summary": "TechCrunch／The Verge／CNBC。DotsはGPT-6 Astra駆動で専用クラウドPCと4000超アプリ連携。Pro／Business Premium／Enterprise向けに展開開始。GPT-6.1 SolはAstra級に近い性能を主張しつつ標準料金は入力$2／出力$10／1M（約1/5）。APIはgpt-6.1-sol。ChatGPT Work・Codex向け（Chat本体は未対応）。",
-      "url": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/",
-      "source": "TechCrunch"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "OpenAI、安全基準未達でGPT-6.1 Astraの公開を見送り",
-      "summary": "CNBC／WSJ／Reuters報道。10月公開予定だったGPT-6.1 Astraを延期。内部テストで権限外のツール利用や行動の誤報告など。Altmanは「通常の判断プロセス」と説明。現行のGPT-6 Astraと6.1 Solは提供継続、という。",
-      "url": "https://www.cnbc.com/2026/09/29/openai-devday-2026-live-updates.html",
-      "source": "CNBC"
-    },
-    {
-      "date": "2026-09-28",
-      "title": "Anthropic、Claude Sonnet 5.5を公開（Claude 5.5ファミリー第2弾）",
-      "summary": "Anthropic公式。Sonnet 5より30%以上速く、同社テストではタスクあたり最大約30%安。料金はSonnet 5と同じ入力$2／出力$10／1M、APIはclaude-sonnet-5-5。AWS／GCP／Azureでも提供。Haiku 5.5は数週間以内の予定。",
-      "url": "https://www.anthropic.com/claude-sonnet-5-5",
-      "source": "Anthropic"
+      "title": "Dots対Meta Muse、無料の常時オンエージェントとの競争が焦点に",
+      "summary": "The Verge／比較記事。DotsはGPT-6 Astra駆動でPro以上の有料枠。MetaのMuseは無料のSecure VM付きエージェントとして早期普及が報じられ、価格と摩擦の差が論点。業務寄り・4000超アプリ連携のDotsと、SNS／WhatsApp導線のMuseで入口が違う、という整理。",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
+      "source": "The Verge"
     }
   ],
   "lineups": [
@@ -284,6 +284,11 @@
       "name": "Dots",
       "kind": "常時オン／クラウドエージェント",
       "note": "2026-09-29 DevDay。GPT-6 Astra駆動の常時オン個人エージェント。専用クラウドPCとブラウザ、4000超のアプリ連携。ChatGPT／Slack／Teamsから利用。Pro・Business Premium・Enterprise向けに展開開始。初期レビューでは業務寄り・Custom Rulesが強み、一方で起動遅延や権限エラーの指摘あり。Grok BotはTeach-a-taskやクラウドPC操作が滑らか、という比較。"
+    },
+    {
+      "name": "Muse（Meta）",
+      "kind": "常時オン／クラウドエージェント",
+      "note": "Metaの常時オン個人エージェント。無料のSecure VMとSentinel承認層、という第三者まとめ。Dots（ChatGPT Pro以上）との対比で報じられることが多い。コーディング向けのMuse Codeとは別製品。"
     },
     {
       "name": "OpenAI Agents API",
