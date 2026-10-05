@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-10-02T09:12:00+09:00",
+  "generatedAt": "2026-10-05T09:20:00+09:00",
   "items": [
     {
-      "date": "2026-10-01",
-      "title": "Google、Project Suncatcherの試作衛星を軌道投入（宇宙でのAI計算実験）",
-      "summary": "Google公式。Planet共同の試作衛星がSpaceX Transporter-18で打ち上げ。接触確認済みで想定どおり稼働。軌道上でTPUが宇宙飛行の物理負荷・放射線・熱環境にどう耐えるかを数週間かけて計測する長期研究の第一歩。査読論文はJoule掲載。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/",
-      "source": "Google"
+      "date": "2026-10-03",
+      "title": "Gemini アプリ、10/9 から無料は Flash-Lite のみに（AI Pro に Deep Think）",
+      "summary": "9to5Google（Googleサポート文書更新）。10/9以降、無料ユーザーは3.5 Flash-Liteのみで3.6 Flash／3.1 Proは使えなくなる。AI Plus（$4.99）はFlash-Lite＋Flashで、Proは外れる（適用日はメールで個別通知）。AI Pro／Ultraは変更なしで、AI ProにもDeep Thinkが追加。10月中に各モデルの思考レベル（低／中／高）も追加予定。Gemini 4 Argonがどの枠に入るかは未発表。",
+      "url": "https://9to5google.com/2026/10/03/gemini-model-limits-oct-26/",
+      "source": "9to5Google"
     },
     {
-      "date": "2026-09-30",
-      "title": "OpenAI、保護された推論の抽出キャンペーンを検知・遮断（Moonshot関連と評価）",
-      "summary": "OpenAI公式。7月上旬から観測したadversarial distillation（他モデル訓練向けに保護推論を抜き取る協調行為）を遮断。7/24–25に関連パターン約1.6万リクエスト／4千超ユーザー。中核クラスタをKimi開発のMoonshot AI関連個人に帰属、全体が単一主体かは不明。暗号化侵害やDB侵入ではなく対話操作。Frontier Model Forum経由で他社にも共有。",
-      "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
-      "source": "OpenAI"
+      "date": "2026-10-03",
+      "title": "OpenAI の安全レポート担当者が退職、「文化が壊れている」と寄稿",
+      "summary": "TechCrunch。主要ローンチの安全レポート執筆を率いてきたという在籍3年半の社員がThe Atlanticに寄稿し退職を表明。OpenAIは「安全に管理できる以上の能力にしない」「必要なら学習停止やモデル見送りもする」と反論し、テスト環境のセキュリティ強化や第三者評価の拡大を挙げた。GPT-6.1 Astra見送りや学習一時停止の流れの中での出来事。",
+      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "source": "TechCrunch"
     },
     {
-      "date": "2026-09-29",
-      "title": "Anthropic、中国ZhipuのオープンウェイトGLM-5.3がMythos級のサイバー能力と評価",
-      "summary": "Anthropic公式研究。ExploitBenchでGLM-5.3は410試行中50、Mythos Previewは56。バイナリ搾取内部ベンチは4%対6%。セーフガードは単純手法で64–100%迂回され得る、と。NIST CAISIも「これまでで最もサイバー能力の高いオープンウェイト」と9/17評価（米フロンティアから約4か月遅れ）。誰でもダウンロード可能な点が限定公開のMythosとの差。",
-      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "date": "2026-10-02",
+      "title": "Anthropic、1億ドルの「Claude Frontier Academy」開始（企業内AIエンジニア1万人育成）",
+      "summary": "Anthropic公式。2027年末までにFrontier Deployed Engineer（FDE）1万人を育成。数日の対面研修＋実技試験の後、自社の実案件を率いる12週間のレジデンシーで認定。初期コホートはAccenture、Bain、Capgemini、Deloitte、McKinsey、Morgan Stanley、Novo Nordiskなど。推薦制で、SF／NY／ロンドンで実施中。",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
       "source": "Anthropic"
     },
     {
-      "date": "2026-09-30",
-      "title": "Google、Gemini 4 Argonを発表（当面はFairwindの防御側限定）",
-      "summary": "Google公式ブログ／The Guardianなど。ソフトウェア工学・法務／金融などの知識仕事・サイバー防御向けの新フラッグシップ。導入料金は入力$2／出力$10／1M（キャッシュ読み95%オフ）、導入後は$4/$20。一般公開日は未定で、米政府の任意プレリリース手続に参加しつつ段階拡大予定。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-      "source": "Google"
+      "date": "2026-10-02",
+      "title": "xAI、公式TypeScript SDKを実験公開／Grok が XChat のグループチャットに参加",
+      "summary": "Runtimewire／AIReportなど。@xai-official/sdk（Apache 2.0）でテキスト・音声・画像・動画API、サーバー側のWeb／X検索・コード実行・リモートMCPを1つのクライアントで扱える。1.0前で破壊的変更あり（当日中にクライアント名をSpaceXAIへ改名）なのでバージョン固定推奨。同日、XChatのグループで@Grokに質問できるようになった。",
+      "url": "https://runtimewire.com/article/spacexai-experimental-typescript-sdk-grok-hosted-tools",
+      "source": "Runtimewire"
     },
     {
-      "date": "2026-09-30",
-      "title": "Dots対Meta Muse、無料の常時オンエージェントとの競争が焦点に",
-      "summary": "The Verge／比較記事。DotsはGPT-6 Astra駆動でPro以上の有料枠。MetaのMuseは無料のSecure VM付きエージェントとして早期普及が報じられ、価格と摩擦の差が論点。業務寄り・4000超アプリ連携のDotsと、SNS／WhatsApp導線のMuseで入口が違う、という整理。",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
-      "source": "The Verge"
+      "date": "2026-10-04",
+      "title": "独Aleph Alpha、オープンウェイトの独英MoE「Kolibri」公開（総78B・アクティブ3.5B）",
+      "summary": "MarkTechPost（公式モデルカード／技術レポート準拠）。総78.1B・トークンあたり3.46Bだけ動くMoEで、最大100万トークン文脈、推論の深さをリクエストごとに指定可。Apache 2.0でHugging Faceに公開。FP8なら単体B200／H200で動く。ドイツ語に強いトークナイザーとEU AI法／GDPR対応を前面に出し、行政・産業など主権重視の用途を狙う。ベンチは自社比較なので割り引いて見る。",
+      "url": "https://www.marktechpost.com/2026/10/04/aleph-alpha-releases-kolibri-a-78-1b-open-weight-english-german-moe-model-with-only-3-46b-active-parameters/",
+      "source": "MarkTechPost"
     }
   ],
   "lineups": [
