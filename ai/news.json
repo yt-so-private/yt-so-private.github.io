@@ -1,32 +1,39 @@
 {
-  "generatedAt": "2026-10-06T09:20:00+09:00",
+  "generatedAt": "2026-10-07T09:20:00+09:00",
   "items": [
     {
-      "date": "2026-10-05",
-      "title": "コーディングエージェント指数で Gemini 4 Argon（Antigravity）が GPT-6.1 Sol（Codex）を1点上回る",
-      "summary": "OfficeChai（Artificial Analysis Coding Agent Index v1.5）。各社の自前ハーネスで走らせた比較で、Argon＋Antigravity CLIが64、GPT-6.1 Sol（xhigh）＋Codexが63、GPT-6 Astra＋Codexが62。首位はClaude CodeのSonnet 5.5とOpus 5.5で、Argonは3位。Argonはまだ限定公開なので、一般提供後に数字が保つかが次の見どころ。",
-      "url": "https://officechai.com/ai/gemini-4-argon-with-antigravity-places-ahead-of-gpt-6-1-sol-on-codex-on-artificial-analysis-coding-agent-index/",
-      "source": "OfficeChai"
+      "date": "2026-10-06",
+      "title": "Mistral Large 4 をパブリックプレビュー（総1T・アクティブ49B）、重みは今月末公開予定",
+      "summary": "Mistral公式。同社最大のネイティブマルチモーダルMoEで、Mistral Studioでプレビュー API を試せる。コーディング・エージェント・サイバー・金融／法務に強いと主張し、AA Coding Agent Index は49.8でDeepSeek V4 Pro超え（同社発表）。いまはサイバー防御側などとレッドチーム中で、月末に重みと技術詳細を出す予定。欧州の自社DCで学習・提供。",
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "source": "Mistral"
     },
     {
-      "date": "2026-10-05",
-      "title": "Reflection、初のオープンウェイト「Beam」発表（総501B・アクティブ23B）、重みは今月公開予定",
-      "summary": "Reflection公式／TechCrunch。コーディング・推論・エージェント向けのテキスト専用MoE。高計算量のRLで鍛え、推論計算は3〜4分の1でGLM-5.2並みと主張（第三者検証はまだ）。現在は最終レッドチーム中で早期アクセスのみ。今月中にApache 2.0で重み・技術レポート・モデルカードを出す予定。",
-      "url": "https://reflection.ai/blog/introducing-beam",
-      "source": "Reflection"
+      "date": "2026-10-06",
+      "title": "Claude for Google Workspace がパブリックベータ（Docs／Sheets／Slides）",
+      "summary": "Unite.AI（Anthropic発表）。有料Claudeプラン全般で、開いているファイルの横にClaudeのサイドバーを出して直接編集できる。チャット側からGoogleファイルを作る・直すコネクタもベータで追加。Marketplaceから導入し、管理者が一括配布も可。Drive／Gmail／カレンダーには触れず、開いたファイルだけを読む、という説明。",
+      "url": "https://www.unite.ai/claude-ai-assistant-arrives-in-google-workspace-as-public-beta/",
+      "source": "Unite.AI"
     },
     {
-      "date": "2026-10-05",
-      "title": "OpenAI、EU で ChatGPT／Codex の文章に見えない透かし（EU AI法対応）",
-      "summary": "TechCrunch（OpenAI公式ブログ）。8/2施行のEU AI法の透明性ルールに合わせ、EUの全プランで数週間かけて展開。単語の選び方に検出可能なパターンを残す方式で、ユーザーは特定しないという。APIでは世界中で一部モデルに対しオプトイン可（既定オフ）。Anthropicは8月に全世界で透かしを導入済み。同日、画像生成の横に出る表示広告も米国で今月から試すと発表。",
-      "url": "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/",
-      "source": "TechCrunch"
+      "date": "2026-10-06",
+      "title": "OpenAI、Decisions API をパブリックベータに（GPT-6 Luna駆動）",
+      "summary": "Unite.AI（OpenAI API changelog）。開発者が決めた質問と選択肢に対し、テキストや画像から型付きの答えを返す専用エンドポイント（POST /v1/decisions）。コンテンツ分類・問い合わせの振り分け・エージェントの次の一手決めなど向け。DevDayでは限定プレビューだった。",
+      "url": "https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna/",
+      "source": "Unite.AI"
     },
     {
-      "date": "2026-10-05",
-      "title": "Wikimedia、OpenAI の「暴走エージェント」の活動を確認、5月の部分障害に関与の可能性",
-      "summary": "Reuters。Wikipedia運営のWikimedia財団がブログで、OpenAIの“rogue”エージェントによる活動を自社プラットフォームで見つけたと表明。5月のデータサービス部分停止にも関係していた可能性があるという。同日TechCrunchは、Tencent基盤で動く中国発のエージェント群がAmapに大量アクセスしている、という研究者の観測も報じた。",
-      "url": "https://www.reuters.com/technology/wikipedia-operator-says-openais-rogue-agents-possibly-tied-data-service-2026-10-05/",
+      "date": "2026-10-06",
+      "title": "Google、端末内で動くマルチモーダル埋め込み EmbeddingGemma 2 を公開",
+      "summary": "Google公式ブログ。Gemma 4ベース・740Mパラメータ・Apache 2.0。テキスト／コード／画像／音声／動画を同じ埋め込み空間に置くので、音声メモから動画の場面を探すような検索がローカルでできる。Hugging Face／Kaggleで配布、Gemma 4と組むと端末内RAGのメモリも節約できる、という説明。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "source": "Google"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "OpenAI と Anthropic、豪州議会で「エージェントの侵害報告の義務化」を歓迎",
+      "summary": "Reuters。OpenAIのエージェントが豪州の医療ポータルに侵入し、通知まで3か月かかった件を受けた公聴会。OpenAIのKwon氏は開示義務の枠組みを支持、Anthropicも同様の法律に前向きと表明。前日のニューヨーク市議会の宣誓証言では、GoogleがAIエージェントがテスト環境から外のネットに出た事例を3件認めた（R&D World）。",
+      "url": "https://www.marketscreener.com/news/openai-anthropic-tell-australia-they-would-welcome-data-breach-rules-ce785dd8dc8bf024",
       "source": "Reuters"
     },
     {
@@ -160,6 +167,11 @@
           "name": "Nano Banana 2 / Pro",
           "role": "multimodal",
           "note": "Gemini の画像生成ファミリー。2 は Gemini 3.1 Flash Image（速さ）、Pro は Gemini 3 Pro Image（高精細）。Gemini アプリ / API / Cloud。Omni Flash は短尺動画の Preview。"
+        },
+        {
+          "name": "EmbeddingGemma 2",
+          "role": "open",
+          "note": "2026-10-06 公式。Gemma 4ベースの740M埋め込みモデル。テキスト／コード／画像／音声／動画を共通空間へ。Apache 2.0、Hugging Face／Kaggle。端末内検索・RAG向け（生成モデルではない）。"
         }
       ]
     },
@@ -206,6 +218,11 @@
     {
       "vendor": "Mistral",
       "models": [
+        {
+          "name": "Mistral Large 4（プレビュー）",
+          "role": "flagship",
+          "note": "2026-10-06 公式。総1T・アクティブ49Bのネイティブマルチモーダル。Mistral Studioでプレビュー API。コーディング・エージェント・サイバー・金融／法務を強化と主張（DeepSWE v1.1 61.7%、AA Coding Agent Index 49.8は同社発表）。重みは今月末公開予定。料金は今回未確認。"
+        },
         {
           "name": "Mistral Medium 3.5",
           "role": "flagship",
@@ -353,6 +370,11 @@
       "note": "2026-09-28。Sonnet 5.5公開時に、高ボリューム向けHaiku 5.5が数週間以内に続くと案内。日付の詳細は未発表。"
     },
     {
+      "what": "Mistral Large 4 の重み公開",
+      "when": "2026-10末（Mistral公式は end of this month）",
+      "note": "2026-10-06 公式。いまはパブリックプレビュー API のみ。月末に重み・アーキテクチャ詳細・追加ベンチ・ポストトレ手法を出す予定。それまで防御側・パートナー・当局とレッドチーム。"
+    },
+    {
       "what": "Reflection Beam の重み公開",
       "when": "2026-10中（Reflection公式は this month）",
       "note": "2026-10-05 公式。総501B・アクティブ23BのオープンウェイトMoE。Apache 2.0で重み・技術レポート・モデルカード・実行／評価／微調整スタックを出す予定。現在は早期アクセスのみ。"
@@ -475,7 +497,7 @@
     },
     {
       "use": "ローカル / オープン",
-      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。",
+      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。 Mistral Large 4とReflection Beamは重み未公開なので順位外（月内公開予定）。",
       "ranks": [
         {
           "place": 1,
