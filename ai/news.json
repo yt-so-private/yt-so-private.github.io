@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-08T09:20:00+09:00",
+  "generatedAt": "2026-10-09T10:40:00+09:00",
   "items": [
+    {
+      "date": "2026-10-09",
+      "title": "Gemini アプリ、本日 10/9 から無料は Flash-Lite のみに（AI Plus は Pro 外し）",
+      "summary": "9to5Google（Googleサポート文書）。本日10/9以降、無料ユーザーは3.5 Flash-Liteのみで3.6 Flash／3.1 Proは使えなくなる、と案内。「will start to take effect」表記のため一部アカウントは遅れる可能性あり。AI Plus（$4.99）はFlash-Lite＋FlashでProは外れる（適用日はメールで個別通知）。AI Pro／Ultraは変更なしで、AI ProにもDeep Thinkが追加。Gemini 4 Argonがどの枠に入るかは未発表。",
+      "url": "https://9to5google.com/2026/10/03/gemini-model-limits-oct-26/",
+      "source": "9to5Google"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Google Cloud、業務向け「Gemini agent」を発表（Claudeも選択可）",
+      "summary": "Google公式／TechCrunch。Gemini at Work 2026で、質問だけでなく目標を渡して業務を進めるユニバーサルエージェントを発表。組織の文脈を使い、ドキュメント・メール・開発環境に成果を返す。既定では最適モデルを自動選択し、ユーザーがAnthropicのClaudeも含めて選べる。エンタープライズ向けに先行（消費者向けは後日）。価格・一般提供日は未発表。",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-at-work/",
+      "source": "Google"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Anthropic、Cyber Mission を開始（重要インフラ防衛＋OSS Scanner）",
+      "summary": "Anthropic公式。防御側を支援する長期取り組み。重要インフラ向けにCritical Infrastructure Defense Program（Accenture・CrowdStrike・PwC等と提携）、オープンソース向けにOSS Scanner（最強モデルによる定期脆弱性スキャンを無料・オプトイン、報告は人間レビューなし）。Project Glasswingの知見を踏まえ、攻撃側に追いつきつつある防御ツールの到達範囲を広げる狙い。",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "source": "Anthropic"
+    },
     {
       "date": "2026-10-07",
       "title": "Anthropic、Claude Haiku 5.5 を公開（10万トークン以下なら入力$0.10／出力$0.50）",
@@ -16,32 +37,11 @@
       "source": "Unite.AI"
     },
     {
-      "date": "2026-10-07",
-      "title": "Biohub・米エネルギー省・NIH・Google DeepMind・Metaら、AI向け生物データに計18億ドル",
-      "summary": "Biohub公式／CNBC。細胞が遺伝子や薬の変化にどう反応するかを予測するAIモデルのため、AIで学習しやすい公開データを作る取り組みを拡大。DOEが5年で5億ドル超、NIHは過去の連邦資金（5億ドル超）で作ったデータを提供、DeepMind・Isomorphic Labs・Metaが計3億ドル。4月のBiohub 5億ドルと合わせて計18億ドル。",
-      "url": "https://biohub.org/news/virtual-biology-initiative-expansion/",
-      "source": "Biohub"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "Perplexity が多モーダル検索用の埋め込み、Liquid AI が端末向け「判断」モデルをオープン公開",
-      "summary": "Perplexityは pplx-embed-v2-late（0.6B／9B）をHugging Faceで公開。OCRなしでテキスト・画像・PDF・スライドをまとめて検索できる、という説明（Crypto Briefing）。Liquid AIは d1-3B と d1-omni-600M を公開し、d1-3Bは同社のDecision Indexで10B未満トップ、RTX 4090で1問8ミリ秒と主張（Liquid公式）。",
-      "url": "https://www.liquid.ai/blog/d1-open",
-      "source": "Liquid AI / Crypto Briefing"
-    },
-    {
       "date": "2026-10-06",
       "title": "Mistral Large 4 をパブリックプレビュー（総1T・アクティブ49B）、重みは今月末公開予定",
       "summary": "Mistral公式。同社最大のネイティブマルチモーダルMoEで、Mistral Studioでプレビュー API を試せる。コーディング・エージェント・サイバー・金融／法務に強いと主張し、AA Coding Agent Index は49.8でDeepSeek V4 Pro超え（同社発表）。いまはサイバー防御側などとレッドチーム中で、月末に重みと技術詳細を出す予定。欧州の自社DCで学習・提供。",
       "url": "https://mistral.ai/news/mistral-large-4/",
       "source": "Mistral"
-    },
-    {
-      "date": "2026-10-03",
-      "title": "Gemini アプリ、明日 10/9 から無料は Flash-Lite のみに（AI Pro に Deep Think）",
-      "summary": "9to5Google（Googleサポート文書更新）。10/9以降、無料ユーザーは3.5 Flash-Liteのみで3.6 Flash／3.1 Proは使えなくなる。AI Plus（$4.99）はFlash-Lite＋Flashで、Proは外れる（適用日はメールで個別通知）。AI Pro／Ultraは変更なしで、AI ProにもDeep Thinkが追加。10月中に各モデルの思考レベル（低／中／高）も追加予定。Gemini 4 Argonがどの枠に入るかは未発表。",
-      "url": "https://9to5google.com/2026/10/03/gemini-model-limits-oct-26/",
-      "source": "9to5Google"
     }
   ],
   "lineups": [
@@ -306,6 +306,11 @@
       "name": "Dots",
       "kind": "常時オン／クラウドエージェント",
       "note": "2026-09-29 DevDay。GPT-6 Astra駆動の常時オン個人エージェント。専用クラウドPCとブラウザ、4000超のアプリ連携。ChatGPT／Slack／Teamsから利用。Pro・Business Premium・Enterprise向けに展開開始。初期レビューでは業務寄り・Custom Rulesが強み、一方で起動遅延や権限エラーの指摘あり。Grok BotはTeach-a-taskやクラウドPC操作が滑らか、という比較。"
+    },
+    {
+      "name": "Gemini agent",
+      "kind": "常時オン／クラウドエージェント（企業向け）",
+      "note": "2026-10-08 Google Cloud（Gemini at Work）。業務向けユニバーサルエージェント。目標を渡すと計画・ツール・社内システム連携まで進め、成果をドキュメント／メール／開発環境へ返す。既定で最適モデルを自動選択し、Claudeも含めて手動切替可。エンタープライズ先行（消費者向けは後日）。価格・一般提供日は未発表。"
     },
     {
       "name": "Muse（Meta）",
