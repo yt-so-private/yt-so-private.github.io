@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-10-09T10:40:00+09:00",
+  "generatedAt": "2026-10-12T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-10-10",
+      "title": "Google、次の Gemini 4「Carbon」を社内テスト中（コーディングは Opus 5.5 並みとの声）",
+      "summary": "Business Insider報道（AI Buzz Wire等が紹介）。社内コーディング基盤Jetskiで最近配備され、Argonよりプログラミングに強いとの初期評価。社員の一人は「Opus 5.5のよう」と述べつつ要追加検証と注意。Argonの名で出るか別モデルになるか、そもそも公開されるかは未定。Argonは引き続きFairwind（防御側）限定。",
+      "url": "https://aibuzzwire.news/en/article/google-gemini-4-carbon-internal-coding-model-claude-opus-5-5",
+      "source": "AI Buzz Wire"
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Claude に Dashboards／Motion（ベータ）、Docs・Slides・Design は無料プランでも",
+      "summary": "The Open Letter。ライブのデータダッシュボード（Dashboards）とアニメ解説動画（Motion）をベータ公開。文書・スライド・デザインツールはテストを終え全プランで利用可に。既に4500万件以上が作られたという。Microsoft 365／Google Workspaceとの競合色が強まる。",
+      "url": "https://theopenletter.io/p/claude-office-suite",
+      "source": "The Open Letter"
+    },
     {
       "date": "2026-10-09",
       "title": "Gemini アプリ、本日 10/9 から無料は Flash-Lite のみに（AI Plus は Pro 外し）",
@@ -28,20 +42,6 @@
       "summary": "Anthropic公式。5.5ファミリーの小型・最速枠で、サブエージェントや要約・分類などの大量処理向け。10万トークン以下のプロンプトはHaiku 4.5より90%安く、超えると$0.50/$2.50（50%安）。平均では約75%安い、という説明。1Mコンテキスト・最大出力128K、APIはclaude-haiku-5-5でAWS／GCP／Azureでも提供。同日にSonnet 5.5のキャッシュ読み取りも半額（$0.10）に。",
       "url": "https://www.anthropic.com/claude-haiku-5-5",
       "source": "Anthropic"
-    },
-    {
-      "date": "2026-10-07",
-      "title": "ChatGPT のチャットが GPT-6 に、回答をボタンやグラフ付きで返す「Intelligent UI」",
-      "summary": "Unite.AI（OpenAI発表）。質問に応じて、文章だけでなく図・タップできるボタン・フォーム・チャートなどを組み合わせた対話的な答えを返す。10/7からPlus／Pro／Business／Enterpriseで順次、10/8からFree／Goにも拡大。有料はGPT-6 Sol、Free／GoはGPT-6 Lunaが担当。WorkとCodexのモデルは今回変わらない。",
-      "url": "https://www.unite.ai/openai-brings-gpt-6-with-intelligent-ui-to-all-chatgpt-tiers/",
-      "source": "Unite.AI"
-    },
-    {
-      "date": "2026-10-06",
-      "title": "Mistral Large 4 をパブリックプレビュー（総1T・アクティブ49B）、重みは今月末公開予定",
-      "summary": "Mistral公式。同社最大のネイティブマルチモーダルMoEで、Mistral Studioでプレビュー API を試せる。コーディング・エージェント・サイバー・金融／法務に強いと主張し、AA Coding Agent Index は49.8でDeepSeek V4 Pro超え（同社発表）。いまはサイバー防御側などとレッドチーム中で、月末に重みと技術詳細を出す予定。欧州の自社DCで学習・提供。",
-      "url": "https://mistral.ai/news/mistral-large-4/",
-      "source": "Mistral"
     }
   ],
   "lineups": [
