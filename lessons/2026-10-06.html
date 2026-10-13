@@ -3,149 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3ecdf">
 <title>That's on me · Daily English</title>
 <!--
   Thicker Daily English template (~15–18 min)
   Sections: 0流れ → 1聞く → 2チャンク → 3音読 → 4軽いシャドーイング → 5瞬間英作文 → 6クイズ
 -->
-<style>
-  :root {
-    --bg: #f6f1e8;
-    --ink: #1c1915;
-    --muted: #6b645b;
-    --card: #fffdf8;
-    --line: #e6ddd0;
-    --accent: #c45c26;
-    --ok: #2c6e49;
-    --bad: #9b2c2c;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.65;
-  }
-  main { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-  header { margin-bottom: 1.5rem; }
-  .kicker {
-    font-size: .75rem;
-    letter-spacing: .14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-weight: 700;
-  }
-  h1 { font-size: 1.6rem; margin: .35rem 0 .25rem; letter-spacing: -.02em; }
-  .sub { color: var(--muted); font-size: .95rem; }
-  section {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 1.25rem 1.2rem;
-    margin: 1rem 0;
-  }
-  h2 { font-size: 1.05rem; margin: 0 0 .8rem; }
-  .note { color: var(--muted); font-size: .9rem; margin: 0 0 .75rem; }
-  .passage { font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; }
-  .passage p { margin: 0 0 .8rem; }
-  .vocab { display: grid; gap: .6rem; }
-  .item { border-bottom: 1px dashed var(--line); padding-bottom: .55rem; }
-  .item:last-child { border: 0; padding: 0; }
-  .en { font-weight: 700; display: flex; align-items: baseline; gap: .35rem; flex-wrap: wrap; }
-  .gloss { color: var(--ink); font-size: .95rem; margin-top: .15rem; }
-  .tag {
-    font-size: .65rem;
-    font-weight: 700;
-    letter-spacing: .06em;
-    color: var(--accent);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    padding: .1rem .45rem;
-    margin-left: .25rem;
-  }
-  .hint { color: var(--muted); font-size: .9rem; margin-top: .5rem; display: none; }
-  .flow { list-style: none; padding: 0; margin: 0; }
-  .flow li {
-    display: flex;
-    gap: .6rem;
-    align-items: flex-start;
-    padding: .35rem 0;
-    border-bottom: 1px dashed var(--line);
-    font-size: .95rem;
-  }
-  .flow li:last-child { border: 0; }
-  .flow .min { color: var(--muted); font-size: .8rem; white-space: nowrap; min-width: 2.8rem; }
-  button {
-    appearance: none;
-    border: 1px solid var(--line);
-    background: #fff;
-    color: var(--ink);
-    border-radius: 999px;
-    padding: .35rem .75rem;
-    font: inherit;
-    font-size: .8rem;
-    cursor: pointer;
-  }
-  button:hover { border-color: var(--accent); color: var(--accent); }
-  button.primary {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #fff;
-  }
-  button.primary:hover { filter: brightness(1.05); color: #fff; }
-  .listen {
-    font-size: .72rem;
-    padding: .2rem .55rem;
-    margin-left: .35rem;
-    vertical-align: middle;
-    line-height: 1.2;
-    white-space: nowrap;
-  }
-  h2 .listen { vertical-align: baseline; }
-  .speak-line {
-    display: flex;
-    align-items: baseline;
-    gap: .35rem;
-    flex-wrap: wrap;
-    margin: 0 0 .7rem;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.05rem;
-  }
-  .speak-line > span { flex: 1 1 auto; }
-  .prompt {
-    border: 1px dashed var(--line);
-    border-radius: 12px;
-    padding: .9rem 1rem;
-    margin: 0 0 .9rem;
-  }
-  .prompt .ja { font-weight: 600; margin: 0 0 .55rem; }
-  .prompt .model { display: none; margin-top: .55rem; }
-  .prompt .model .en-line {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-  }
-  .q { margin: 1rem 0 1.4rem; }
-  .q p { margin: 0 0 .5rem; font-weight: 600; }
-  .choices { display: flex; flex-wrap: wrap; gap: .4rem; }
-  .choices button { border-radius: 10px; padding: .5rem .8rem; }
-  .choices button.correct { background: #e7f4ec; border-color: var(--ok); color: var(--ok); }
-  .choices button.wrong { background: #fbeaea; border-color: var(--bad); color: var(--bad); }
-  .feedback { font-size: .9rem; margin-top: .4rem; min-height: 1.2em; color: var(--muted); }
-  .quiz-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
-    align-items: center;
-    margin-top: .5rem;
-  }
-  #quiz-score { color: var(--muted); font-size: .9rem; }
-  footer { color: var(--muted); font-size: .8rem; margin-top: 1.5rem; }
-  footer a { color: var(--accent); }
-</style>
+<link rel="stylesheet" href="../assets/site.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("de.theme");
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  } catch (e) {}
+})();
+</script>
 </head>
-<body>
+<body class="lesson">
+<header class="topbar">
+  <a class="brand" href="../index.html">英語の10分<small>一覧へ</small></a>
+  <div class="topbar-actions">
+    <button type="button" class="icon-btn" data-theme-toggle aria-label="ダーク表示にする">ダーク</button>
+  </div>
+</header>
+
 <main>
   <header>
     <div class="kicker">Daily English · B1</div>
@@ -176,8 +57,8 @@
       <p>Lesson learned.</p>
       <p>Honestly, I'm not used to waking up this early.</p>
     </div>
-    <p style="margin-top:.75rem"><button type="button" data-toggle="#ja1">日本語を見る</button></p>
-    <div id="ja1" class="hint">ごめん、間違った時間を送っちゃった。私のせいだ。大丈夫、実害はないよ。ちゃんと間に合ったし。次はまず念のため確認するね。念には念を。いい勉強になった。正直、こんなに早起きするのは慣れてないんだ。</div>
+    <details class="reveal"><summary>日本語を見る</summary><div class="hint">ごめん、間違った時間を送っちゃった。私のせいだ。大丈夫、実害はないよ。ちゃんと間に合ったし。次はまず念のため確認するね。念には念を。いい勉強になった。正直、こんなに早起きするのは慣れてないんだ。</div></details>
+    
   </section>
 
   <section>
@@ -215,10 +96,10 @@
   <section>
     <h2>5. 瞬間英作文</h2>
     <p class="note">日本語を見て、英語を口に出してから「英語を見る」。</p>
-    <div class="prompt"><p class="ja">ごめん、私のせいだ。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">Sorry, that's on me. <button type="button" class="listen" data-speak="Sorry, that's on me.">▶ 聞く</button></div></div></div>
-    <div class="prompt"><p class="ja">大丈夫、実害はないよ。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">No harm done. <button type="button" class="listen" data-speak="No harm done.">▶ 聞く</button></div></div></div>
-    <div class="prompt"><p class="ja">念のため確認させて。用心するに越したことはないから。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">Let me double-check. Better safe than sorry. <button type="button" class="listen" data-speak="Let me double-check. Better safe than sorry.">▶ 聞く</button></div></div></div>
-    <div class="prompt"><p class="ja">こんなに早起きするのは慣れてない。</p><button type="button" data-reveal>英語を見る</button><div class="model"><div class="en-line">I'm not used to waking up this early. <button type="button" class="listen" data-speak="I'm not used to waking up this early.">▶ 聞く</button></div></div></div>
+    <div class="prompt"><p class="ja">ごめん、私のせいだ。</p><details class="reveal"><summary>英語を見る</summary><div class="model"><div class="en-line">Sorry, that's on me. <button type="button" class="listen" data-speak="Sorry, that's on me.">▶ 聞く</button></div></div></details></div>
+    <div class="prompt"><p class="ja">大丈夫、実害はないよ。</p><details class="reveal"><summary>英語を見る</summary><div class="model"><div class="en-line">No harm done. <button type="button" class="listen" data-speak="No harm done.">▶ 聞く</button></div></div></details></div>
+    <div class="prompt"><p class="ja">念のため確認させて。用心するに越したことはないから。</p><details class="reveal"><summary>英語を見る</summary><div class="model"><div class="en-line">Let me double-check. Better safe than sorry. <button type="button" class="listen" data-speak="Let me double-check. Better safe than sorry.">▶ 聞く</button></div></div></details></div>
+    <div class="prompt"><p class="ja">こんなに早起きするのは慣れてない。</p><details class="reveal"><summary>英語を見る</summary><div class="model"><div class="en-line">I'm not used to waking up this early. <button type="button" class="listen" data-speak="I'm not used to waking up this early.">▶ 聞く</button></div></div></details></div>
   </section>
 
   <section>
@@ -390,5 +271,8 @@
     });
   });
 </script>
+<script src="../assets/progress.js"></script>
+<script src="../assets/theme.js"></script>
+<script src="../assets/lesson.js"></script>
 </body>
 </html>
