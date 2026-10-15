@@ -1,54 +1,40 @@
 {
-  "generatedAt": "2026-10-14T09:20:00+09:00",
+  "generatedAt": "2026-10-15T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-10-14",
+      "title": "Paper Instruments、Ultramarine 1 Flash を公開（知識業務向けエージェントモデル）",
+      "summary": "Paper Instruments公式（10/14）。オープンのGLM-5.3 Flashをベースに、検証しにくい知識業務向けのRLを大規模化したエージェントモデル。金融・法務・コンサル・オペの合成タスクで学習。同社の知識業務スイートではタスクあたり約$0.13で、Fable 5やGPT-5.6 Sol（max）を上回り、Opus 5.5／GPT-6 Solに近い点を主張（ベンダー数字）。APIで利用可、重みは近日予定。",
+      "url": "https://www.paperinstruments.com/blog/ultramarine",
+      "source": "Paper Instruments"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Anthropic、社内向け版管理システム Scion を公開（1日3万マージ超でGitから移行）",
+      "summary": "Anthropic公式エンジニアリング。エージェントが書くコードが増え、5月の約2,500マージ／日から9月は3万超に。ボトルネックはコーディングではなくソース管理・CIだと説明し、5か月でモノレポをGitから自前のScionへ全面移行。あわせてレビュー面Antiqueなども構築。7人チーム。一般向けのGit代替ではなく、巨大モノレポ／エージェント前提の設計共有が目的。OSS化はなし。",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "source": "Anthropic"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Anthropic、Claudeの蒸留攻撃対策を強化（抽出データは約90〜99%減と主張）",
+      "summary": "Anthropic公式リサーチ。推論の抜き取りを狙う蒸留攻撃向けに、preserved thinking（新規APIアカウントは思考ブロック周辺の改変不可）、二段分類器、再試行の制限などを導入。蒸留側が取れる推論トークンは以前の1/10〜1/100に減った、と自社計測。ZhipuのGLM-5.3やMoonshot経由の不正利用事例にも言及。正規ユーザー向けの統合変更や誤検知（0.1%未満）のトレードオフあり。",
+      "url": "https://www.anthropic.com/research/distillation-defenses",
+      "source": "Anthropic"
+    },
     {
       "date": "2026-10-13",
       "title": "Google、Gemini 4 Argon を一般公開（API・Geminiアプリ・Antigravity）",
-      "summary": "Google公式。9/30のFairwind限定から拡大し、世界でAPI（AI Studio／Geminiプラットフォームの有料枠）、Gemini for business、Google AI Ultra／ProのGeminiアプリと検索AIモード、UltraのAntigravityで利用可に。入出力合わせて1Mトークン、新しいcontinuation protocolあり。導入料金は入力$2／出力$10／1M（キャッシュ95%オフ）で11/30まで、その後$4／$20。The VergeはGPT-6 Astra・Fable 5の約1/5の単価と報道（ベンチ優位はGoogleの主張）。",
+      "summary": "Google公式。9/30のFairwind限定から拡大し、世界でAPI（AI Studio／Geminiプラットフォームの有料枠）、Gemini for business、Google AI Ultra／ProのGeminiアプリと検索AIモード、UltraのAntigravityで利用可に。入出力合わせて1Mトークン、新しいcontinuation protocolあり。導入料金は入力$2／出力$10／1M（キャッシュ95%オフ）で11/30まで、その後$4／$20。防御向けのArgon Cyber Permissive（Fairwind許可リスト）も同時にGA。",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "source": "Google"
     },
     {
-      "date": "2026-10-13",
-      "title": "OpenAI・Anthropic、英議会で「拘束力ある規制を」　Google DeepMind・Metaは慎重",
-      "summary": "WIRED。英議会の公聴会で、Anthropicは自主的な約束では不十分で法的拘束力のあるルールが要ると明言。OpenAIもインシデント報告など一部の義務化と国際条約を支持。Google DeepMindは標準づくり重視、Metaは既存の規制当局で足りるとして新法は支持せず。",
-      "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
-      "source": "WIRED"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Reuters：OpenAIとAnthropic、外部安全評価の公表内容を管理しようとしていた",
-      "summary": "Reuters独自。営業秘密の流出を懸念し、外部評価者が何を公表できるかに強い管理を求めていた、と関係者2人。10/5時点では厳しい編集権を求め、10/8ごろから軟化。Anthropicは評価者が手法・結論・公表を決めると説明、OpenAIは全文の承認権は求めず機密部分を伏せるのが通例と回答。",
-      "url": "https://www.streetinsider.com/Reuters/Exclusive-Behind+AI+industrys+call+for+independent+reviews%2C+a+fight+over+what+gets+made+public/27176240.html",
-      "source": "Reuters"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Workday と Anthropic が提携（Claude から人事・財務データを操作）",
-      "summary": "Workday公式（Workday Rising 2026）。ClaudeとWorkdayのSanaエージェントをMCPでつなぎ、どちらから始めても文脈と権限を引き継ぐ。Claude内で人事・財務データの分析や承認ができ、既存の権限・監査に従う。Sana in Claudeプラグインは早期アクセス中で、一般提供は2026年後半予定。",
-      "url": "https://en-sg.newsroom.workday.com/2026-10-13-Workday-and-Anthropic-Announce-New-Partnership-to-Connect-Reasoning-to-the-Rules-That-Run-the-Business,-Wherever-People-Choose-to-Work",
-      "source": "Workday"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Liquid AI、LFM2.5-24B-A2B を公開（ノートPCで動くツール呼び出し向けMoE）",
-      "summary": "OrcaRouterのまとめ。総24B・アクティブ約2.45BのMoEで、コンテキストは前世代の32Kから131Kへ。LFM2.5ファミリー最大かつ最後のモデル。Qwen3.6-35B-A3Bとの比較表はLiquid自身の数字で、第三者の再現はまだ。",
-      "url": "https://www.orcarouter.ai/blog/lfm2-5-24b-a2b-release",
-      "source": "OrcaRouter"
-    },
-    {
       "date": "2026-10-12",
       "title": "Meta、Muse Wonder／Muse Wonder Full を公開（エージェント向けの新旗艦）",
-      "summary": "Meta公式。Muse Sparkの上位で、Active Memory（会話をまたいで要点を保持）とActive Focus（難所で別手を試し、重要操作の前に確認）が売り。WonderはMeta Model API（muse-wonder-1.0、1Mコンテキスト、プレビュー）とMuse Codeで本日から。APIは入力$4／出力$20／1M（キャッシュ$0.20）という報道。Wonder FullはMuse Codeの$50／$200プラン限定でAPIなし。消費者向けMuseアプリには近日、サブスク加入者から。詳細な安全性レポートは後日。",
+      "summary": "Meta公式。Muse Sparkの上位で、Active Memory（会話をまたいで要点を保持）とActive Focus（難所で別手を試し、重要操作の前に確認）が売り。WonderはMeta Model API（muse-wonder-1.0、1Mコンテキスト、プレビュー）とMuse Codeで本日から。APIは入力$4／出力$20／1M（キャッシュ$0.20）という報道。Wonder FullはMuse Codeの$50／$200プラン限定でAPIなし。消費者向けMuseアプリには近日、サブスク加入者から。",
       "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
       "source": "Meta"
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Microsoft、自社AIチップ Maia 300 を発表（2027年から主力の推論基盤に）",
-      "summary": "Microsoft公式ブログ。第3世代の推論専用チップで、長文脈の推論・会話・多段エージェント向け。GPU系より電力あたりトークン40%増、96基ラックでMaia 200の最大7倍のスループットを見込む。2027年に本番投入し、数GW規模でCopilot・GitHub・Foundryなど自社サービスの主な推論基盤にする方針。Maia 200は既に本番稼働中。",
-      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
-      "source": "Microsoft"
     }
   ],
   "lineups": [
