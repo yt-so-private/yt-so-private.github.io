@@ -2,6 +2,8 @@
   var ASSET = "../assets/";
 
   function ensureCss() {
+    // Lessons written from the old template carry an inline <style>; drop it so site.css wins.
+    document.querySelectorAll("head style").forEach(function (s) { s.remove(); });
     if (document.querySelector('link[href*="assets/site.css"]')) return;
     var link = document.createElement("link");
     link.rel = "stylesheet";
