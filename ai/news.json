@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-15T09:15:00+09:00",
+  "generatedAt": "2026-10-16T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-15",
+      "title": "Meta、Muse Spark Open の重みを公開（米国製オープンウェイトで最強と主張）",
+      "summary": "Meta公式（10/15）。総816B・アクティブ42BのMoEで、テキスト・画像・音声・動画を入力できるネイティブマルチモーダル、1Mコンテキスト。コーディングと長時間エージェント作業向け。重みはHugging Face／SageMaker／Google Cloud Model Garden／Microsoft Foundryで入手でき、APIはBaseten・Fireworks・Groq・OpenRouter・Togetherなど。Appleと組み、M5 Ultra Mac Studioでのローカル実行も打ち出し（MLX対応、3bit／4bit量子化あり）。「最強」はMetaの主張。",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "source": "Meta"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "NVIDIA、Nemotron 3.5 Super VL と Bolt を公開（常時稼働エージェント〜ローカル向けのオープンモデル）",
+      "summary": "NVIDIA公式ブログ。Super VLは120Bのオープンな視覚言語モデルで、専門エージェントのタスク完了の速さと精度を主張（ベンダー数字）。ローカル向けにBolt 74B-A9B（約24GB）を同時公開し、llama.cpp／Ollama／LM Studio／vLLMなどに対応。4GBのBolt E4Bは10/23予定。Hugging Face・OpenRouter・NIMで提供。",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source": "NVIDIA"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "OpenAI、米国の大学研究室向けに Rosalind Academic Plan を開始",
+      "summary": "OpenAI公式。生命科学向けモデルGPT-Rosalindを、審査を通った米国大学の研究室に提供。ChatGPT Business席（最大30席・最長12か月）を無償で付け、ChatGPTとCodexで使える。PI（研究室長）が信頼アクセスの手続きで申請し、本人・大学の確認あり。API利用やAPIクレジットは含まれない。日本の大学は今のところ対象外。",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
+      "source": "OpenAI"
+    },
     {
       "date": "2026-10-14",
       "title": "Paper Instruments、Ultramarine 1 Flash を公開（知識業務向けエージェントモデル）",
@@ -14,27 +35,6 @@
       "summary": "Anthropic公式エンジニアリング。エージェントが書くコードが増え、5月の約2,500マージ／日から9月は3万超に。ボトルネックはコーディングではなくソース管理・CIだと説明し、5か月でモノレポをGitから自前のScionへ全面移行。あわせてレビュー面Antiqueなども構築。7人チーム。一般向けのGit代替ではなく、巨大モノレポ／エージェント前提の設計共有が目的。OSS化はなし。",
       "url": "https://www.anthropic.com/engineering/redesigning-source-control",
       "source": "Anthropic"
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Anthropic、Claudeの蒸留攻撃対策を強化（抽出データは約90〜99%減と主張）",
-      "summary": "Anthropic公式リサーチ。推論の抜き取りを狙う蒸留攻撃向けに、preserved thinking（新規APIアカウントは思考ブロック周辺の改変不可）、二段分類器、再試行の制限などを導入。蒸留側が取れる推論トークンは以前の1/10〜1/100に減った、と自社計測。ZhipuのGLM-5.3やMoonshot経由の不正利用事例にも言及。正規ユーザー向けの統合変更や誤検知（0.1%未満）のトレードオフあり。",
-      "url": "https://www.anthropic.com/research/distillation-defenses",
-      "source": "Anthropic"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Google、Gemini 4 Argon を一般公開（API・Geminiアプリ・Antigravity）",
-      "summary": "Google公式。9/30のFairwind限定から拡大し、世界でAPI（AI Studio／Geminiプラットフォームの有料枠）、Gemini for business、Google AI Ultra／ProのGeminiアプリと検索AIモード、UltraのAntigravityで利用可に。入出力合わせて1Mトークン、新しいcontinuation protocolあり。導入料金は入力$2／出力$10／1M（キャッシュ95%オフ）で11/30まで、その後$4／$20。防御向けのArgon Cyber Permissive（Fairwind許可リスト）も同時にGA。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "source": "Google"
-    },
-    {
-      "date": "2026-10-12",
-      "title": "Meta、Muse Wonder／Muse Wonder Full を公開（エージェント向けの新旗艦）",
-      "summary": "Meta公式。Muse Sparkの上位で、Active Memory（会話をまたいで要点を保持）とActive Focus（難所で別手を試し、重要操作の前に確認）が売り。WonderはMeta Model API（muse-wonder-1.0、1Mコンテキスト、プレビュー）とMuse Codeで本日から。APIは入力$4／出力$20／1M（キャッシュ$0.20）という報道。Wonder FullはMuse Codeの$50／$200プラン限定でAPIなし。消費者向けMuseアプリには近日、サブスク加入者から。",
-      "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-      "source": "Meta"
     }
   ],
   "lineups": [
@@ -212,6 +212,11 @@
           "note": "2026-09-02。Axios / Meta for Developers。コーディングとエージェント向け。2026-10-12からはMuse Wonderの下で「安い方」の位置づけ（公式ドキュメント）。Muse Code と Meta Model API。1M コンテキスト、テキスト＋画像＋動画入力という第三者まとめ。max reasoning は発売直後は安全テスト待ちで、9/4 前後に API / Muse Code へ追加。ネイティブマルチモーダルのクローズド枠（Llama 系とは別）。"
         },
         {
+          "name": "Muse Spark Open",
+          "role": "open",
+          "note": "2026-10-15 公式。Museシリーズのフルサイズのオープンウェイト。総816B・アクティブ42BのMoE、1Mコンテキスト、テキスト＋画像＋音声＋動画入力（出力はテキスト）。コーディング／長時間エージェント向け。重みはHugging Face（meta-models）や各クラウド、APIはBaseten・Fireworks・Groq・OpenRouter・Togetherなど。M5 Ultra Mac Studioでのローカル実行を案内（MLX、3bit／4bit量子化）。"
+        },
+        {
           "name": "Llama 4 Scout / Maverick",
           "role": "open",
           "note": "2025-04-05 公開のオープン寄りの MoE。Scout は 17B active / 109B total、コンテキスト 1000万。Maverick は 17B active / 400B total。llama.com と Hugging Face から入手。ローカル運用の定番枠。"
@@ -265,6 +270,21 @@
           "name": "DeepSeek-V4-Flash",
           "role": "cheap",
           "note": "284B total / 13B active。速さ・安さ枠。API は deepseek-v4-flash。1M コンテキスト。Flash-0731（2026-07-31）が現行、というまとめ。"
+        }
+      ]
+    },
+    {
+      "vendor": "NVIDIA",
+      "models": [
+        {
+          "name": "Nemotron 3.5 Super VL",
+          "role": "open",
+          "note": "2026-10-15 公式。120Bのオープンな視覚言語モデル。常時稼働の専門エージェント向けで、速さと精度を主張（ベンダー数字）。Hugging Face・OpenRouter・ModelScope・NVIDIA NIM。"
+        },
+        {
+          "name": "Nemotron 3.5 Bolt 74B-A9B",
+          "role": "open",
+          "note": "2026-10-15 公式。約24GBのローカル向けMoE。llama.cpp／Ollama／LM Studio／Unsloth／vLLM対応。RTX PC・DGX Spark・RTX PROなどで動く。4GBのBolt E4Bは10/23予定。"
         }
       ]
     },
@@ -381,6 +401,11 @@
       "what": "Reflection Beam の重み公開",
       "when": "2026-10中（Reflection公式は this month）",
       "note": "2026-10-05 公式。総501B・アクティブ23BのオープンウェイトMoE。Apache 2.0で重み・技術レポート・モデルカード・実行／評価／微調整スタックを出す予定。現在は早期アクセスのみ。"
+    },
+    {
+      "what": "Nemotron 3.5 Bolt E4B（4GB）",
+      "when": "2026-10-23（NVIDIA公式）",
+      "note": "2026-10-15 公式ブログ。会話エージェント向けの小型オープンモデル。Super VLとBolt 74B-A9Bは公開済み。"
     },
     {
       "what": "GPT-6 Astra の一般提供拡大",
@@ -505,22 +530,22 @@
     },
     {
       "use": "ローカル / オープン",
-      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。 Mistral Large 4とReflection Beamは重み未公開なので順位外（月内公開予定）。",
+      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。Muse Spark Open（10/15）とNemotron 3.5（10/15）は公開直後で独立評価はこれから。Mistral Large 4とReflection Beamは重み未公開なので順位外（月内公開予定）。",
       "ranks": [
         {
           "place": 1,
-          "name": "DeepSeek-V4-Pro / Flash",
-          "why": "公式がオープンソースと案内。Hugging Face。1M コンテキスト。能力はクローズドのすぐ近く、という SWE-bench 集計。"
+          "name": "DeepSeek-V4-Pro / Flash / Muse Spark Open",
+          "why": "DeepSeekは公式がオープンソースと案内、1Mコンテキストでクローズドのすぐ近く、という SWE-bench 集計。Muse Spark OpenはMetaが米国製オープンで最強と主張（816B／42Bアクティブ、マルチモーダル入力）。"
         },
         {
           "place": 2,
-          "name": "Llama 4 Scout / Maverick",
-          "why": "Meta 公式からダウンロード。Scout は単一 H100 と 10M コンテキストが売り。エコシステムが広い。"
+          "name": "Llama 4 Scout / Maverick / Nemotron 3.5 Super VL",
+          "why": "Llamaはエコシステムが広く、Scoutは単一H100と10Mコンテキストが売り。Super VLは120Bの視覚言語オープンでエージェント向け。"
         },
         {
           "place": 3,
-          "name": "Mistral Small 4 / Large 3 / Ministral 3",
-          "why": "公式 docs で Apache 2.0 の小型〜中型が揃う。PC やエッジ向け。Muse Glimmer も同帯の新しい選択肢。"
+          "name": "Mistral Small 4 / Ministral 3 / Muse Glimmer / Nemotron 3.5 Bolt",
+          "why": "手元のPC・Mac・エッジで回しやすい帯。MistralはApache 2.0、Glimmerは30B、Boltは約24GBでOllama等に対応。"
         }
       ]
     }
