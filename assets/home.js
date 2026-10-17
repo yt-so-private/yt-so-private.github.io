@@ -37,6 +37,7 @@
   }
 
   var todayDate = dateFrom(today.getAttribute("href"));
+  var revealedMonths = {};
   var items = Array.prototype.map.call(arch.querySelectorAll(":scope > li"), function (li) {
     var link = li.querySelector("a");
     return {
@@ -98,6 +99,16 @@
       if (state.restart && date < state.restart) return false;
       return !!state.done[date];
     }).length;
+
+    var savedOpen = null;
+    var monthNodes = shelf.querySelectorAll("details.month");
+    if (monthNodes.length) {
+      savedOpen = {};
+      monthNodes.forEach(function (node) {
+        if (node.open) savedOpen[node.getAttribute("data-month")] = true;
+      });
+    }
+
     shelf.replaceChildren();
 
     var head = document.createElement("div");
@@ -121,17 +132,29 @@
       group.items.push(item);
     });
 
-    var openMonths = {};
-    shelf.querySelectorAll("details.month[open]").forEach(function (node) {
-      openMonths[node.getAttribute("data-month")] = true;
+    // Five most recent past lessons stay visible. A short newest month
+    // borrows the rest of that budget from the following months.
+    var PREVIEW = 5;
+    var budget = PREVIEW;
+    var previewCount = {};
+    var startsOpen = {};
+    groups.forEach(function (group) {
+      if (budget > 0) {
+        var n = Math.min(group.items.length, budget);
+        previewCount[group.key] = n;
+        startsOpen[group.key] = true;
+        budget -= n;
+      } else {
+        previewCount[group.key] = group.items.length;
+        startsOpen[group.key] = false;
+      }
     });
-    var keepOpen = shelf.querySelector("details.month") !== null;
 
-    groups.forEach(function (group, index) {
+    groups.forEach(function (group) {
       var details = document.createElement("details");
       details.className = "month";
       details.setAttribute("data-month", group.key);
-      details.open = keepOpen ? !!openMonths[group.key] : index === 0;
+      details.open = savedOpen ? !!savedOpen[group.key] : !!startsOpen[group.key];
       var summary = document.createElement("summary");
       var label = document.createElement("span");
       label.textContent = formatMonth(group.key);
@@ -144,7 +167,9 @@
       details.appendChild(summary);
 
       var list = document.createElement("ul");
-      group.items.forEach(function (item) {
+      var showCount = revealedMonths[group.key] ? group.items.length : previewCount[group.key];
+      group.items.forEach(function (item, index) {
+        if (index >= showCount) return;
         var tracked = !!state.restart && item.date >= state.restart;
         if (state.restart === item.date) {
           var marker = document.createElement("li");
@@ -181,6 +206,29 @@
         row.appendChild(link);
         list.appendChild(row);
       });
+      if (showCount < group.items.length) {
+        var hidden = group.items.length - showCount;
+        var moreItem = document.createElement("li");
+        moreItem.className = "month-more";
+        var moreBtn = document.createElement("button");
+        moreBtn.type = "button";
+        var moreLabel = document.createElement("span");
+        moreLabel.textContent = "もっと";
+        var moreCount = document.createElement("span");
+        moreCount.className = "month-more-count";
+        moreCount.textContent = "残り" + hidden + "枚";
+        moreBtn.append(moreLabel, moreCount);
+        moreBtn.addEventListener("click", function () {
+          revealedMonths[group.key] = true;
+          var focusHref = group.items[showCount].href;
+          announce(formatMonth(group.key) + "の残りを表示しました。");
+          render();
+          var again = shelf.querySelector('details.month[data-month="' + group.key + '"] a[href="' + focusHref + '"]');
+          if (again) again.focus();
+        });
+        moreItem.appendChild(moreBtn);
+        list.appendChild(moreItem);
+      }
       details.appendChild(list);
       shelf.appendChild(details);
     });

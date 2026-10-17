@@ -431,6 +431,45 @@ main {
   padding: 0 0.35rem 0.4rem;
 }
 
+.month-more {
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.month-more button {
+  appearance: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.72rem 0.55rem;
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.month-more button:hover {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+.month-more-count {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
 .marker {
   list-style: none;
   margin: 0.15rem 0.45rem 0.2rem;
