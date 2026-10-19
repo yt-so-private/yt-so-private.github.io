@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-16T09:20:00+09:00",
+  "generatedAt": "2026-10-19T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-17",
+      "title": "DeepSeek、V4.1-Flash-1017 を公開（同価格のまま性能アップ、MIT で重みも）",
+      "summary": "DeepSeek公式（10/17）。V4.1-Flashの小改良版で、ベンチは軒並み上がり、作業時間と出力の長さは短くなったと主張（DeepSWE v1.1で77.0、ベンダー数字）。API名はdeepseek-flashのままで料金も据え置き。重みはMITライセンスでHugging Face／ModelScopeに。あわせて自社検索のSearch & Fetch APIを全員に開放（各$0.75／1,000回、DeepSeek Harness・Claude Code・Codex経由のサーバー側ツール呼び出しは10/31まで無料）。",
+      "url": "https://api-docs.deepseek.com/news/news261017/",
+      "source": "DeepSeek"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Reflection、Beam の重みを Apache 2.0 で公開（501B のオープン MoE）",
+      "summary": "Reflection公式（10/16）。総501B・アクティブ23BのMoEで、コーディング・推論・長時間エージェント向け。テキスト入力、1Mコンテキスト。Hugging Faceで重みを公開し、モデルカードに最終ベンチ、安全性の技術レポートも同時公開。Rust製の専用ハーネスがあり、transformers／vLLM／SGLangに初日対応。40超のパートナー経由でも使える。",
+      "url": "https://reflection.ai/blog/beam-is-available",
+      "source": "Reflection"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Elorian、画像・動画を見直しながら考える Glimpse を公開（$0.60／$3）",
+      "summary": "Elorian公式（10/16）。推論の途中で画像を切り抜いたり動画のフレームを取り出したりして、根拠を見直してから答える視覚推論モデル。科学チャートの読み取りや数え上げ、短い動画の説明でGPT-6 Astraを上回ると主張（ベンダー数字）。料金は入力$0.60／出力$3（1M）、コンテキスト262K。APIとチャットで研究プレビュー提供、OpenRouterやVercel AI Gatewayにも。",
+      "url": "https://elorian.ai/blog/introducing-glimpse",
+      "source": "Elorian"
+    },
     {
       "date": "2026-10-15",
       "title": "Meta、Muse Spark Open の重みを公開（米国製オープンウェイトで最強と主張）",
@@ -14,27 +35,6 @@
       "summary": "NVIDIA公式ブログ。Super VLは120Bのオープンな視覚言語モデルで、専門エージェントのタスク完了の速さと精度を主張（ベンダー数字）。ローカル向けにBolt 74B-A9B（約24GB）を同時公開し、llama.cpp／Ollama／LM Studio／vLLMなどに対応。4GBのBolt E4Bは10/23予定。Hugging Face・OpenRouter・NIMで提供。",
       "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
       "source": "NVIDIA"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "OpenAI、米国の大学研究室向けに Rosalind Academic Plan を開始",
-      "summary": "OpenAI公式。生命科学向けモデルGPT-Rosalindを、審査を通った米国大学の研究室に提供。ChatGPT Business席（最大30席・最長12か月）を無償で付け、ChatGPTとCodexで使える。PI（研究室長）が信頼アクセスの手続きで申請し、本人・大学の確認あり。API利用やAPIクレジットは含まれない。日本の大学は今のところ対象外。",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan/",
-      "source": "OpenAI"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Paper Instruments、Ultramarine 1 Flash を公開（知識業務向けエージェントモデル）",
-      "summary": "Paper Instruments公式（10/14）。オープンのGLM-5.3 Flashをベースに、検証しにくい知識業務向けのRLを大規模化したエージェントモデル。金融・法務・コンサル・オペの合成タスクで学習。同社の知識業務スイートではタスクあたり約$0.13で、Fable 5やGPT-5.6 Sol（max）を上回り、Opus 5.5／GPT-6 Solに近い点を主張（ベンダー数字）。APIで利用可、重みは近日予定。",
-      "url": "https://www.paperinstruments.com/blog/ultramarine",
-      "source": "Paper Instruments"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Anthropic、社内向け版管理システム Scion を公開（1日3万マージ超でGitから移行）",
-      "summary": "Anthropic公式エンジニアリング。エージェントが書くコードが増え、5月の約2,500マージ／日から9月は3万超に。ボトルネックはコーディングではなくソース管理・CIだと説明し、5か月でモノレポをGitから自前のScionへ全面移行。あわせてレビュー面Antiqueなども構築。7人チーム。一般向けのGit代替ではなく、巨大モノレポ／エージェント前提の設計共有が目的。OSS化はなし。",
-      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "source": "Anthropic"
     }
   ],
   "lineups": [
@@ -264,12 +264,12 @@
         {
           "name": "DeepSeek-V4-Pro",
           "role": "flagship",
-          "note": "公式発表の 1.6T total / 49B active MoE。1M コンテキスト。API は deepseek-v4-pro。オープンウェイト（Hugging Face）。Thinking / Non-Thinking。Pro-0813 が現行チェックポイント、という第三者まとめ。"
+          "note": "公式発表の 1.6T total / 49B active MoE。1M コンテキスト。API は deepseek-v4-pro。オープンウェイト（Hugging Face）。Thinking / Non-Thinking。Pro-0813 が現行チェックポイント、という第三者まとめ。 公式の中国語更新ログでは、9/14以降も API 提供を続けると案内。"
         },
         {
-          "name": "DeepSeek-V4-Flash",
+          "name": "DeepSeek-V4.1-Flash-1017",
           "role": "cheap",
-          "note": "284B total / 13B active。速さ・安さ枠。API は deepseek-v4-flash。1M コンテキスト。Flash-0731（2026-07-31）が現行、というまとめ。"
+          "note": "2026-10-17 公式。V4.1-Flash（9/10、552BのMoE、ネイティブ画像入力）の小改良版。API は deepseek-flash（旧 deepseek-v4-flash 名もここへ転送）、料金据え置き。1M コンテキスト。重みは MIT。"
         }
       ]
     },
@@ -305,6 +305,16 @@
           "name": "Nova Multimodal Embeddings",
           "role": "multimodal",
           "note": "テキスト・文書・画像・動画・音声を一つの埋め込み空間へ。RAG と検索向け。"
+        }
+      ]
+    },
+    {
+      "vendor": "Reflection",
+      "models": [
+        {
+          "name": "Beam",
+          "role": "open",
+          "note": "2026-10-16 重み公開（Apache 2.0）。総501B／アクティブ23BのMoE、テキスト入力、1Mコンテキスト。コーディング・エージェント向けで、Rust製の専用ハーネスあり。"
         }
       ]
     }
@@ -396,11 +406,6 @@
       "what": "Mistral Large 4 の重み公開",
       "when": "2026-10末（Mistral公式は end of this month）",
       "note": "2026-10-06 公式。いまはパブリックプレビュー API のみ。月末に重み・アーキテクチャ詳細・追加ベンチ・ポストトレ手法を出す予定。それまで防御側・パートナー・当局とレッドチーム。"
-    },
-    {
-      "what": "Reflection Beam の重み公開",
-      "when": "2026-10中（Reflection公式は this month）",
-      "note": "2026-10-05 公式。総501B・アクティブ23BのオープンウェイトMoE。Apache 2.0で重み・技術レポート・モデルカード・実行／評価／微調整スタックを出す予定。現在は早期アクセスのみ。"
     },
     {
       "what": "Nemotron 3.5 Bolt E4B（4GB）",
@@ -497,7 +502,7 @@
         },
         {
           "place": 2,
-          "name": "GPT-6.1 Sol / Claude Sonnet 5.5 / DeepSeek-V4-Flash",
+          "name": "GPT-6.1 Sol / Claude Sonnet 5.5 / DeepSeek-V4.1-Flash",
           "why": "6.1 SolとSonnet 5.5はいずれも$2/$10帯（Sonnet 5.5はキャッシュ読みが$0.10に値下げ）。旗艦のArgonも導入期間は同帯。Flashはオープンで安い。"
         },
         {
@@ -530,17 +535,17 @@
     },
     {
       "use": "ローカル / オープン",
-      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。Muse Spark Open（10/15）とNemotron 3.5（10/15）は公開直後で独立評価はこれから。Mistral Large 4とReflection Beamは重み未公開なので順位外（月内公開予定）。",
+      "sourceNote": "今日点の目安。重み公開とローカル実行のしやすさ。frontier のクローズドとは別リーグ。Muse Spark Open・Nemotron 3.5（10/15）、Reflection Beam（10/16）、DeepSeek-V4.1-Flash-1017（10/17）は公開直後で独立評価はこれから。Mistral Large 4は重み未公開なので順位外（月末公開予定）。",
       "ranks": [
         {
           "place": 1,
-          "name": "DeepSeek-V4-Pro / Flash / Muse Spark Open",
-          "why": "DeepSeekは公式がオープンソースと案内、1Mコンテキストでクローズドのすぐ近く、という SWE-bench 集計。Muse Spark OpenはMetaが米国製オープンで最強と主張（816B／42Bアクティブ、マルチモーダル入力）。"
+          "name": "DeepSeek-V4-Pro / V4.1-Flash / Muse Spark Open",
+          "why": "DeepSeekは公式がオープンソースと案内、1Mコンテキストでクローズドのすぐ近く、という SWE-bench 集計。V4.1-Flash-1017はMITで重み公開。Muse Spark OpenはMetaが米国製オープンで最強と主張（816B／42Bアクティブ、マルチモーダル入力）。"
         },
         {
           "place": 2,
-          "name": "Llama 4 Scout / Maverick / Nemotron 3.5 Super VL",
-          "why": "Llamaはエコシステムが広く、Scoutは単一H100と10Mコンテキストが売り。Super VLは120Bの視覚言語オープンでエージェント向け。"
+          "name": "Reflection Beam / Llama 4 Scout / Maverick / Nemotron 3.5 Super VL",
+          "why": "Beamは501B／23BアクティブのApache 2.0（公開直後で暫定）。Llamaはエコシステムが広く、Scoutは単一H100と10Mコンテキストが売り。Super VLは120Bの視覚言語オープンでエージェント向け。"
         },
         {
           "place": 3,
