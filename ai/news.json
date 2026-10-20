@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-10-19T09:20:00+09:00",
+  "generatedAt": "2026-10-20T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-19",
+      "title": "Inception、拡散型LLM Mercury 3 を公開（毎秒1,000トークン超、$0.20／$0.70）",
+      "summary": "Inception公式（10/19、Business Wire）。文章を1トークンずつではなく並列に生成する拡散型LLMの最新版。Mercury 1の40倍超の規模でも毎秒1,000トークン超を保ち、GPT-6 Luna／Claude Haiku 5.5と同等以上で4〜8倍速いと主張（ベンダー数字）。コンテキストは1M。料金は入力$0.20／出力$0.70（1M）で、発売記念で当面半額。OpenAI互換APIで、Baseten・OpenRouter・Vercelでも使える。",
+      "url": "https://finance.yahoo.com/technology/ai/articles/inception-launches-mercury-3-setting-164800350.html",
+      "source": "Inception（Business Wire）"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "MiniMax、M3.1 Flash を公開（エージェント作業のコスト7割減、重みは後日）",
+      "summary": "MiniMax公式（10/19）。OpenRouterで匿名公開されていた「Space Bunny」の正式版。エージェント・コーディング・コンピュータ操作が大きく伸び、推論は約3倍速、エージェント作業のコストは前世代比70%減と主張（ベンダー数字）。料金は入力$0.15／出力$0.60（1M）、キャッシュ$0.015。API・M Plan・MiniMax Codeで提供。重みは「後日」（10/23予定という報道、ライセンスは未発表）。Vercel AI Gatewayでは10/22まで無料。",
+      "url": "https://www.minimax.io/blog/minimax-m31f",
+      "source": "MiniMax"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "報道：Anthropic・Google・OpenAI がそろって次のモデルを準備中",
+      "summary": "The Information報道（10/19、Digital Today等が転載）。Anthropicは利用者の意図をくみ取る力が強い新モデルを準備中（Fable系かOpus系かは不明）。GoogleはArgonの一段上とみられる「Gemini 4 Carbon」を開発中。OpenAIは数週間内に、GPT-6.1 Solより高性能で安い中位「Terra」系を出す見込み。いずれも公式発表ではない。",
+      "url": "https://www.digitaltoday.co.kr/en/view/116605/anthropic-readies-new-ai-model-to-better-grasp-user-intent",
+      "source": "The Information（Digital Today経由）"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Anthropic、株式の5%を公益ファンドに拠出へ（企業価値が伸びると上乗せ）",
+      "summary": "Anthropic公式（10/18）。新設のAnthropic Public Benefit Fund（全額出資のLLC）に株式5%を拠出（株主承認が条件）。基準値から企業価値が50%増えるごとに、取締役会の判断で2%ずつ追加。AIによる雇用への影響などに、非営利への寄付や特定の人々への直接分配で取り組む想定。ロビー活動や政治献金には使わない。創業者・社員の寄付分と合わせて株式の約2割が公益向けになるという。",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "source": "Anthropic"
+    },
     {
       "date": "2026-10-17",
       "title": "DeepSeek、V4.1-Flash-1017 を公開（同価格のまま性能アップ、MIT で重みも）",
@@ -14,27 +42,6 @@
       "summary": "Reflection公式（10/16）。総501B・アクティブ23BのMoEで、コーディング・推論・長時間エージェント向け。テキスト入力、1Mコンテキスト。Hugging Faceで重みを公開し、モデルカードに最終ベンチ、安全性の技術レポートも同時公開。Rust製の専用ハーネスがあり、transformers／vLLM／SGLangに初日対応。40超のパートナー経由でも使える。",
       "url": "https://reflection.ai/blog/beam-is-available",
       "source": "Reflection"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Elorian、画像・動画を見直しながら考える Glimpse を公開（$0.60／$3）",
-      "summary": "Elorian公式（10/16）。推論の途中で画像を切り抜いたり動画のフレームを取り出したりして、根拠を見直してから答える視覚推論モデル。科学チャートの読み取りや数え上げ、短い動画の説明でGPT-6 Astraを上回ると主張（ベンダー数字）。料金は入力$0.60／出力$3（1M）、コンテキスト262K。APIとチャットで研究プレビュー提供、OpenRouterやVercel AI Gatewayにも。",
-      "url": "https://elorian.ai/blog/introducing-glimpse",
-      "source": "Elorian"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Meta、Muse Spark Open の重みを公開（米国製オープンウェイトで最強と主張）",
-      "summary": "Meta公式（10/15）。総816B・アクティブ42BのMoEで、テキスト・画像・音声・動画を入力できるネイティブマルチモーダル、1Mコンテキスト。コーディングと長時間エージェント作業向け。重みはHugging Face／SageMaker／Google Cloud Model Garden／Microsoft Foundryで入手でき、APIはBaseten・Fireworks・Groq・OpenRouter・Togetherなど。Appleと組み、M5 Ultra Mac Studioでのローカル実行も打ち出し（MLX対応、3bit／4bit量子化あり）。「最強」はMetaの主張。",
-      "url": "https://research.meta.ai/blog/muse-spark-open",
-      "source": "Meta"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "NVIDIA、Nemotron 3.5 Super VL と Bolt を公開（常時稼働エージェント〜ローカル向けのオープンモデル）",
-      "summary": "NVIDIA公式ブログ。Super VLは120Bのオープンな視覚言語モデルで、専門エージェントのタスク完了の速さと精度を主張（ベンダー数字）。ローカル向けにBolt 74B-A9B（約24GB）を同時公開し、llama.cpp／Ollama／LM Studio／vLLMなどに対応。4GBのBolt E4Bは10/23予定。Hugging Face・OpenRouter・NIMで提供。",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "source": "NVIDIA"
     }
   ],
   "lineups": [
@@ -413,6 +420,11 @@
       "note": "2026-10-15 公式ブログ。会話エージェント向けの小型オープンモデル。Super VLとBolt 74B-A9Bは公開済み。"
     },
     {
+      "what": "MiniMax M3.1 Flash の重み公開",
+      "when": "2026-10-23（報道。公式は「後日」）",
+      "note": "2026-10-19 公式ブログ。いまはAPI・M Plan・MiniMax Codeのみ。ライセンスは未発表。"
+    },
+    {
       "what": "GPT-6 Astra の一般提供拡大",
       "when": "展開中（公式は coming days。高度なサイバーは限定）",
       "note": "2026-09-03 リリースノート。限定組織へ先行。Plus / Pro / Business / Enterprise と API・Bedrock / Azure は数日で拡大予定、と案内。Advanced cybersecurity は Trusted Access / Daybreak 系の防御用途に制限。"
@@ -445,7 +457,7 @@
     {
       "what": "次の世代（Grok 4.8 / 4.9、GPT-5.7、Gemini 4 の残りのモデルなど）",
       "when": "公式の発売日は未発表",
-      "note": "Grok 4.7は2026-09-21公開済み。Gemini 4 Argonは2026-10-13に一般公開し、Googleは「Gemini 4ファミリーの残りも出す」とだけ案内（日付なし）。MuskはXで4.8／4.9／Grok 5をスケッチしたが日付なし。他社の次世代も公式日は未確定。"
+      "note": "Grok 4.7は2026-09-21公開済み。Gemini 4 Argonは2026-10-13に一般公開し、Googleは「Gemini 4ファミリーの残りも出す」とだけ案内（日付なし）。MuskはXで4.8／4.9／Grok 5をスケッチしたが日付なし。他社の次世代も公式日は未確定。 2026-10-19のThe Information報道では、Anthropicの新モデル、Googleの「Gemini 4 Carbon」、OpenAIの中位Terra系（数週間内）が準備中。いずれも公式日なし。"
     }
   ],
   "rankings": [
@@ -493,7 +505,7 @@
     },
     {
       "use": "速さ・安さ",
-      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。Haiku 5.5は10万トークン以下の料金で比較（超えると$0.50/$2.50）。Argonは旗艦だが導入$2/$10（11/30まで、その後$4/$20）。実測レイテンシの一枚板は取っていない。",
+      "sourceNote": "今日点の目安。公式のトークン価格と「安い／速い」の位置づけ。Haiku 5.5は10万トークン以下の料金で比較（超えると$0.50/$2.50）。Argonは旗艦だが導入$2/$10（11/30まで、その後$4/$20）。実測レイテンシの一枚板は取っていない。 10/19公開のMercury 3（$0.20/$0.70、毎秒1,000トークン超）とMiniMax M3.1 Flash（$0.15/$0.60）はベンダー数字のみで独立評価待ちのため順位外。",
       "ranks": [
         {
           "place": 1,
