@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-10-20T09:20:00+09:00",
+  "generatedAt": "2026-10-21T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-10-20",
+      "title": "Google、Gemini の Personal Intelligence を車載へ（Android Autoから順次）",
+      "summary": "Google公式（10/20）。Geminiが世界のAndroid Auto／Google搭載車で使えるようになり、本人が有効にすればGmail・カレンダー・フォト・マップ・YouTube・検索の情報を使って運転中の質問に答える（例：空港へ向かう途中で搭乗口と遅延を一度に確認）。Android Autoは本日から、Google搭載車は数か月内。オプトインで、18歳以上の個人アカウントのみ。EEA・スイス・英国などは対象外。",
+      "url": "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/",
+      "source": "Google"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Anthropic の連邦AI安全法案ドラフトに賛否（50人超の死傷・10億ドル超の損害が基準）",
+      "summary": "Politico報道（10/16）を受け、TechCrunch等が10/20に詳報。Anthropicが議員に示したとされる法案案では、外部評価者が定期的に最先端モデルを評価し、生物兵器・サイバー攻撃・制御喪失で50人超の死傷か10億ドル超の損害の差し迫ったリスクがあれば、商務省が連邦裁判所に公開停止を求められる。商務省以外の機関は止められず、州の同種規制も制限する内容。Anthropicは自社の提言に沿うと説明する一方、基準が高すぎる・評価者が企業から報酬を受けうると批判も出ている。",
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+      "source": "TechCrunch（Politico報道）"
+    },
     {
       "date": "2026-10-19",
       "title": "Inception、拡散型LLM Mercury 3 を公開（毎秒1,000トークン超、$0.20／$0.70）",
@@ -28,20 +42,6 @@
       "summary": "Anthropic公式（10/18）。新設のAnthropic Public Benefit Fund（全額出資のLLC）に株式5%を拠出（株主承認が条件）。基準値から企業価値が50%増えるごとに、取締役会の判断で2%ずつ追加。AIによる雇用への影響などに、非営利への寄付や特定の人々への直接分配で取り組む想定。ロビー活動や政治献金には使わない。創業者・社員の寄付分と合わせて株式の約2割が公益向けになるという。",
       "url": "https://www.anthropic.com/news/public-benefit-fund",
       "source": "Anthropic"
-    },
-    {
-      "date": "2026-10-17",
-      "title": "DeepSeek、V4.1-Flash-1017 を公開（同価格のまま性能アップ、MIT で重みも）",
-      "summary": "DeepSeek公式（10/17）。V4.1-Flashの小改良版で、ベンチは軒並み上がり、作業時間と出力の長さは短くなったと主張（DeepSWE v1.1で77.0、ベンダー数字）。API名はdeepseek-flashのままで料金も据え置き。重みはMITライセンスでHugging Face／ModelScopeに。あわせて自社検索のSearch & Fetch APIを全員に開放（各$0.75／1,000回、DeepSeek Harness・Claude Code・Codex経由のサーバー側ツール呼び出しは10/31まで無料）。",
-      "url": "https://api-docs.deepseek.com/news/news261017/",
-      "source": "DeepSeek"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Reflection、Beam の重みを Apache 2.0 で公開（501B のオープン MoE）",
-      "summary": "Reflection公式（10/16）。総501B・アクティブ23BのMoEで、コーディング・推論・長時間エージェント向け。テキスト入力、1Mコンテキスト。Hugging Faceで重みを公開し、モデルカードに最終ベンチ、安全性の技術レポートも同時公開。Rust製の専用ハーネスがあり、transformers／vLLM／SGLangに初日対応。40超のパートナー経由でも使える。",
-      "url": "https://reflection.ai/blog/beam-is-available",
-      "source": "Reflection"
     }
   ],
   "lineups": [
