@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-21T09:15:00+09:00",
+  "generatedAt": "2026-10-22T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-10-21",
+      "title": "OpenAI のモデルが Google Cloud に（GPT-6 Astra／6.1 Sol／6 Luna、まず限定プレビュー）",
+      "summary": "OpenAI・Google Cloud公式（10/21）。Model GardenでGPT-6 Astra・GPT-6.1 Sol・GPT-6 Lunaを一部の企業向けに限定プレビュー開始、一般提供は数週間内。支払いはGoogle Cloud Marketplace経由で既存のクラウド利用枠も使える。Codex CLI／Desktopの推論をGoogle側で動かすこともでき、今後はAntigravityやGemini for businessでもOpenAIモデルを選べる予定。Googleは主要3社（Gemini・Claude・OpenAI）のモデルをそろえた唯一の大手クラウドになったと説明。Microsoftは引き続きOpenAIの主要クラウドパートナー。",
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "source": "OpenAI／Google Cloud"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "米国土安全保障省、連邦の民間機関に DeepSeek 製品の排除を命令（同日 DeepSeek は推論基盤 DeepInfer を公開）",
+      "summary": "DHSが10/20に官報で命令を公表。財務省・国務省・司法省などの民間機関でDeepSeekの製品・サービスの調達を禁じ、既存のIT環境から削除を求める。DeepSeekを使って作られた他社製品も対象で、その範囲はまだはっきりしない（国防総省は対象外、例外申請は可）。同じ10/20、DeepSeekはV4.1-Flashの本番サービスを支える推論フレームワークDeepInferをApache-2.0でGitHub公開（NVIDIA SM100・Huawei Ascend 950対応、性能グラフは自社測定）。",
+      "url": "https://www.deai.org/news/daily-brief-2026-10-21",
+      "source": "DeAI Daily Brief（官報・GitHub）"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Anthropic、Claude がサソリ毒に結合するタンパク質を設計（初期研究段階）",
+      "summary": "The Neuron（10/21）によると、Anthropicは64時間のタンパク質設計の大部分をClaudeが進めたと報告。外部の研究室が211件の設計を試験し、17件が単一の毒素への結合という厳しい基準を満たした。細胞や動物で毒を中和できるかはまだ示されておらず、抗毒素ができたわけではない。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/",
+      "source": "The Neuron"
+    },
     {
       "date": "2026-10-20",
       "title": "Google、Gemini の Personal Intelligence を車載へ（Android Autoから順次）",
@@ -17,13 +38,6 @@
     },
     {
       "date": "2026-10-19",
-      "title": "Inception、拡散型LLM Mercury 3 を公開（毎秒1,000トークン超、$0.20／$0.70）",
-      "summary": "Inception公式（10/19、Business Wire）。文章を1トークンずつではなく並列に生成する拡散型LLMの最新版。Mercury 1の40倍超の規模でも毎秒1,000トークン超を保ち、GPT-6 Luna／Claude Haiku 5.5と同等以上で4〜8倍速いと主張（ベンダー数字）。コンテキストは1M。料金は入力$0.20／出力$0.70（1M）で、発売記念で当面半額。OpenAI互換APIで、Baseten・OpenRouter・Vercelでも使える。",
-      "url": "https://finance.yahoo.com/technology/ai/articles/inception-launches-mercury-3-setting-164800350.html",
-      "source": "Inception（Business Wire）"
-    },
-    {
-      "date": "2026-10-19",
       "title": "MiniMax、M3.1 Flash を公開（エージェント作業のコスト7割減、重みは後日）",
       "summary": "MiniMax公式（10/19）。OpenRouterで匿名公開されていた「Space Bunny」の正式版。エージェント・コーディング・コンピュータ操作が大きく伸び、推論は約3倍速、エージェント作業のコストは前世代比70%減と主張（ベンダー数字）。料金は入力$0.15／出力$0.60（1M）、キャッシュ$0.015。API・M Plan・MiniMax Codeで提供。重みは「後日」（10/23予定という報道、ライセンスは未発表）。Vercel AI Gatewayでは10/22まで無料。",
       "url": "https://www.minimax.io/blog/minimax-m31f",
@@ -35,13 +49,6 @@
       "summary": "The Information報道（10/19、Digital Today等が転載）。Anthropicは利用者の意図をくみ取る力が強い新モデルを準備中（Fable系かOpus系かは不明）。GoogleはArgonの一段上とみられる「Gemini 4 Carbon」を開発中。OpenAIは数週間内に、GPT-6.1 Solより高性能で安い中位「Terra」系を出す見込み。いずれも公式発表ではない。",
       "url": "https://www.digitaltoday.co.kr/en/view/116605/anthropic-readies-new-ai-model-to-better-grasp-user-intent",
       "source": "The Information（Digital Today経由）"
-    },
-    {
-      "date": "2026-10-18",
-      "title": "Anthropic、株式の5%を公益ファンドに拠出へ（企業価値が伸びると上乗せ）",
-      "summary": "Anthropic公式（10/18）。新設のAnthropic Public Benefit Fund（全額出資のLLC）に株式5%を拠出（株主承認が条件）。基準値から企業価値が50%増えるごとに、取締役会の判断で2%ずつ追加。AIによる雇用への影響などに、非営利への寄付や特定の人々への直接分配で取り組む想定。ロビー活動や政治献金には使わない。創業者・社員の寄付分と合わせて株式の約2割が公益向けになるという。",
-      "url": "https://www.anthropic.com/news/public-benefit-fund",
-      "source": "Anthropic"
     }
   ],
   "lineups": [
