@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-10-22T09:15:00+09:00",
+  "generatedAt": "2026-10-23T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-10-21",
+      "title": "Anthropic、先回りして動くエージェントアプリ「Claude Duet」を研究プレビュー",
+      "summary": "Anthropic公式（10/21）。Claude Opus 5.5ベースの単独アプリ（iOS・Android・claude.ai）。毎朝つないだアプリの要点をまとめて届け、数時間ごとに確認して必要なときだけ知らせる。クラウド上の専用VMとブラウザで裏で作業を続け、メール送信・支払い・署名・削除の前には承認を求める。米国のPro／Max向けにウェイトリストで順次開放、利用枠は通常のClaudeと共通。Team／Enterpriseは後日、Microsoft 365はまだ非対応。",
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "source": "Anthropic"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "AIが見つけたPHPの重大な脆弱性「PHP2Shell」、修正版公開（OpenAIは開示手順も提案）",
+      "summary": "OpenAIの「Patch the Planet」で研究者がGPT-5.6 Solを使い、PHPのエンジンに14年潜んでいたリモートコード実行の欠陥2件を発見。Wizも自社ツールとGemini 4 Argon・GPT-5.6 Solで独立に見つけた。PHPは10/21に8.5.12／8.4.27／8.3.36／8.2.35で修正。PHPを使うサイトは早めの更新を。OpenAIは多数の製品に影響するAI発見バグ向けに5段階の開示計画を公開し、今後こうした発見は急増すると見ている。",
+      "url": "https://toolsift.ai/llm-news/2026-10-22/",
+      "source": "ToolSift（OpenAI・Wiz・Help Net Security）"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Recursive、ノートPCで動くコーディングモデル「Flint」を公開（Apache 2.0）",
+      "summary": "Recursive初のモデル。約40BのMoE（1トークンあたり約2.5B）で、4bitなら約23GB、M4 Pro MacBook Proで毎秒約130トークン（自社測定）。開発の大半を自社の自動研究システムが担ったとしている。SWE-bench Verifiedでは50B未満のモデルで首位と主張する一方、Terminal-Benchなどでは一部の密モデルに及ばず、有料のコーディング支援より指示が要ると会社自身も認めている。重みはHugging Faceで無料。",
+      "url": "https://toolsift.ai/llm-news/2026-10-22/",
+      "source": "ToolSift（TechCrunch・The Neuron）"
+    },
     {
       "date": "2026-10-21",
       "title": "OpenAI のモデルが Google Cloud に（GPT-6 Astra／6.1 Sol／6 Luna、まず限定プレビュー）",
@@ -23,32 +44,11 @@
       "source": "The Neuron"
     },
     {
-      "date": "2026-10-20",
-      "title": "Google、Gemini の Personal Intelligence を車載へ（Android Autoから順次）",
-      "summary": "Google公式（10/20）。Geminiが世界のAndroid Auto／Google搭載車で使えるようになり、本人が有効にすればGmail・カレンダー・フォト・マップ・YouTube・検索の情報を使って運転中の質問に答える（例：空港へ向かう途中で搭乗口と遅延を一度に確認）。Android Autoは本日から、Google搭載車は数か月内。オプトインで、18歳以上の個人アカウントのみ。EEA・スイス・英国などは対象外。",
-      "url": "https://blog.google/products-and-platforms/platforms/android/android-auto-cars-with-google-built-in-gemini-personal-intelligence/",
-      "source": "Google"
-    },
-    {
-      "date": "2026-10-20",
-      "title": "Anthropic の連邦AI安全法案ドラフトに賛否（50人超の死傷・10億ドル超の損害が基準）",
-      "summary": "Politico報道（10/16）を受け、TechCrunch等が10/20に詳報。Anthropicが議員に示したとされる法案案では、外部評価者が定期的に最先端モデルを評価し、生物兵器・サイバー攻撃・制御喪失で50人超の死傷か10億ドル超の損害の差し迫ったリスクがあれば、商務省が連邦裁判所に公開停止を求められる。商務省以外の機関は止められず、州の同種規制も制限する内容。Anthropicは自社の提言に沿うと説明する一方、基準が高すぎる・評価者が企業から報酬を受けうると批判も出ている。",
-      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-      "source": "TechCrunch（Politico報道）"
-    },
-    {
       "date": "2026-10-19",
       "title": "MiniMax、M3.1 Flash を公開（エージェント作業のコスト7割減、重みは後日）",
       "summary": "MiniMax公式（10/19）。OpenRouterで匿名公開されていた「Space Bunny」の正式版。エージェント・コーディング・コンピュータ操作が大きく伸び、推論は約3倍速、エージェント作業のコストは前世代比70%減と主張（ベンダー数字）。料金は入力$0.15／出力$0.60（1M）、キャッシュ$0.015。API・M Plan・MiniMax Codeで提供。重みは「後日」（10/23予定という報道、ライセンスは未発表）。Vercel AI Gatewayでは10/22まで無料。",
       "url": "https://www.minimax.io/blog/minimax-m31f",
       "source": "MiniMax"
-    },
-    {
-      "date": "2026-10-19",
-      "title": "報道：Anthropic・Google・OpenAI がそろって次のモデルを準備中",
-      "summary": "The Information報道（10/19、Digital Today等が転載）。Anthropicは利用者の意図をくみ取る力が強い新モデルを準備中（Fable系かOpus系かは不明）。GoogleはArgonの一段上とみられる「Gemini 4 Carbon」を開発中。OpenAIは数週間内に、GPT-6.1 Solより高性能で安い中位「Terra」系を出す見込み。いずれも公式発表ではない。",
-      "url": "https://www.digitaltoday.co.kr/en/view/116605/anthropic-readies-new-ai-model-to-better-grasp-user-intent",
-      "source": "The Information（Digital Today経由）"
     }
   ],
   "lineups": [
@@ -418,8 +418,8 @@
     },
     {
       "what": "Mistral Large 4 の重み公開",
-      "when": "2026-10末（Mistral公式は end of this month）",
-      "note": "2026-10-06 公式。いまはパブリックプレビュー API のみ。月末に重み・アーキテクチャ詳細・追加ベンチ・ポストトレ手法を出す予定。それまで防御側・パートナー・当局とレッドチーム。"
+      "when": "2026-10-31（Hugging Faceの予定日。公式は end of this month）",
+      "note": "2026-10-06 公式。いまはパブリックプレビュー API のみ。月末に重み・アーキテクチャ詳細・追加ベンチ・ポストトレ手法を出す予定。それまで防御側・パートナー・当局とレッドチーム。 10/22時点ではHFは予告ページのみでダウンロード不可、ライセンス名も未公表。"
     },
     {
       "what": "Nemotron 3.5 Bolt E4B（4GB）",
