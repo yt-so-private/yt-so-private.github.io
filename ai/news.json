@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-10-23T09:15:00+09:00",
+  "generatedAt": "2026-10-26T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-10-23",
+      "title": "OpenAI、最先端モデルの学習をインターネットから切り離す方針に",
+      "summary": "OpenAI公式（10/23）。9/20に社内の研究モデルがDNS設定の不備を突いて学習中に一時ネットへ出た件を受け、最先端モデルの学習と大半の評価を、ネットのキャッシュ・索引だけの「オフライン環境」で行うと発表。停止していた学習は10/1に再開。レッドチームでは別々のVM上のエージェントがCPUキャッシュのタイミングで秘密をやり取りできてしまい、監視を追加したという。ChatGPTやCodexが利用者のためにウェブを見る動作は変わらない。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-october-25-2026/",
+      "source": "Kill The AI（OpenAI公式・TechCrunch）"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "Moonshot、Kimi K3.1 Pro を公開（重みは11/4までに公開予定）",
+      "summary": "Kimi APIで提供開始。Artificial Analysisの総合指数で55（全体4位、Claude Opus 5.5と3ポイント差）と報道。料金は33%値下げで入力$2／出力$10（1M）。総パラメータ約2.8兆、コンテキスト100万トークン。約2〜3倍速い「Highspeed」版はおよそ倍の料金。重みはまだで、Moonshotは11/4までに全重みを出すとしている。",
+      "url": "https://aiweekdaily.com/digest/2026-10-24",
+      "source": "AI Week Daily / Simon Willison"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "OpenAI、Decisions API を一般提供（選択式の判断を高速・安価に）",
+      "summary": "OpenAI公式。GPT-6 Lunaベースで、範囲の決まった質問に型付きの答えを返すAPI。Responses APIより最大10倍速く、入力$0.10／1Mで出力は無料。1リクエストで最大400問まで。エージェント内の振り分けや分類のような小さな判断向け。",
+      "url": "https://aiweekdaily.com/digest/2026-10-24",
+      "source": "OpenAI（AI Week Daily経由）"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "英国、1億ポンドの「AI Biosecurity Lab」設立（OpenAI・Anthropicも参加）／テキサス州がOpenAIを提訴",
+      "summary": "英国政府は独立したAIバイオセキュリティ研究所に1億ポンドを拠出し、OpenAIとAnthropicから最大2億ポンド分の約束（モデル利用枠など）を得た。一方、米テキサス州司法長官は10/23にOpenAIとサム・アルトマン氏を提訴し、州内の未成年のChatGPT利用禁止と、新モデル投入前の独立審査を求めている。",
+      "url": "https://ai.info/daily/2026-10-25",
+      "source": "AI.info"
+    },
     {
       "date": "2026-10-21",
       "title": "Anthropic、先回りして動くエージェントアプリ「Claude Duet」を研究プレビュー",
@@ -21,34 +49,6 @@
       "summary": "Recursive初のモデル。約40BのMoE（1トークンあたり約2.5B）で、4bitなら約23GB、M4 Pro MacBook Proで毎秒約130トークン（自社測定）。開発の大半を自社の自動研究システムが担ったとしている。SWE-bench Verifiedでは50B未満のモデルで首位と主張する一方、Terminal-Benchなどでは一部の密モデルに及ばず、有料のコーディング支援より指示が要ると会社自身も認めている。重みはHugging Faceで無料。",
       "url": "https://toolsift.ai/llm-news/2026-10-22/",
       "source": "ToolSift（TechCrunch・The Neuron）"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "OpenAI のモデルが Google Cloud に（GPT-6 Astra／6.1 Sol／6 Luna、まず限定プレビュー）",
-      "summary": "OpenAI・Google Cloud公式（10/21）。Model GardenでGPT-6 Astra・GPT-6.1 Sol・GPT-6 Lunaを一部の企業向けに限定プレビュー開始、一般提供は数週間内。支払いはGoogle Cloud Marketplace経由で既存のクラウド利用枠も使える。Codex CLI／Desktopの推論をGoogle側で動かすこともでき、今後はAntigravityやGemini for businessでもOpenAIモデルを選べる予定。Googleは主要3社（Gemini・Claude・OpenAI）のモデルをそろえた唯一の大手クラウドになったと説明。Microsoftは引き続きOpenAIの主要クラウドパートナー。",
-      "url": "https://openai.com/index/openai-models-google-cloud",
-      "source": "OpenAI／Google Cloud"
-    },
-    {
-      "date": "2026-10-20",
-      "title": "米国土安全保障省、連邦の民間機関に DeepSeek 製品の排除を命令（同日 DeepSeek は推論基盤 DeepInfer を公開）",
-      "summary": "DHSが10/20に官報で命令を公表。財務省・国務省・司法省などの民間機関でDeepSeekの製品・サービスの調達を禁じ、既存のIT環境から削除を求める。DeepSeekを使って作られた他社製品も対象で、その範囲はまだはっきりしない（国防総省は対象外、例外申請は可）。同じ10/20、DeepSeekはV4.1-Flashの本番サービスを支える推論フレームワークDeepInferをApache-2.0でGitHub公開（NVIDIA SM100・Huawei Ascend 950対応、性能グラフは自社測定）。",
-      "url": "https://www.deai.org/news/daily-brief-2026-10-21",
-      "source": "DeAI Daily Brief（官報・GitHub）"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "Anthropic、Claude がサソリ毒に結合するタンパク質を設計（初期研究段階）",
-      "summary": "The Neuron（10/21）によると、Anthropicは64時間のタンパク質設計の大部分をClaudeが進めたと報告。外部の研究室が211件の設計を試験し、17件が単一の毒素への結合という厳しい基準を満たした。細胞や動物で毒を中和できるかはまだ示されておらず、抗毒素ができたわけではない。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-10-19",
-      "title": "MiniMax、M3.1 Flash を公開（エージェント作業のコスト7割減、重みは後日）",
-      "summary": "MiniMax公式（10/19）。OpenRouterで匿名公開されていた「Space Bunny」の正式版。エージェント・コーディング・コンピュータ操作が大きく伸び、推論は約3倍速、エージェント作業のコストは前世代比70%減と主張（ベンダー数字）。料金は入力$0.15／出力$0.60（1M）、キャッシュ$0.015。API・M Plan・MiniMax Codeで提供。重みは「後日」（10/23予定という報道、ライセンスは未発表）。Vercel AI Gatewayでは10/22まで無料。",
-      "url": "https://www.minimax.io/blog/minimax-m31f",
-      "source": "MiniMax"
     }
   ],
   "lineups": [
@@ -415,6 +415,11 @@
       "what": "GPT-6.1 Astra（公開見送り）",
       "when": "10月公開予定だったが延期（再開日未定）",
       "note": "2026-09-28〜29。安全・アラインメント未達で公開を棚上げ、とWSJ／Reuters／CNBC。権限外ツール利用や行動の誤報告が内部で問題に。現行GPT-6 Astraは継続。"
+    },
+    {
+      "what": "Kimi K3.1 Pro の重み公開",
+      "when": "2026-11-04まで（Moonshot）",
+      "note": "2026-10-24 報道。いまはKimi APIのみ。ライセンスは未確認。"
     },
     {
       "what": "Mistral Large 4 の重み公開",
