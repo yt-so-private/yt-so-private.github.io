@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-10-26T09:15:00+09:00",
+  "generatedAt": "2026-10-27T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-26",
+      "title": "OpenAI、GPT-6.1 Terra を公開（画面操作向け・API料金は半額）",
+      "summary": "OpenAI公式（10/26）。画面を読んでアプリを操作したり、フォーム入力・資料作成をこなす中位モデル。APIはgpt-6.1-terraで入力$1／出力$5（1M）と、GPT-5.6 TerraやGPT-6.1 Solの半額。社内の画面操作テストではGPT-6 Astra並みを1/10のトークン単価で出し、作業は3倍以上速いと主張（自社測定）。誤答率も大きく下がったという。ChatGPT Work・Codex（Plus／Pro／Enterprise／Edu）とAPI、Amazon Bedrockで提供。難しいコーディングは引き続きSol／Astra推奨。",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "source": "OpenAI"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Anthropic、上場申請（S-1）を提出。Nasdaqで「ANT」予定",
+      "summary": "2026年上半期の売上は163億ドル（前年同期12億ドル）。最終損失は807億ドルだが、うち724億ドルは転換社債などの評価替えによる会計上の費用で、営業損失は6.93億ドルに縮小。6月末の現金・短期投資は1,317億ドル。株数・価格帯はまだ空欄。",
+      "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
+      "source": "NPR / DailyAI"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "新ラボ Mirendil、1,000万トークン文脈のモデル「Fern 0.1」を発表",
+      "summary": "一から事前学習したモデルで、最大1,000万トークン（コード約50万行分）を一度に読める。AI研究向けの大量エージェント作業（学習データの監査など）が狙い。ただしチーム自身、10Mは1Mほど使いこなせておらず、エージェント型コーディングではGLM 5.3やKimi K3に及ばないと説明。より大きな2モデルを学習中。",
+      "url": "https://whenitships.com/",
+      "source": "When It Ships"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Meta、AI設備のため最大950億ドルの新株発行へ",
+      "summary": "今年のAI設備投資（1,350億〜1,450億ドル見込み）の約3分の2を賄う計画。まず約350億ドルを公募し、残り約600億ドルは市場で順次売り出す。Nvidia・AMD・Broadcomが合計最大50億ドル分を買う可能性がある。",
+      "url": "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates",
+      "source": "The Guardian"
+    },
     {
       "date": "2026-10-23",
       "title": "OpenAI、最先端モデルの学習をインターネットから切り離す方針に",
@@ -21,34 +49,6 @@
       "summary": "OpenAI公式。GPT-6 Lunaベースで、範囲の決まった質問に型付きの答えを返すAPI。Responses APIより最大10倍速く、入力$0.10／1Mで出力は無料。1リクエストで最大400問まで。エージェント内の振り分けや分類のような小さな判断向け。",
       "url": "https://aiweekdaily.com/digest/2026-10-24",
       "source": "OpenAI（AI Week Daily経由）"
-    },
-    {
-      "date": "2026-10-24",
-      "title": "英国、1億ポンドの「AI Biosecurity Lab」設立（OpenAI・Anthropicも参加）／テキサス州がOpenAIを提訴",
-      "summary": "英国政府は独立したAIバイオセキュリティ研究所に1億ポンドを拠出し、OpenAIとAnthropicから最大2億ポンド分の約束（モデル利用枠など）を得た。一方、米テキサス州司法長官は10/23にOpenAIとサム・アルトマン氏を提訴し、州内の未成年のChatGPT利用禁止と、新モデル投入前の独立審査を求めている。",
-      "url": "https://ai.info/daily/2026-10-25",
-      "source": "AI.info"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "Anthropic、先回りして動くエージェントアプリ「Claude Duet」を研究プレビュー",
-      "summary": "Anthropic公式（10/21）。Claude Opus 5.5ベースの単独アプリ（iOS・Android・claude.ai）。毎朝つないだアプリの要点をまとめて届け、数時間ごとに確認して必要なときだけ知らせる。クラウド上の専用VMとブラウザで裏で作業を続け、メール送信・支払い・署名・削除の前には承認を求める。米国のPro／Max向けにウェイトリストで順次開放、利用枠は通常のClaudeと共通。Team／Enterpriseは後日、Microsoft 365はまだ非対応。",
-      "url": "https://claude.com/resources/articles/claude-duet",
-      "source": "Anthropic"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "AIが見つけたPHPの重大な脆弱性「PHP2Shell」、修正版公開（OpenAIは開示手順も提案）",
-      "summary": "OpenAIの「Patch the Planet」で研究者がGPT-5.6 Solを使い、PHPのエンジンに14年潜んでいたリモートコード実行の欠陥2件を発見。Wizも自社ツールとGemini 4 Argon・GPT-5.6 Solで独立に見つけた。PHPは10/21に8.5.12／8.4.27／8.3.36／8.2.35で修正。PHPを使うサイトは早めの更新を。OpenAIは多数の製品に影響するAI発見バグ向けに5段階の開示計画を公開し、今後こうした発見は急増すると見ている。",
-      "url": "https://toolsift.ai/llm-news/2026-10-22/",
-      "source": "ToolSift（OpenAI・Wiz・Help Net Security）"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "Recursive、ノートPCで動くコーディングモデル「Flint」を公開（Apache 2.0）",
-      "summary": "Recursive初のモデル。約40BのMoE（1トークンあたり約2.5B）で、4bitなら約23GB、M4 Pro MacBook Proで毎秒約130トークン（自社測定）。開発の大半を自社の自動研究システムが担ったとしている。SWE-bench Verifiedでは50B未満のモデルで首位と主張する一方、Terminal-Benchなどでは一部の密モデルに及ばず、有料のコーディング支援より指示が要ると会社自身も認めている。重みはHugging Faceで無料。",
-      "url": "https://toolsift.ai/llm-news/2026-10-22/",
-      "source": "ToolSift（TechCrunch・The Neuron）"
     }
   ],
   "lineups": [
@@ -76,9 +76,14 @@
           "note": "2026-09-22。高ボリュームの集中タスク向け。API は gpt-6-luna。公式料金は入力 $0.10 / 出力 $0.50 / 1M。2026-10-08 から ChatGPT Free／Go のチャットも GPT-6 Luna（Intelligent UI付き）に。"
         },
         {
+          "name": "GPT-6.1 Terra",
+          "role": "balanced",
+          "note": "2026-10-26 公式。画面操作・視覚理解・文章作成向けの中位モデル。APIはgpt-6.1-terra、入力$1／出力$5／1M（5.6 TerraやGPT-6.1 Solの半額）。ChatGPT Work・Codex（Plus以上）、Amazon Bedrock。最難関のコーディングはSol／Astra推奨。"
+        },
+        {
           "name": "GPT-5.6 Terra",
           "role": "balanced",
-          "note": "5.6 世代のバランス枠として API に残る。gpt-5.6-terra。公式料金表（短コンテキスト）は入力 $2 / 出力 $12 / 1M。新規は GPT-6 Sol／Luna を優先。"
+          "note": "5.6 世代のバランス枠として API に残る。gpt-5.6-terra。公式料金表（短コンテキスト）は入力 $2 / 出力 $12 / 1M。新規は GPT-6.1 Terra を優先。"
         }
       ]
     },
@@ -469,7 +474,7 @@
     {
       "what": "次の世代（Grok 4.8 / 4.9、GPT-5.7、Gemini 4 の残りのモデルなど）",
       "when": "公式の発売日は未発表",
-      "note": "Grok 4.7は2026-09-21公開済み。Gemini 4 Argonは2026-10-13に一般公開し、Googleは「Gemini 4ファミリーの残りも出す」とだけ案内（日付なし）。MuskはXで4.8／4.9／Grok 5をスケッチしたが日付なし。他社の次世代も公式日は未確定。 2026-10-19のThe Information報道では、Anthropicの新モデル、Googleの「Gemini 4 Carbon」、OpenAIの中位Terra系（数週間内）が準備中。いずれも公式日なし。"
+      "note": "Grok 4.7は2026-09-21公開済み。Gemini 4 Argonは2026-10-13に一般公開し、Googleは「Gemini 4ファミリーの残りも出す」とだけ案内（日付なし）。MuskはXで4.8／4.9／Grok 5をスケッチしたが日付なし。他社の次世代も公式日は未確定。 2026-10-19のThe Information報道では、Anthropicの新モデル、Googleの「Gemini 4 Carbon」、OpenAIの中位Terra系（数週間内）が準備中。いずれも公式日なし。 OpenAIのTerra系は2026-10-26にGPT-6.1 Terraとして公開済み。"
     }
   ],
   "rankings": [
