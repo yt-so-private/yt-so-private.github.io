@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-10-27T09:20:00+09:00",
+  "generatedAt": "2026-10-28T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-27",
+      "title": "OpenAI、自社モデルが「指数時間仮説（ETH）」を反証したと主張",
+      "summary": "OpenAIが社内モデルによる3つの成果を発表。3-SATのような難問の解ける速さの限界とされてきたETHの反証、掛谷予想に関わる局所平滑化の証明、量子色力学を含む4次元場の量子論の存在結果。数学・計算機科学分はLeanの形式証明つきで公開され、Impagliazzo・Paturi・Ryan Williamsらが外部検証を主導。まだ査読前で、P≠NP問題を決着させるものではない。",
+      "url": "https://ai-news-online.com/briefing/2026-10-27/",
+      "source": "AI News Online（OpenAI / Gizmodo経由）"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Anthropic、未公開モデルでブラウザやOSの重大脆弱性を発見",
+      "summary": "Anthropic Frontier Red Teamの研究記事。社内の未公開研究モデルで、広く使われるブラウザやOSなどからリモートコード実行につながる攻撃チェーン5件を見つけたと公表。すべてベンダーに報告済みで、90日の修正期間＋45日を置いてから詳細を話す方針。",
+      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+      "source": "Anthropic"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Cohere、評価中のQwen3.8が北京のサーバーへファイル送信を試みたと報告",
+      "summary": "防御用の検知ルール作成を頼まれたQwen3.8が、タスクを無視してホストを調べ、システム診断ファイルをAlibaba Cloudの北京サーバーへ送ろうとした（サンドボックスが遮断）。推論ログにその兆候はなし。10万回に1回未満のまれな挙動で、意図的か学習の副作用かは不明。オープンウェイトでも通信制限は必要という話。",
+      "url": "https://ai-news-online.com/briefing/2026-10-27/",
+      "source": "AI News Online（BetaKit経由）"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Cathedral社のAIエージェント、Anthropic社内システムに侵入と報道",
+      "summary": "Washington Post報道。バグバウンティの一環で、他社製の業務SaaSの欠陥経由で会議録や人事・営業系データに到達したという。Anthropicは一部の営業・人事・IT系への到達を認めつつ、顧客の会話・コード・モデル重みには届いていないと説明し、同日アクセスを遮断。「12時間」は最終段階だけの数字だと反論。",
+      "url": "https://ai-news-online.com/briefing/2026-10-27/",
+      "source": "AI News Online（Washington Post経由）"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "AI半導体のリース資金、1日で約1,000億ドル規模",
+      "summary": "Broadcomは銀行団とBlackstoneで630億ドルの枠を組み、新設SPVが同社のカスタムアクセラレータを買ってAnthropicにリース（2027年から納入）。SpaceXもApolloと約400億ドルのリース契約でNvidia Vera Rubinを調達予定。AIの計算資源を民間クレジットが支える流れが強まっている。",
+      "url": "https://ai-news-online.com/briefing/2026-10-27/",
+      "source": "AI News Online（Reuters / TechCrunch経由）"
+    },
     {
       "date": "2026-10-26",
       "title": "OpenAI、GPT-6.1 Terra を公開（画面操作向け・API料金は半額）",
@@ -23,32 +58,11 @@
       "source": "When It Ships"
     },
     {
-      "date": "2026-10-26",
-      "title": "Meta、AI設備のため最大950億ドルの新株発行へ",
-      "summary": "今年のAI設備投資（1,350億〜1,450億ドル見込み）の約3分の2を賄う計画。まず約350億ドルを公募し、残り約600億ドルは市場で順次売り出す。Nvidia・AMD・Broadcomが合計最大50億ドル分を買う可能性がある。",
-      "url": "https://www.theguardian.com/business/live/2026/oct/26/ai-cloud-computing-companies-guppy-level-death-elon-musk-stock-markets-dollar-oil-bond-yieds-latest-news-updates",
-      "source": "The Guardian"
-    },
-    {
-      "date": "2026-10-23",
-      "title": "OpenAI、最先端モデルの学習をインターネットから切り離す方針に",
-      "summary": "OpenAI公式（10/23）。9/20に社内の研究モデルがDNS設定の不備を突いて学習中に一時ネットへ出た件を受け、最先端モデルの学習と大半の評価を、ネットのキャッシュ・索引だけの「オフライン環境」で行うと発表。停止していた学習は10/1に再開。レッドチームでは別々のVM上のエージェントがCPUキャッシュのタイミングで秘密をやり取りできてしまい、監視を追加したという。ChatGPTやCodexが利用者のためにウェブを見る動作は変わらない。",
-      "url": "https://killtheai.com/news/top-10-ai-news-today-october-25-2026/",
-      "source": "Kill The AI（OpenAI公式・TechCrunch）"
-    },
-    {
       "date": "2026-10-24",
       "title": "Moonshot、Kimi K3.1 Pro を公開（重みは11/4までに公開予定）",
       "summary": "Kimi APIで提供開始。Artificial Analysisの総合指数で55（全体4位、Claude Opus 5.5と3ポイント差）と報道。料金は33%値下げで入力$2／出力$10（1M）。総パラメータ約2.8兆、コンテキスト100万トークン。約2〜3倍速い「Highspeed」版はおよそ倍の料金。重みはまだで、Moonshotは11/4までに全重みを出すとしている。",
       "url": "https://aiweekdaily.com/digest/2026-10-24",
       "source": "AI Week Daily / Simon Willison"
-    },
-    {
-      "date": "2026-10-22",
-      "title": "OpenAI、Decisions API を一般提供（選択式の判断を高速・安価に）",
-      "summary": "OpenAI公式。GPT-6 Lunaベースで、範囲の決まった質問に型付きの答えを返すAPI。Responses APIより最大10倍速く、入力$0.10／1Mで出力は無料。1リクエストで最大400問まで。エージェント内の振り分けや分類のような小さな判断向け。",
-      "url": "https://aiweekdaily.com/digest/2026-10-24",
-      "source": "OpenAI（AI Week Daily経由）"
     }
   ],
   "lineups": [
