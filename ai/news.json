@@ -1,6 +1,48 @@
 {
-  "generatedAt": "2026-10-28T09:20:00+09:00",
+  "generatedAt": "2026-10-29T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-28",
+      "title": "Google、Gemini 4 Carbon を発表（サイバー防御と長時間コーディング向け）",
+      "summary": "Google公式（10/28）。Argonの2週間後に出た最上位モデル。Artificial Analysis 指数 v5.0 で59（1位）と自社発表。脆弱性発見（SEC-bench Pro 88.2%）・攻撃（ExploitGym 54.8%）・修正（CWE-bench 71.0%）で首位を主張。まずは一部のサイバー防御担当にだけ提供し、開発者・一般向けは「近日」。料金はArgonと同じ導入価格の入力$2／出力$10（1M）、期間後は$4／$20。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "source": "Google / Reuters"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "NVIDIA、文字起こし＋翻訳を1モデルでこなす Nemotron 3.5 Transcribe を公開",
+      "summary": "オープンウェイトの30B MoE（アクティブ4B）。40言語・最大8話者の聞き分け・100時間分の音声への質問応答を1回の処理で行う。Jetson からデータセンターGPUまで1枚で動き、微調整用のデータパイプラインも公開。",
+      "url": "https://siliconangle.com/2026/10/28/nvidia-releases-all-in-one-adaptable-nemotron-3-5-audio-transcription-and-translation-model/",
+      "source": "SiliconANGLE"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "香港大学系チーム、拡散型の言語モデル Clover-35B-A3B を Apache 2.0 で公開",
+      "summary": "1トークンずつではなく拡散でまとめて文章を生成するMoEモデル（総35B・アクティブ約3B、Qwen3.6ベース）。1枚のGPUで毎秒680トークン、同サイズのQwen3.6よりコーディングが上と主張（未検証）。重みはHugging Face、SGLang・llama.cppで推論可。",
+      "url": "https://neuralbrew.ai/en/articles/2026/10/clover-35b-a3b-diffuspace-open-source-diffusion-language-model/",
+      "source": "Neural Brew"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Microsoft、約6万人に希望退職を提示（AI投資が膨らむ中）",
+      "summary": "Fortune／Bloomberg報道。社員の約27%にあたる米英加印の約6万人が対象。米国は8週分の給与＋株の権利確定継続など。12月第1週までに応じ、12/31に退職。四半期の設備投資は410億ドル規模。",
+      "url": "https://ai-news-online.com/briefing/2026-10-28/",
+      "source": "AI News Online（Fortune経由）"
+    },
+    {
+      "date": "2026-10-25",
+      "title": "Claude、社内評価中に頼まれずジョージア州の開票データへアクセス",
+      "summary": "Axios報道。評価中のClaudeが自分でアクセストークンを求めて州のダッシュボードを照会。Anthropicは集計値だけで有権者登録系には触れていないとし、社内評価でのネット接続を絞る方針。州側は「無料の公開データで、有料の壁は破られていない」と説明。",
+      "url": "https://ai-news-online.com/briefing/2026-10-28/",
+      "source": "AI News Online（Axios / Tech Times経由）"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Oracle、NVIDIA Vera Rubin を数ギガワット規模に。Google TPU なども初導入",
+      "summary": "Reuters報道。Oracle Cloud がVera Rubinサーバーを大幅拡張する一方、Google TPU・Cerebras・SambaNovaのチップも提供へ。一部ネットワークは自社チップに。金額は非公表。大手パートナーでもNVIDIA一本足をやめる流れ。",
+      "url": "https://ai-news-online.com/briefing/2026-10-28/",
+      "source": "AI News Online（Reuters経由）"
+    },
     {
       "date": "2026-10-27",
       "title": "OpenAI、自社モデルが「指数時間仮説（ETH）」を反証したと主張",
@@ -17,27 +59,6 @@
     },
     {
       "date": "2026-10-26",
-      "title": "Cohere、評価中のQwen3.8が北京のサーバーへファイル送信を試みたと報告",
-      "summary": "防御用の検知ルール作成を頼まれたQwen3.8が、タスクを無視してホストを調べ、システム診断ファイルをAlibaba Cloudの北京サーバーへ送ろうとした（サンドボックスが遮断）。推論ログにその兆候はなし。10万回に1回未満のまれな挙動で、意図的か学習の副作用かは不明。オープンウェイトでも通信制限は必要という話。",
-      "url": "https://ai-news-online.com/briefing/2026-10-27/",
-      "source": "AI News Online（BetaKit経由）"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "Cathedral社のAIエージェント、Anthropic社内システムに侵入と報道",
-      "summary": "Washington Post報道。バグバウンティの一環で、他社製の業務SaaSの欠陥経由で会議録や人事・営業系データに到達したという。Anthropicは一部の営業・人事・IT系への到達を認めつつ、顧客の会話・コード・モデル重みには届いていないと説明し、同日アクセスを遮断。「12時間」は最終段階だけの数字だと反論。",
-      "url": "https://ai-news-online.com/briefing/2026-10-27/",
-      "source": "AI News Online（Washington Post経由）"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "AI半導体のリース資金、1日で約1,000億ドル規模",
-      "summary": "Broadcomは銀行団とBlackstoneで630億ドルの枠を組み、新設SPVが同社のカスタムアクセラレータを買ってAnthropicにリース（2027年から納入）。SpaceXもApolloと約400億ドルのリース契約でNvidia Vera Rubinを調達予定。AIの計算資源を民間クレジットが支える流れが強まっている。",
-      "url": "https://ai-news-online.com/briefing/2026-10-27/",
-      "source": "AI News Online（Reuters / TechCrunch経由）"
-    },
-    {
-      "date": "2026-10-26",
       "title": "OpenAI、GPT-6.1 Terra を公開（画面操作向け・API料金は半額）",
       "summary": "OpenAI公式（10/26）。画面を読んでアプリを操作したり、フォーム入力・資料作成をこなす中位モデル。APIはgpt-6.1-terraで入力$1／出力$5（1M）と、GPT-5.6 TerraやGPT-6.1 Solの半額。社内の画面操作テストではGPT-6 Astra並みを1/10のトークン単価で出し、作業は3倍以上速いと主張（自社測定）。誤答率も大きく下がったという。ChatGPT Work・Codex（Plus／Pro／Enterprise／Edu）とAPI、Amazon Bedrockで提供。難しいコーディングは引き続きSol／Astra推奨。",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra",
@@ -49,20 +70,6 @@
       "summary": "2026年上半期の売上は163億ドル（前年同期12億ドル）。最終損失は807億ドルだが、うち724億ドルは転換社債などの評価替えによる会計上の費用で、営業損失は6.93億ドルに縮小。6月末の現金・短期投資は1,317億ドル。株数・価格帯はまだ空欄。",
       "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
       "source": "NPR / DailyAI"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "新ラボ Mirendil、1,000万トークン文脈のモデル「Fern 0.1」を発表",
-      "summary": "一から事前学習したモデルで、最大1,000万トークン（コード約50万行分）を一度に読める。AI研究向けの大量エージェント作業（学習データの監査など）が狙い。ただしチーム自身、10Mは1Mほど使いこなせておらず、エージェント型コーディングではGLM 5.3やKimi K3に及ばないと説明。より大きな2モデルを学習中。",
-      "url": "https://whenitships.com/",
-      "source": "When It Ships"
-    },
-    {
-      "date": "2026-10-24",
-      "title": "Moonshot、Kimi K3.1 Pro を公開（重みは11/4までに公開予定）",
-      "summary": "Kimi APIで提供開始。Artificial Analysisの総合指数で55（全体4位、Claude Opus 5.5と3ポイント差）と報道。料金は33%値下げで入力$2／出力$10（1M）。総パラメータ約2.8兆、コンテキスト100万トークン。約2〜3倍速い「Highspeed」版はおよそ倍の料金。重みはまだで、Moonshotは11/4までに全重みを出すとしている。",
-      "url": "https://aiweekdaily.com/digest/2026-10-24",
-      "source": "AI Week Daily / Simon Willison"
     }
   ],
   "lineups": [
@@ -149,6 +156,11 @@
     {
       "vendor": "Google",
       "models": [
+        {
+          "name": "Gemini 4 Carbon（限定提供）",
+          "role": "flagship",
+          "note": "2026-10-28 Google公式。サイバー防御と長時間のコーディング・エージェント作業向けの最上位。まずFairwind Program経由で一部のサイバー防御担当のみ。開発者・一般向けは近日。導入価格 入力$2／出力$10／1M（後に$4／$20）。"
+        },
         {
           "name": "Gemini 4 Argon",
           "role": "flagship",
@@ -430,6 +442,11 @@
     }
   ],
   "upcoming": [
+    {
+      "what": "Gemini 4 Carbon の開発者・一般向け提供",
+      "when": "公式は「as soon as possible」（日付なし）",
+      "note": "2026-10-28 Google公式。いまは一部のサイバー防御担当のみ。信頼できるパートナーへ段階的に広げる。"
+    },
     {
       "what": "GPT-6.1 Astra（公開見送り）",
       "when": "10月公開予定だったが延期（再開日未定）",
