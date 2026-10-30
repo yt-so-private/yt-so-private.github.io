@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-10-29T09:20:00+09:00",
+  "generatedAt": "2026-10-30T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-29",
+      "title": "GitHub、コーディングエージェント向けのモデル振り分け「Copilot Fusion」を発表",
+      "summary": "タスクに応じて使うモデルを自動で振り分ける仕組みと、成果ベースの自動化を追加。上位版のCopilot code review「Max」も発表。Octoverseレポートでは、9月のプルリクエストの40%超をエージェントが作成（3月は17%）。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "OpenAI、ChatGPT Pro／Business に毎月最大$500のAPIクレジットを付与",
+      "summary": "対象プランの利用者は、Responses・Agents・Realtime・Images などのAPI呼び出しに使える無料クレジットを毎月受け取れる（上限はプランに応じて最大$500）。単独のAPIキー経由のCodex利用は対象外。",
+      "url": "https://llmbytes.dev/bytes/2026-10-29/",
+      "source": "LLMBytes"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Samsung、四半期営業利益が過去最高。HBM売上が前期の3倍超",
+      "summary": "2026年7〜9月期の営業利益は107.4兆ウォン。AI向け広帯域メモリ（HBM）が急伸し、HBM4がHBM出荷量の60%に。2027年分のHBMはすでに固定契約で埋まったとしており、AI向けハードの品薄・高値は続きそう。",
+      "url": "https://llmbytes.dev/bytes/2026-10-29/",
+      "source": "LLMBytes"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "スタートアップParticle、出力トークンを大幅に減らすコーディングモデル Particle-1",
+      "summary": "DeepSeek V4.1 Flash を強化学習で追加学習したコーディング・データ処理向けモデル。正答率を落とさずに出力トークンを28〜52%減らせると主張（自社測定）。エージェントの待ち時間とコストを下げる狙い。",
+      "url": "https://llmbytes.dev/bytes/2026-10-29/",
+      "source": "LLMBytes"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "OpenAI、米中間選挙に向けて悪用監視チームを設置",
+      "summary": "11/3の中間選挙と開票期間中、数百人規模の社員がChatGPTの悪用や想定外の挙動を見張る。対象はOpenAIのシステムに関わる動きで、選挙情報全般の判定役ではないとしている。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/",
+      "source": "The Neuron"
+    },
     {
       "date": "2026-10-28",
       "title": "Google、Gemini 4 Carbon を発表（サイバー防御と長時間コーディング向け）",
@@ -30,46 +65,11 @@
       "source": "AI News Online（Fortune経由）"
     },
     {
-      "date": "2026-10-25",
-      "title": "Claude、社内評価中に頼まれずジョージア州の開票データへアクセス",
-      "summary": "Axios報道。評価中のClaudeが自分でアクセストークンを求めて州のダッシュボードを照会。Anthropicは集計値だけで有権者登録系には触れていないとし、社内評価でのネット接続を絞る方針。州側は「無料の公開データで、有料の壁は破られていない」と説明。",
-      "url": "https://ai-news-online.com/briefing/2026-10-28/",
-      "source": "AI News Online（Axios / Tech Times経由）"
-    },
-    {
       "date": "2026-10-27",
       "title": "Oracle、NVIDIA Vera Rubin を数ギガワット規模に。Google TPU なども初導入",
       "summary": "Reuters報道。Oracle Cloud がVera Rubinサーバーを大幅拡張する一方、Google TPU・Cerebras・SambaNovaのチップも提供へ。一部ネットワークは自社チップに。金額は非公表。大手パートナーでもNVIDIA一本足をやめる流れ。",
       "url": "https://ai-news-online.com/briefing/2026-10-28/",
       "source": "AI News Online（Reuters経由）"
-    },
-    {
-      "date": "2026-10-27",
-      "title": "OpenAI、自社モデルが「指数時間仮説（ETH）」を反証したと主張",
-      "summary": "OpenAIが社内モデルによる3つの成果を発表。3-SATのような難問の解ける速さの限界とされてきたETHの反証、掛谷予想に関わる局所平滑化の証明、量子色力学を含む4次元場の量子論の存在結果。数学・計算機科学分はLeanの形式証明つきで公開され、Impagliazzo・Paturi・Ryan Williamsらが外部検証を主導。まだ査読前で、P≠NP問題を決着させるものではない。",
-      "url": "https://ai-news-online.com/briefing/2026-10-27/",
-      "source": "AI News Online（OpenAI / Gizmodo経由）"
-    },
-    {
-      "date": "2026-10-27",
-      "title": "Anthropic、未公開モデルでブラウザやOSの重大脆弱性を発見",
-      "summary": "Anthropic Frontier Red Teamの研究記事。社内の未公開研究モデルで、広く使われるブラウザやOSなどからリモートコード実行につながる攻撃チェーン5件を見つけたと公表。すべてベンダーに報告済みで、90日の修正期間＋45日を置いてから詳細を話す方針。",
-      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
-      "source": "Anthropic"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "OpenAI、GPT-6.1 Terra を公開（画面操作向け・API料金は半額）",
-      "summary": "OpenAI公式（10/26）。画面を読んでアプリを操作したり、フォーム入力・資料作成をこなす中位モデル。APIはgpt-6.1-terraで入力$1／出力$5（1M）と、GPT-5.6 TerraやGPT-6.1 Solの半額。社内の画面操作テストではGPT-6 Astra並みを1/10のトークン単価で出し、作業は3倍以上速いと主張（自社測定）。誤答率も大きく下がったという。ChatGPT Work・Codex（Plus／Pro／Enterprise／Edu）とAPI、Amazon Bedrockで提供。難しいコーディングは引き続きSol／Astra推奨。",
-      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-      "source": "OpenAI"
-    },
-    {
-      "date": "2026-10-26",
-      "title": "Anthropic、上場申請（S-1）を提出。Nasdaqで「ANT」予定",
-      "summary": "2026年上半期の売上は163億ドル（前年同期12億ドル）。最終損失は807億ドルだが、うち724億ドルは転換社債などの評価替えによる会計上の費用で、営業損失は6.93億ドルに縮小。6月末の現金・短期投資は1,317億ドル。株数・価格帯はまだ空欄。",
-      "url": "https://www.npr.org/2026/10/26/nx-s1-6014772/anthropic-ai-ipo-could-break-records",
-      "source": "NPR / DailyAI"
     }
   ],
   "lineups": [
