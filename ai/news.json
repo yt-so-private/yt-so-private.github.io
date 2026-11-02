@@ -1,6 +1,34 @@
 {
-  "generatedAt": "2026-10-30T09:20:00+09:00",
+  "generatedAt": "2026-11-02T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-10-31",
+      "title": "Microsoft、北朝鮮系グループがオープンソースの侵入テスト用エージェントを悪用と報告",
+      "summary": "Onyx Sleet・Pearl Sleet が、エージェント型のペネトレーションテスト基盤「ARTEX」を攻撃に使っていたと公表。ただし操作は人間主導で、AIが自律的に攻撃していたわけではないとしている。",
+      "url": "https://ai.info/daily/2026-11-01",
+      "source": "AI.info"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "OpenAI、生命科学研究向けの GPT-Rosalind-6 を審査済みチーム限定で公開",
+      "summary": "利用できるのは審査を通った研究組織・ユーザーのみ。OpenAIは生物分野の能力を「高」と評価しつつ、4つの評価で「重大」の目安には届かなかったとしている。",
+      "url": "https://ai.info/daily/2026-11-01",
+      "source": "AI.info"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Mistral、1Tパラメータの Mistral Large 4 の重みを公開",
+      "summary": "総約1T・1Mトークン文脈のマルチモーダルMoE。独自の Mistral Ecosystem Open-Weight License で公開し、「コーディングで最良のオープンウェイトモデル」と自称（自社評価）。",
+      "url": "https://theagenticweekly.com/news/models",
+      "source": "The Agentic Weekly"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Pika、音声付き動画を6ステップで生成するオープンウェイトの Pika H3 Flex",
+      "summary": "MiniMax H3 をベースに追加学習。ステレオ音声を同期生成し、参照素材は最大12個まで。オープンな文章→動画モデルで1位と主張（自社発表）。",
+      "url": "https://theagenticweekly.com/news/models",
+      "source": "The Agentic Weekly"
+    },
     {
       "date": "2026-10-29",
       "title": "GitHub、コーディングエージェント向けのモデル振り分け「Copilot Fusion」を発表",
@@ -12,20 +40,6 @@
       "date": "2026-10-29",
       "title": "OpenAI、ChatGPT Pro／Business に毎月最大$500のAPIクレジットを付与",
       "summary": "対象プランの利用者は、Responses・Agents・Realtime・Images などのAPI呼び出しに使える無料クレジットを毎月受け取れる（上限はプランに応じて最大$500）。単独のAPIキー経由のCodex利用は対象外。",
-      "url": "https://llmbytes.dev/bytes/2026-10-29/",
-      "source": "LLMBytes"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "Samsung、四半期営業利益が過去最高。HBM売上が前期の3倍超",
-      "summary": "2026年7〜9月期の営業利益は107.4兆ウォン。AI向け広帯域メモリ（HBM）が急伸し、HBM4がHBM出荷量の60%に。2027年分のHBMはすでに固定契約で埋まったとしており、AI向けハードの品薄・高値は続きそう。",
-      "url": "https://llmbytes.dev/bytes/2026-10-29/",
-      "source": "LLMBytes"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "スタートアップParticle、出力トークンを大幅に減らすコーディングモデル Particle-1",
-      "summary": "DeepSeek V4.1 Flash を強化学習で追加学習したコーディング・データ処理向けモデル。正答率を落とさずに出力トークンを28〜52%減らせると主張（自社測定）。エージェントの待ち時間とコストを下げる狙い。",
       "url": "https://llmbytes.dev/bytes/2026-10-29/",
       "source": "LLMBytes"
     },
@@ -44,32 +58,11 @@
       "source": "Google / Reuters"
     },
     {
-      "date": "2026-10-28",
-      "title": "NVIDIA、文字起こし＋翻訳を1モデルでこなす Nemotron 3.5 Transcribe を公開",
-      "summary": "オープンウェイトの30B MoE（アクティブ4B）。40言語・最大8話者の聞き分け・100時間分の音声への質問応答を1回の処理で行う。Jetson からデータセンターGPUまで1枚で動き、微調整用のデータパイプラインも公開。",
-      "url": "https://siliconangle.com/2026/10/28/nvidia-releases-all-in-one-adaptable-nemotron-3-5-audio-transcription-and-translation-model/",
-      "source": "SiliconANGLE"
-    },
-    {
-      "date": "2026-10-28",
-      "title": "香港大学系チーム、拡散型の言語モデル Clover-35B-A3B を Apache 2.0 で公開",
-      "summary": "1トークンずつではなく拡散でまとめて文章を生成するMoEモデル（総35B・アクティブ約3B、Qwen3.6ベース）。1枚のGPUで毎秒680トークン、同サイズのQwen3.6よりコーディングが上と主張（未検証）。重みはHugging Face、SGLang・llama.cppで推論可。",
-      "url": "https://neuralbrew.ai/en/articles/2026/10/clover-35b-a3b-diffuspace-open-source-diffusion-language-model/",
-      "source": "Neural Brew"
-    },
-    {
       "date": "2026-10-27",
-      "title": "Microsoft、約6万人に希望退職を提示（AI投資が膨らむ中）",
-      "summary": "Fortune／Bloomberg報道。社員の約27%にあたる米英加印の約6万人が対象。米国は8週分の給与＋株の権利確定継続など。12月第1週までに応じ、12/31に退職。四半期の設備投資は410億ドル規模。",
-      "url": "https://ai-news-online.com/briefing/2026-10-28/",
-      "source": "AI News Online（Fortune経由）"
-    },
-    {
-      "date": "2026-10-27",
-      "title": "Oracle、NVIDIA Vera Rubin を数ギガワット規模に。Google TPU なども初導入",
-      "summary": "Reuters報道。Oracle Cloud がVera Rubinサーバーを大幅拡張する一方、Google TPU・Cerebras・SambaNovaのチップも提供へ。一部ネットワークは自社チップに。金額は非公表。大手パートナーでもNVIDIA一本足をやめる流れ。",
-      "url": "https://ai-news-online.com/briefing/2026-10-28/",
-      "source": "AI News Online（Reuters経由）"
+      "title": "Liquid AI、端末上で動く2B級のオープンモデル群 LFM3 を公開",
+      "summary": "22Tトークンで事前学習した LFM3-1.7B-Base から、テキスト・画像・音声向けの6モデルを派生。前世代の2.6Bモデルより35%少ないパラメータで上回ったと主張。",
+      "url": "https://theagenticweekly.com/news/models",
+      "source": "The Agentic Weekly"
     }
   ],
   "lineups": [
