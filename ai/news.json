@@ -1,11 +1,46 @@
 {
-  "generatedAt": "2026-11-02T09:20:00+09:00",
+  "generatedAt": "2026-11-03T09:15:00+09:00",
   "items": [
     {
-      "date": "2026-10-31",
-      "title": "Microsoft、北朝鮮系グループがオープンソースの侵入テスト用エージェントを悪用と報告",
-      "summary": "Onyx Sleet・Pearl Sleet が、エージェント型のペネトレーションテスト基盤「ARTEX」を攻撃に使っていたと公表。ただし操作は人間主導で、AIが自律的に攻撃していたわけではないとしている。",
-      "url": "https://ai.info/daily/2026-11-01",
+      "date": "2026-11-02",
+      "title": "OpenAI、12月から ChatGPT と Codex の利用上限を共通化へ",
+      "summary": "Plus・Pro・Business では、負荷の高い ChatGPT の機能と Codex が同じ利用枠を使う形に変わる。通常の Instant チャットは対象外。残り枠とリセット時刻は設定画面で確認でき、上限後は追加クレジットで続けられる。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "SemiAnalysis、超難関ベンチマーク「GDPx」を公開。首位の Claude Opus 5.5 でも12%",
+      "summary": "半導体設計・サイバーセキュリティ・生物・法務・クオンツ取引など高付加価値の11分野で、実務レベルの難題を解けるかを測る。結果は Claude Opus 5.5 が12.0%、Gemini 4 Carbon 10.9%、GPT-6 Astra 9.6%。公開直後で第三者の検証はまだ少なく、日常的な使いやすさやコストは測っていない。",
+      "url": "https://aiweekly.co/ai-news-today",
+      "source": "AI Weekly"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Meituan、1.6Tパラメータの LongCat-2.5 正式版を公開",
+      "summary": "総1.6T・1トークンあたり約48B有効のMoE。画像理解とエージェント型コーディングを強化し、Claude Code・Codex・Hermes などのツールに対応とうたう（自社発表）。",
+      "url": "https://epoch0.tokyo/daily/2026-11-02/en",
+      "source": "Epoch 0"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "DeepSeek、グループチャットに常駐するオープンソースのコーディングエージェント「Super-agent」を試作公開",
+      "summary": "開発者のグループチャットを見張り、頼まれなくても修正を提案する。「人間の注意をできるだけ使わない」ことを目標に掲げる。Claude Code への対抗馬と報じられている。",
+      "url": "https://thegpu.ai/p/gpu-daily-2026-11-02",
+      "source": "The GPU Daily"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Apple、中国向け Apple Intelligence の提供日程を発表",
+      "summary": "11/4に開発者向けテスト開始、12月の iOS 27.3 で一般提供。一部機能は Alibaba の Qwen が支える。WWDCで発表された新しいSiriはこの段階には含まれない。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Chainalysis、「攻撃的なエージェント技術」による不正アクセスで顧客の氏名・メールが流出と公表",
+      "summary": "顧客のユーザーID・氏名・メールアドレス・組織内の役割が見られた。調査内容・パスワード・MFA情報・セッショントークンへのアクセスの証拠はないとしつつ、顧客ごとの確認はまだ終わっていない。",
+      "url": "https://ai.info/daily/2026-11-02",
       "source": "AI.info"
     },
     {
@@ -23,46 +58,11 @@
       "source": "The Agentic Weekly"
     },
     {
-      "date": "2026-10-29",
-      "title": "Pika、音声付き動画を6ステップで生成するオープンウェイトの Pika H3 Flex",
-      "summary": "MiniMax H3 をベースに追加学習。ステレオ音声を同期生成し、参照素材は最大12個まで。オープンな文章→動画モデルで1位と主張（自社発表）。",
-      "url": "https://theagenticweekly.com/news/models",
-      "source": "The Agentic Weekly"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "GitHub、コーディングエージェント向けのモデル振り分け「Copilot Fusion」を発表",
-      "summary": "タスクに応じて使うモデルを自動で振り分ける仕組みと、成果ベースの自動化を追加。上位版のCopilot code review「Max」も発表。Octoverseレポートでは、9月のプルリクエストの40%超をエージェントが作成（3月は17%）。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "OpenAI、ChatGPT Pro／Business に毎月最大$500のAPIクレジットを付与",
-      "summary": "対象プランの利用者は、Responses・Agents・Realtime・Images などのAPI呼び出しに使える無料クレジットを毎月受け取れる（上限はプランに応じて最大$500）。単独のAPIキー経由のCodex利用は対象外。",
-      "url": "https://llmbytes.dev/bytes/2026-10-29/",
-      "source": "LLMBytes"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "OpenAI、米中間選挙に向けて悪用監視チームを設置",
-      "summary": "11/3の中間選挙と開票期間中、数百人規模の社員がChatGPTの悪用や想定外の挙動を見張る。対象はOpenAIのシステムに関わる動きで、選挙情報全般の判定役ではないとしている。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/",
-      "source": "The Neuron"
-    },
-    {
       "date": "2026-10-28",
       "title": "Google、Gemini 4 Carbon を発表（サイバー防御と長時間コーディング向け）",
       "summary": "Google公式（10/28）。Argonの2週間後に出た最上位モデル。Artificial Analysis 指数 v5.0 で59（1位）と自社発表。脆弱性発見（SEC-bench Pro 88.2%）・攻撃（ExploitGym 54.8%）・修正（CWE-bench 71.0%）で首位を主張。まずは一部のサイバー防御担当にだけ提供し、開発者・一般向けは「近日」。料金はArgonと同じ導入価格の入力$2／出力$10（1M）、期間後は$4／$20。",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
       "source": "Google / Reuters"
-    },
-    {
-      "date": "2026-10-27",
-      "title": "Liquid AI、端末上で動く2B級のオープンモデル群 LFM3 を公開",
-      "summary": "22Tトークンで事前学習した LFM3-1.7B-Base から、テキスト・画像・音声向けの6モデルを派生。前世代の2.6Bモデルより35%少ないパラメータで上回ったと主張。",
-      "url": "https://theagenticweekly.com/news/models",
-      "source": "The Agentic Weekly"
     }
   ],
   "lineups": [
