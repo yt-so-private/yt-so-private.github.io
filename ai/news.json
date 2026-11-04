@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-11-03T09:15:00+09:00",
+  "generatedAt": "2026-11-04T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-11-03",
+      "title": "Anthropic、「AIによる研究の急加速」の社内基準に近づきつつあると開示",
+      "summary": "規制当局向け書類の更新で、AIが次世代モデルの開発を評価より速く進めてしまう可能性を警告。現行モデルはまだ基準を超えていないとし、人の監督を外して自律的に次世代を作らせる考えはないと説明。責任あるスケーリング方針（RSP）の見直しも検討中。基準到達は自社評価で、第三者の検証はない。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
+      "source": "The Neuron（TechCrunch報道より）"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "OpenAI、日常の用事をこなせるかを測る新ベンチマーク「LifeVal」を公開",
+      "summary": "保育先探し・家計管理・役所の手続きなど、生活上のタスクをAIが手伝えるかを評価。生活時間調査と約4,000人への調査をもとに作ったとしている。OpenAI自身が作った評価で、他社モデルとの公平な比較はまだこれから。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "MIT、AIが別のモデルの重みを直接書き換えて性能を上げる実験を報告",
+      "summary": "GPT-6 Astra が小型の Qwen モデルの内部数値を調べて編集。重みのわずか0.016%を変えただけで MATH-500 の正答率が7.9%から48.1%に上がった例を示した。研究段階の結果。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Goldman Sachs、Claude Code などの高度なコーディングAIを原則エンジニア限定に",
+      "summary": "トレーダーや銀行員にも試させていたが、生産性とリスク管理を理由に利用範囲を絞ったと報じられている（社内ガイダンスの報道ベース）。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "WIRED、ペット似顔絵アプリなどを装った悪質ディープフェイクアプリ400超を発見",
+      "summary": "インストール後に性的ディープフェイク生成機能を読み込む仕組みで、一部は Apple・Google のストアにも掲載、合計35万DL超。Apple は指摘を受けて19本を削除した。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
+      "source": "The Neuron（WIRED報道より）"
+    },
     {
       "date": "2026-11-02",
       "title": "OpenAI、12月から ChatGPT と Codex の利用上限を共通化へ",
@@ -14,13 +49,6 @@
       "summary": "半導体設計・サイバーセキュリティ・生物・法務・クオンツ取引など高付加価値の11分野で、実務レベルの難題を解けるかを測る。結果は Claude Opus 5.5 が12.0%、Gemini 4 Carbon 10.9%、GPT-6 Astra 9.6%。公開直後で第三者の検証はまだ少なく、日常的な使いやすさやコストは測っていない。",
       "url": "https://aiweekly.co/ai-news-today",
       "source": "AI Weekly"
-    },
-    {
-      "date": "2026-11-02",
-      "title": "Meituan、1.6Tパラメータの LongCat-2.5 正式版を公開",
-      "summary": "総1.6T・1トークンあたり約48B有効のMoE。画像理解とエージェント型コーディングを強化し、Claude Code・Codex・Hermes などのツールに対応とうたう（自社発表）。",
-      "url": "https://epoch0.tokyo/daily/2026-11-02/en",
-      "source": "Epoch 0"
     },
     {
       "date": "2026-11-01",
@@ -42,20 +70,6 @@
       "summary": "顧客のユーザーID・氏名・メールアドレス・組織内の役割が見られた。調査内容・パスワード・MFA情報・セッショントークンへのアクセスの証拠はないとしつつ、顧客ごとの確認はまだ終わっていない。",
       "url": "https://ai.info/daily/2026-11-02",
       "source": "AI.info"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "OpenAI、生命科学研究向けの GPT-Rosalind-6 を審査済みチーム限定で公開",
-      "summary": "利用できるのは審査を通った研究組織・ユーザーのみ。OpenAIは生物分野の能力を「高」と評価しつつ、4つの評価で「重大」の目安には届かなかったとしている。",
-      "url": "https://ai.info/daily/2026-11-01",
-      "source": "AI.info"
-    },
-    {
-      "date": "2026-10-29",
-      "title": "Mistral、1Tパラメータの Mistral Large 4 の重みを公開",
-      "summary": "総約1T・1Mトークン文脈のマルチモーダルMoE。独自の Mistral Ecosystem Open-Weight License で公開し、「コーディングで最良のオープンウェイトモデル」と自称（自社評価）。",
-      "url": "https://theagenticweekly.com/news/models",
-      "source": "The Agentic Weekly"
     },
     {
       "date": "2026-10-28",
