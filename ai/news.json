@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-11-04T09:15:00+09:00",
+  "generatedAt": "2026-11-09T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-11-07",
+      "title": "OpenAI、評価額1.25兆ドルで110億ドルを調達（第1弾）",
+      "summary": "Bloomberg報道で、CFOがテレビ取材で評価額を認めたとされる。ラウンドはまだ完了しておらず合計は約200億ドルになる可能性があり、当初目標の300億ドル・1.4兆ドルには届かない見込み。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
+      "source": "Kill The AI（Bloomberg報道より）"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Mistral、1兆パラメータの「Mistral Large 4」の重みを公開",
+      "summary": "マルチモーダルのMoE型で、1トークンあたり約500億パラメータが動き、コンテキストは100万トークン。ライセンスは改変MIT系で商用利用も可だが、モデルを提供するサービス事業者は別契約が必要。",
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-9-2026-mistral-opens-le-chonk-weights-grok-api-watermarks-by-default-2gdm",
+      "source": "DEV Community"
+    },
+    {
+      "date": "2026-11-07",
+      "title": "xAI、Grok APIのテキスト出力に標準で見えない透かしを付与",
+      "summary": "現行7モデルが対象で、リクエストごとのヘッダーで確認できる。無効化は管理者のみで法的例外の確認が必要。EU AI法の表示義務（12/2）への対応と説明されている。",
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-9-2026-mistral-opens-le-chonk-weights-grok-api-watermarks-by-default-2gdm",
+      "source": "DEV Community"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Apple、Siriのエージェント化を加速と報道",
+      "summary": "iOS 27.3（12月）でまずApple純正アプリの細かい操作、サードパーティ連携は2027年春の見込み。OpenAIのDotsなどに対抗する狙い。Gurman氏の報道ベース。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
+      "source": "The Verge / Kill The AI"
+    },
+    {
+      "date": "2026-11-08",
+      "title": "NVIDIA取締役会、CEOに関する報道を受け独立調査を開始",
+      "summary": "米情報当局の文書とされる内容を受けた調査で、詳細は報道ベース。AI業界の主要企業のガバナンス面のニュースとして記載。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
+      "source": "TechCrunch / Kill The AI"
+    },
     {
       "date": "2026-11-03",
       "title": "Anthropic、「AIによる研究の急加速」の社内基準に近づきつつあると開示",
@@ -16,27 +51,6 @@
       "source": "The Neuron"
     },
     {
-      "date": "2026-11-03",
-      "title": "MIT、AIが別のモデルの重みを直接書き換えて性能を上げる実験を報告",
-      "summary": "GPT-6 Astra が小型の Qwen モデルの内部数値を調べて編集。重みのわずか0.016%を変えただけで MATH-500 の正答率が7.9%から48.1%に上がった例を示した。研究段階の結果。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-03",
-      "title": "Goldman Sachs、Claude Code などの高度なコーディングAIを原則エンジニア限定に",
-      "summary": "トレーダーや銀行員にも試させていたが、生産性とリスク管理を理由に利用範囲を絞ったと報じられている（社内ガイダンスの報道ベース）。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-03",
-      "title": "WIRED、ペット似顔絵アプリなどを装った悪質ディープフェイクアプリ400超を発見",
-      "summary": "インストール後に性的ディープフェイク生成機能を読み込む仕組みで、一部は Apple・Google のストアにも掲載、合計35万DL超。Apple は指摘を受けて19本を削除した。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
-      "source": "The Neuron（WIRED報道より）"
-    },
-    {
       "date": "2026-11-02",
       "title": "OpenAI、12月から ChatGPT と Codex の利用上限を共通化へ",
       "summary": "Plus・Pro・Business では、負荷の高い ChatGPT の機能と Codex が同じ利用枠を使う形に変わる。通常の Instant チャットは対象外。残り枠とリセット時刻は設定画面で確認でき、上限後は追加クレジットで続けられる。",
@@ -49,27 +63,6 @@
       "summary": "半導体設計・サイバーセキュリティ・生物・法務・クオンツ取引など高付加価値の11分野で、実務レベルの難題を解けるかを測る。結果は Claude Opus 5.5 が12.0%、Gemini 4 Carbon 10.9%、GPT-6 Astra 9.6%。公開直後で第三者の検証はまだ少なく、日常的な使いやすさやコストは測っていない。",
       "url": "https://aiweekly.co/ai-news-today",
       "source": "AI Weekly"
-    },
-    {
-      "date": "2026-11-01",
-      "title": "DeepSeek、グループチャットに常駐するオープンソースのコーディングエージェント「Super-agent」を試作公開",
-      "summary": "開発者のグループチャットを見張り、頼まれなくても修正を提案する。「人間の注意をできるだけ使わない」ことを目標に掲げる。Claude Code への対抗馬と報じられている。",
-      "url": "https://thegpu.ai/p/gpu-daily-2026-11-02",
-      "source": "The GPU Daily"
-    },
-    {
-      "date": "2026-11-02",
-      "title": "Apple、中国向け Apple Intelligence の提供日程を発表",
-      "summary": "11/4に開発者向けテスト開始、12月の iOS 27.3 で一般提供。一部機能は Alibaba の Qwen が支える。WWDCで発表された新しいSiriはこの段階には含まれない。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-2-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-01",
-      "title": "Chainalysis、「攻撃的なエージェント技術」による不正アクセスで顧客の氏名・メールが流出と公表",
-      "summary": "顧客のユーザーID・氏名・メールアドレス・組織内の役割が見られた。調査内容・パスワード・MFA情報・セッショントークンへのアクセスの証拠はないとしつつ、顧客ごとの確認はまだ終わっていない。",
-      "url": "https://ai.info/daily/2026-11-02",
-      "source": "AI.info"
     },
     {
       "date": "2026-10-28",
