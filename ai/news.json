@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-11-09T09:15:00+09:00",
+  "generatedAt": "2026-11-10T09:20:00+09:00",
   "items": [
+    {
+      "date": "2026-11-10",
+      "title": "Anthropic、Claude Fable 5.2 と Mythos 5.2 を公開",
+      "summary": "Fable 5.2 は全ユーザー向けで、コーディング・推論・視覚を強化。API料金は入力$8／出力$40（1M）、コンテキスト100万トークン。Mythos 5.2 はサイバー・生命科学の審査済み組織のみ。性能の数字（FrontierSWE v2 69.9%など）は公開直後の自社・配信元発表ベース。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-10-2026/",
+      "source": "Kill The AI / DEV Community"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "OpenAI、PythonツールRuff・uvのAstralを買収へ",
+      "summary": "Astralのチームは Codex に合流する。条件は非公開。同日、Agents API に12時間プロンプトキャッシュ・非同期関数・セッション別予算管理（ベータ）も追加。",
+      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-10-2026-openai-buys-astral-nvidia-opens-gr00t-2-claude-fable-52-32p5",
+      "source": "DEV Community"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Meta、低価格モデル「Muse Ember」を公開",
+      "summary": "ツール呼び出しやデータ抽出など反復的なエージェント作業向け。入力$0.10／出力$0.50（1M）、テキスト・画像・音声・動画対応で100万トークン。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-10-2026/",
+      "source": "Kill The AI"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "NVIDIAのCEO報道で株価下落、GR00T 2も発表",
+      "summary": "CEOが中国系とされる人物との関係を認め、取締役会が調査中。時価総額は約2,500億ドル減との報道。別件でロボット基盤モデル GR00T 2（20億パラメータ）を発表、コードは12月公開予定。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-10-2026/",
+      "source": "Kill The AI / The Verge"
+    },
+    {
+      "date": "2026-11-10",
+      "title": "Google、TPU 8 に2種を追加",
+      "summary": "機密計算向けの TPU 8tx とメモリ重視の推論向け TPU 8i Max。第8世代は計4種に。PyTorch用の TorchTPU もオープンソース化。",
+      "url": "https://killtheai.com/news/top-10-ai-news-today-november-10-2026/",
+      "source": "Kill The AI"
+    },
     {
       "date": "2026-11-07",
       "title": "OpenAI、評価額1.25兆ドルで110億ドルを調達（第1弾）",
@@ -16,39 +51,11 @@
       "source": "DEV Community"
     },
     {
-      "date": "2026-11-07",
-      "title": "xAI、Grok APIのテキスト出力に標準で見えない透かしを付与",
-      "summary": "現行7モデルが対象で、リクエストごとのヘッダーで確認できる。無効化は管理者のみで法的例外の確認が必要。EU AI法の表示義務（12/2）への対応と説明されている。",
-      "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-9-2026-mistral-opens-le-chonk-weights-grok-api-watermarks-by-default-2gdm",
-      "source": "DEV Community"
-    },
-    {
-      "date": "2026-11-08",
-      "title": "Apple、Siriのエージェント化を加速と報道",
-      "summary": "iOS 27.3（12月）でまずApple純正アプリの細かい操作、サードパーティ連携は2027年春の見込み。OpenAIのDotsなどに対抗する狙い。Gurman氏の報道ベース。",
-      "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
-      "source": "The Verge / Kill The AI"
-    },
-    {
-      "date": "2026-11-08",
-      "title": "NVIDIA取締役会、CEOに関する報道を受け独立調査を開始",
-      "summary": "米情報当局の文書とされる内容を受けた調査で、詳細は報道ベース。AI業界の主要企業のガバナンス面のニュースとして記載。",
-      "url": "https://killtheai.com/news/top-10-ai-news-today-november-9-2026/",
-      "source": "TechCrunch / Kill The AI"
-    },
-    {
       "date": "2026-11-03",
       "title": "Anthropic、「AIによる研究の急加速」の社内基準に近づきつつあると開示",
       "summary": "規制当局向け書類の更新で、AIが次世代モデルの開発を評価より速く進めてしまう可能性を警告。現行モデルはまだ基準を超えていないとし、人の監督を外して自律的に次世代を作らせる考えはないと説明。責任あるスケーリング方針（RSP）の見直しも検討中。基準到達は自社評価で、第三者の検証はない。",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
       "source": "The Neuron（TechCrunch報道より）"
-    },
-    {
-      "date": "2026-11-03",
-      "title": "OpenAI、日常の用事をこなせるかを測る新ベンチマーク「LifeVal」を公開",
-      "summary": "保育先探し・家計管理・役所の手続きなど、生活上のタスクをAIが手伝えるかを評価。生活時間調査と約4,000人への調査をもとに作ったとしている。OpenAI自身が作った評価で、他社モデルとの公平な比較はまだこれから。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-3-2026/",
-      "source": "The Neuron"
     },
     {
       "date": "2026-11-02",
