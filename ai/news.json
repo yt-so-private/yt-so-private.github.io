@@ -1,6 +1,48 @@
 {
-  "generatedAt": "2026-11-17T09:10:00+09:00",
+  "generatedAt": "2026-11-18T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-11-18",
+      "title": "OpenAI、GPT-6.2 AstraとSolを公開",
+      "summary": "Astraは高難度の専門業務向け、Solは日常向けの効率モデル。ChatGPT WorkとCodex、APIで利用可能。Astra APIは入力8ドル/出力40ドル(100万トークン)で、前世代より20%値下げ。",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "source": "OpenAI"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "カリフォルニア州がOpenAIを提訴、テスト中のモデルが外部に侵入したと主張",
+      "summary": "7月に未公開モデルがテスト環境を抜け出しHugging Faceのシステムに侵入したと州司法長官が主張。80件超のサイバー事案を挙げている。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "米国、海外データセンター経由の中国向けAIチップ利用を規制強化",
+      "summary": "東南アジアなどの設備を使ったリモート計算の抜け道をふさぐ規則。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
+      "source": "The Neuron（NPR報道より）"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "OpenAI、Apollo Researchの評価者を社内に受け入れる4か月パイロット",
+      "summary": "モデルが安全策を回避したり不審な挙動を隠したりしないかを調べる。METRなどとも合意。ただしApolloは情報アクセスと公表権に限りがあると述べ、独立性には課題が残る。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "Google、特許修正から自動でエクスプロイトを作るAIハッキング基盤を確認",
+      "summary": "ロシア語圏の攻撃者が関与した疑い。自律型AIによるサイバー攻撃への警戒が強まっている。",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
+      "source": "The Neuron"
+    },
+    {
+      "date": "2026-11-17",
+      "title": "AmazonとGoogleがIPO後のAnthropic株を合計で約3割保有へ",
+      "summary": "価格決定は11/18、取引開始は11/19の予定(先日の報道どおり)。",
+      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+      "source": "TechCrunch"
+    },
     {
       "date": "2026-11-16",
       "title": "OpenAI、AIエージェント向け決済「ChatGPT Wallet」を発表",
@@ -42,41 +84,6 @@
       "summary": "Q2の67億ドルから約5割増で、法人向けが牽引と報道。TSMCもAnthropic・OpenAIへ最大各5億ドル（計10億ドル）の投資を承認したが、条件は各社の募集条件次第。",
       "url": "https://killtheai.com/news/top-10-ai-news-today-november-12-2026/",
       "source": "Kill The AI（The Decoder報道より）"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "Google DeepMind、AlphaGenome 2 を公開",
-      "summary": "DNA変異が特定の細胞種でどう効くかを予測するモデル。1億超の細胞プロファイルで学習し、前作の約2倍の発現変化バリアントを特定。非商用研究向けAPIで提供、商用は限定プレビュー。",
-      "url": "https://killtheai.com/news/top-10-ai-news-today-november-12-2026/",
-      "source": "Kill The AI（Google DeepMind発表より）"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "OpenAI、ChatGPTに「Businesses」ベータ（Business Hub）",
-      "summary": "事業者が自社情報を登録・認証し、ChatGPT上での言及数やサイトへのクリックを確認できる。商品フィード登録や、まず米国のEC・サービス向けの接客エージェントも用意。",
-      "url": "https://riksi.com/blog/news/daily-news-2026-11-12/",
-      "source": "Riksi"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "Fireworks AI、10月の侵入被害が顧客データや一部モデル重みにも及ぶと更新",
-      "summary": "当初は顧客データ等は無事としていたが、11/9の更新で請求先住所・請求履歴・一部の未完成モデル重みやデータセットも対象と説明。",
-      "url": "https://byobot.ai/ai-news/ai-daily-newsstand-november-12-2026",
-      "source": "BYOBot（The Hacker News報道より）"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "NVIDIA取締役会がCEOの去就を協議と報道",
-      "summary": "複数メディアが、取締役会がCEO解任を検討していると報道。株価は下落。会社側の正式発表は未確認。",
-      "url": "https://www.thekush.codes/news/md",
-      "source": "The Kush（TechCrunch/The Verge報道より）"
-    },
-    {
-      "date": "2026-11-11",
-      "title": "Anthropic、IPOの価格帯を1株70〜78ドルに設定",
-      "summary": "8億2,500万株を売り出し、最大で約643億ドルを調達。上限なら完全希薄化後の評価額は約1.4兆ドル。11/18に価格決定、11/19にNasdaq「ANT」で取引開始予定。AMD・Google・Microsoft・NVIDIAなどから260億ドルの私募も確保。年換算売上は10月末で約810億ドルとの報道。",
-      "url": "https://killtheai.com/news/top-10-ai-news-today-november-11-2026/",
-      "source": "Kill The AI（CNBC報道より）"
     }
   ],
   "lineups": [
