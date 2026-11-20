@@ -1,6 +1,27 @@
 {
-  "generatedAt": "2026-11-19T09:15:00+09:00",
+  "generatedAt": "2026-11-20T09:15:00+09:00",
   "items": [
+    {
+      "date": "2026-11-19",
+      "title": "Anthropic、Nasdaq「ANT」で取引開始。調達額は約810億ドルで史上最大級のIPO",
+      "summary": "アナリストからは自律型AIが収益に与えるリスクの指摘も出ている。安全性をめぐる報道も増えている。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Google、Gemini Tasksを無料ユーザーにも提供（Gemini 4 Hydrogen搭載）",
+      "summary": "チャットから切り替えて、予約や支払いの整理など複数手順の用事を任せられる。Googleカレンダー等と連携。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "GPT-6.2 Astra、ArenaのCodingで3位（1,338点）と報道",
+      "summary": "総合は6位（1,291点）。Arenaは人の好みによる投票で、実務の再現性や費用対効果までは測れない点に注意。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
     {
       "date": "2026-11-19",
       "title": "Google、Gemini 4 Neonを公開（CarbonとHydrogenの中間）",
@@ -69,27 +90,6 @@
       "title": "Google、特許修正から自動でエクスプロイトを作るAIハッキング基盤を確認",
       "summary": "ロシア語圏の攻撃者が関与した疑い。自律型AIによるサイバー攻撃への警戒が強まっている。",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-16",
-      "title": "OpenAI、AIエージェント向け決済「ChatGPT Wallet」を発表",
-      "summary": "カードを一度登録し、購入ごとに顔・指紋認証で承認。エージェントとお店にはカード情報が渡らず、一時的な代替情報で決済する仕組み。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-16",
-      "title": "Alibaba、Qwen4-Maxを正式提供（重みは非公開）",
-      "summary": "MoE 2.4兆パラメータ・最大100万トークン・画像入力。入力100万トークン1.5ドル/出力4.5ドル。小型Qwen4は今後オープンウェイト予定（時期未定）。",
-      "url": "https://aiproplaybook.com/top-ai-stories/2026-11-16",
-      "source": "AI Pro Playbook"
-    },
-    {
-      "date": "2026-11-16",
-      "title": "Jensen Huang氏のNVIDIA CEO復帰を検討と報道、AI関連株は下落",
-      "summary": "取締役会の調査は継続中。チップ輸出規制の強化を求める声も米議会で強まり、Cantwell上院議員は商務省の対応を批判。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
       "source": "The Neuron"
     }
   ],
