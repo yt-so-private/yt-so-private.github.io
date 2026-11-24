@@ -1,59 +1,31 @@
 {
-  "generatedAt": "2026-11-20T09:15:00+09:00",
+  "generatedAt": "2026-11-24T09:10:00+09:00",
   "items": [
     {
-      "date": "2026-11-19",
-      "title": "Anthropic、Nasdaq「ANT」で取引開始。調達額は約810億ドルで史上最大級のIPO",
-      "summary": "アナリストからは自律型AIが収益に与えるリスクの指摘も出ている。安全性をめぐる報道も増えている。",
+      "date": "2026-11-23",
+      "title": "Google Antigravity、OrchestratorでモデルをPro/Ultraユーザーが選択可能に",
+      "summary": "例えばGemini 4 Neon Highを計画役にして、実装役を別モデルにする組み合わせができる。",
       "url": "https://x.com/i/trending",
       "source": "X News"
     },
     {
-      "date": "2026-11-18",
-      "title": "Google、Gemini Tasksを無料ユーザーにも提供（Gemini 4 Hydrogen搭載）",
-      "summary": "チャットから切り替えて、予約や支払いの整理など複数手順の用事を任せられる。Googleカレンダー等と連携。",
+      "date": "2026-11-22",
+      "title": "Anthropic、エージェントのトークン消費を最大85%減らす手法を紹介",
+      "summary": "ツールのオンデマンド検索、未使用ツールの遅延読み込み、サンドボックス内処理、並列呼び出しなどを組み合わせる。",
       "url": "https://x.com/i/trending",
       "source": "X News"
     },
     {
-      "date": "2026-11-19",
-      "title": "GPT-6.2 Astra、ArenaのCodingで3位（1,338点）と報道",
-      "summary": "総合は6位（1,291点）。Arenaは人の好みによる投票で、実務の再現性や費用対効果までは測れない点に注意。",
+      "date": "2026-11-20",
+      "title": "OpenAI、敵対的蒸留への防御研究を公開",
+      "summary": "GPT-6.2 Astraのような最先端モデルの推論力を、安全対策なしの生徒モデルが抜き取る問題への対策。",
       "url": "https://x.com/i/trending",
       "source": "X News"
     },
     {
-      "date": "2026-11-19",
-      "title": "Google、Gemini 4 Neonを公開（CarbonとHydrogenの中間）",
-      "summary": "知識業務向けの深さと速さのバランス型。Artificial Analysis指数61、コーディングエージェントで首位級と報じられ、トークン単価はCarbonより約25%安い。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "Anthropic、IPOを1株83ドル（評価額約1.5兆ドル）で価格決定",
-      "summary": "Nasdaq「ANT」で11/19に取引開始の予定。報道では上場後、AmazonとGoogleで約3割を保有。",
-      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
-      "source": "X News／TechCrunch"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "Microsoft、IgniteでMAIモデル7種。MAI Code 2はGitHub Copilotで利用可",
-      "summary": "社内評価でGPT-6.1 Sol比98%の性能を40%の価格で、と主張（自社発表のため独立検証は未確認）。MAI Image 2.7は画像編集系ベンチで首位級。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "Tencent、Hy4 Flashの重みをHugging Faceで公開",
-      "summary": "総224B・活性12B、100万トークン文脈、画像入力対応。API入力は100万トークン約0.07ドルから。11/30までOpenCode等で無料枠。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "NVIDIA取締役会、Huang氏のCEO復帰を否決と報道",
-      "summary": "暫定トップはColette Kress氏。株価は決算後の上げ分を戻した。",
+      "date": "2026-11-23",
+      "title": "開発者から Gemini 4 Neon のコーディング性能に称賛の声",
+      "summary": "起動時間の短縮などで「非常に良い」との評価が出ている（個人の感想ベースで、独立した検証ではない）。",
       "url": "https://x.com/i/trending",
       "source": "X News"
     },
