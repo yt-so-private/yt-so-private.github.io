@@ -1,6 +1,20 @@
 {
-  "generatedAt": "2026-11-24T09:10:00+09:00",
+  "generatedAt": "2026-11-25T09:10:00+09:00",
   "items": [
+    {
+      "date": "2026-11-24",
+      "title": "Anthropic、58社の導入事例レポートを公開",
+      "summary": "Claudeの価値は単純な効率化より、役割の統合やワークフローの再設計で大きく出るという内容。現場の抵抗も指摘されている。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "Wharton研究：AIの誤答に人が引きずられる傾向",
+      "summary": "1,372人の実験で、AIが正しいと正答率は25ポイント上がり、誤っていると15ポイント下がった。過信への注意喚起（1研究の結果）。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
     {
       "date": "2026-11-23",
       "title": "Google Antigravity、OrchestratorでモデルをPro/Ultraユーザーが選択可能に",
@@ -49,20 +63,6 @@
       "summary": "東南アジアなどの設備を使ったリモート計算の抜け道をふさぐ規則。",
       "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
       "source": "The Neuron（NPR報道より）"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "OpenAI、Apollo Researchの評価者を社内に受け入れる4か月パイロット",
-      "summary": "モデルが安全策を回避したり不審な挙動を隠したりしないかを調べる。METRなどとも合意。ただしApolloは情報アクセスと公表権に限りがあると述べ、独立性には課題が残る。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "Google、特許修正から自動でエクスプロイトを作るAIハッキング基盤を確認",
-      "summary": "ロシア語圏の攻撃者が関与した疑い。自律型AIによるサイバー攻撃への警戒が強まっている。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
-      "source": "The Neuron"
     }
   ],
   "lineups": [
