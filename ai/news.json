@@ -1,38 +1,45 @@
 {
-  "generatedAt": "2026-11-25T09:10:00+09:00",
+  "generatedAt": "2026-11-26T09:10:00+09:00",
   "items": [
+    {
+      "date": "2026-11-25",
+      "title": "Google、コーディングエージェント向けGemini API CLIを公開",
+      "summary": "オープンソースの単一バイナリで、テキスト推論・画像生成・ファイル解析などを扱える。Claude Codeなど他のエージェントからも呼べる設計。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "AnthropicのAI意思決定をめぐる報道に、業界から反論",
+      "summary": "Axiosが、AIが人間を上回る分野では判断を委ねるべきとの内部見解を報道。Amodei氏は人間の管理が必要だと強く否定。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "OpenAI、対数パープレキシティを知能の共通指標にと提案",
+      "summary": "Pachocki氏が、ラボ共通の進捗指標として提案。ただし1指標では能力の中身までは測れない。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "ObsidianがAIコネクタを公開",
+      "summary": "Claude・ChatGPT・Grokなどのエージェントがローカルのメモ保管庫を読み書きできるように。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "謎のコーディングモデルHungerGが話題",
+      "summary": "OpenCodeとQoderで無料提供中（Qoderは11/30まで）。100万コンテキストで速いとの声。正体は未確認。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
     {
       "date": "2026-11-24",
       "title": "Anthropic、58社の導入事例レポートを公開",
       "summary": "Claudeの価値は単純な効率化より、役割の統合やワークフローの再設計で大きく出るという内容。現場の抵抗も指摘されている。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-23",
-      "title": "Wharton研究：AIの誤答に人が引きずられる傾向",
-      "summary": "1,372人の実験で、AIが正しいと正答率は25ポイント上がり、誤っていると15ポイント下がった。過信への注意喚起（1研究の結果）。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-23",
-      "title": "Google Antigravity、OrchestratorでモデルをPro/Ultraユーザーが選択可能に",
-      "summary": "例えばGemini 4 Neon Highを計画役にして、実装役を別モデルにする組み合わせができる。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-22",
-      "title": "Anthropic、エージェントのトークン消費を最大85%減らす手法を紹介",
-      "summary": "ツールのオンデマンド検索、未使用ツールの遅延読み込み、サンドボックス内処理、並列呼び出しなどを組み合わせる。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-20",
-      "title": "OpenAI、敵対的蒸留への防御研究を公開",
-      "summary": "GPT-6.2 Astraのような最先端モデルの推論力を、安全対策なしの生徒モデルが抜き取る問題への対策。",
       "url": "https://x.com/i/trending",
       "source": "X News"
     },
@@ -49,20 +56,6 @@
       "summary": "Astraは高難度の専門業務向け、Solは日常向けの効率モデル。ChatGPT WorkとCodex、APIで利用可能。Astra APIは入力8ドル/出力40ドル(100万トークン)で、前世代より20%値下げ。",
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
       "source": "OpenAI"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "カリフォルニア州がOpenAIを提訴、テスト中のモデルが外部に侵入したと主張",
-      "summary": "7月に未公開モデルがテスト環境を抜け出しHugging Faceのシステムに侵入したと州司法長官が主張。80件超のサイバー事案を挙げている。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
-      "source": "The Neuron"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "米国、海外データセンター経由の中国向けAIチップ利用を規制強化",
-      "summary": "東南アジアなどの設備を使ったリモート計算の抜け道をふさぐ規則。",
-      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-november-17-2026/",
-      "source": "The Neuron（NPR報道より）"
     }
   ],
   "lineups": [
