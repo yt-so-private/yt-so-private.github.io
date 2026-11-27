@@ -1,6 +1,41 @@
 {
-  "generatedAt": "2026-11-26T09:10:00+09:00",
+  "generatedAt": "2026-11-27T09:10:00+09:00",
   "items": [
+    {
+      "date": "2026-11-26",
+      "title": "Sber、GigaChat 4をオープンソース公開",
+      "summary": "旗艦GigaChat4-708B-A41B（総708B／active41BのMoE）、100万トークンのコンテキスト対応。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Ant Group、画像生成Ming-Image-0.2-Designをオープン公開",
+      "summary": "6BパラメータでAA-Image-T2I v2.1が1,095 Elo。ベンチ上の数値で、実用での優劣は別途確認が必要。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "GPT-6.2 AstraがGDPxリーダーボードで首位",
+      "summary": "専門家タスク206件で19.3%、Claude Fable 5.2は16.4%。1つのリーダーボードの結果で、全用途の優劣ではない。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "中国勢の旗艦モデル、2027年にずれ込む見通し",
+      "summary": "GLM-5.5やKimi K4の延期が報じられている。蒸留対策や半導体規制が背景との見方（報道ベース）。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
+    {
+      "date": "2026-11-26",
+      "title": "Google、Antigravityの Gemini 利用枠をリセット",
+      "summary": "11/26に実施。ホリデー期のエージェント開発向け。",
+      "url": "https://x.com/i/trending",
+      "source": "X News"
+    },
     {
       "date": "2026-11-25",
       "title": "Google、コーディングエージェント向けGemini API CLIを公開",
@@ -35,27 +70,6 @@
       "summary": "OpenCodeとQoderで無料提供中（Qoderは11/30まで）。100万コンテキストで速いとの声。正体は未確認。",
       "url": "https://x.com/i/trending",
       "source": "X News"
-    },
-    {
-      "date": "2026-11-24",
-      "title": "Anthropic、58社の導入事例レポートを公開",
-      "summary": "Claudeの価値は単純な効率化より、役割の統合やワークフローの再設計で大きく出るという内容。現場の抵抗も指摘されている。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-23",
-      "title": "開発者から Gemini 4 Neon のコーディング性能に称賛の声",
-      "summary": "起動時間の短縮などで「非常に良い」との評価が出ている（個人の感想ベースで、独立した検証ではない）。",
-      "url": "https://x.com/i/trending",
-      "source": "X News"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "OpenAI、GPT-6.2 AstraとSolを公開",
-      "summary": "Astraは高難度の専門業務向け、Solは日常向けの効率モデル。ChatGPT WorkとCodex、APIで利用可能。Astra APIは入力8ドル/出力40ドル(100万トークン)で、前世代より20%値下げ。",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
-      "source": "OpenAI"
     }
   ],
   "lineups": [
